@@ -1,5 +1,7 @@
 <template>
-  <Home />
+  <div class="container mx-auto">
+    <Home />
+  </div>
 </template>
 
 <script>

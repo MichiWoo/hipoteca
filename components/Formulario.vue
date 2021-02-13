@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col items-center justify-center mt-8">
-    <div class="w-9/12 my-4 sm:w-4/6 lg:w-2/6 div-center">
+    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <h5
         class="text-base sm:text-xl text-light-secondary dark:text-dark-secondary"
       >
         Formulario de Contacto
       </h5>
     </div>
-    <div class="w-9/12 my-4 sm:w-4/6 lg:w-2/6 div-center">
+    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <p
         class="text-sm text-center sm:text-base text-light-primary dark:text-dark-primary"
       >
@@ -15,7 +15,7 @@
         hipoteca 100%(*).
       </p>
     </div>
-    <div class="w-9/12 my-4 sm:w-4/6 lg:w-2/6 div-center">
+    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <Input
         placeholder="Nombre Completo"
         type-input="text"
@@ -23,7 +23,7 @@
         @changeText="changeName"
       />
     </div>
-    <div class="w-9/12 my-4 sm:w-4/6 lg:w-2/6 div-center">
+    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <Input
         placeholder="Teléfono"
         type-input="text"
@@ -31,7 +31,7 @@
         @changeText="changePhone"
       />
     </div>
-    <div class="w-9/12 my-4 sm:w-4/6 lg:w-2/6 div-center">
+    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <Input
         placeholder="Localidad"
         type-input="text"
@@ -39,7 +39,7 @@
         @changeText="changeCity"
       />
     </div>
-    <div class="w-9/12 my-4 sm:w-4/6 lg:w-2/6 div-center">
+    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <Input
         placeholder="Email"
         type-input="text"
@@ -47,7 +47,7 @@
         @changeText="changeEmail"
       />
     </div>
-    <div class="w-9/12 my-4 sm:w-4/6 lg:w-2/6 div-center">
+    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <TextArea
         placeholder="Cuentános tu caso"
         aria-label="Campo de texto para los comentarios"
@@ -86,7 +86,7 @@
         aria-label="Botón para enviar el formulario"
       ></ButtonSubmit>
     </div>
-    <div class="w-9/12 sm:w-4/6 lg:-2/6 div-center">
+    <div class="flex justify-center w-9/12 sm:w-4/6 lg:-2/6">
       <h6
         class="text-sm text-justify text-light-primary dark:text-dark-primary"
       >
@@ -98,8 +98,8 @@
         solicitar su supresión cuando los datos ya no sean necesarios.
       </h6>
     </div>
-    <div class="mt-2 mb-2 div-center">
-      <div class="w-9/12 sm:w-4/6 lg:-2/6 div-center">
+    <div class="flex justify-center mt-2 mb-2">
+      <div class="flex justify-center w-9/12 sm:w-4/6 lg:-2/6">
         <h6
           class="text-sm text-justify text-light-secondary dark:text-dark-accent"
         >
@@ -109,8 +109,8 @@
         </h6>
       </div>
     </div>
-    <div class="mt-2 mb-2 div-center">
-      <div class="w-9/12 sm:w-1/6 div-center">
+    <div class="flex justify-center mt-2 mb-2">
+      <div class="flex justify-center w-9/12 sm:w-1/6">
         <div class="relative w-full bg-light-secondary pb-2/12">
           <img
             class="absolute object-cover w-full h-full"

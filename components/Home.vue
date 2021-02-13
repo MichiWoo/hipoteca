@@ -304,7 +304,6 @@
         class="w-full h-1 bg-light-primary dark:bg-dark-primary border-1 border-light-primary dark:border-dark-primary"
       ></div>
     </div>
-    <Formulario></Formulario>
   </div>
 </template>
 
@@ -315,7 +314,6 @@ export default {
     FormWomanHouse: () => import('./forms/FormWomanHouse'),
     CardProducto: () => import('./CardProducto'),
     FormInsurance: () => import('./forms/FormInsurance'),
-    Formulario: () => import('./Formulario'),
   },
   data() {
     return {

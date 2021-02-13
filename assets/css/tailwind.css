@@ -1,0 +1,157 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.dark-mode body {
+  @apply bg-dark;
+}
+
+.light-mode body {
+  @apply bg-light;
+}
+
+.light-mode .nuxt-link-exact-active {
+  @apply font-bold border-b-2 text-light-secondary border-light-secondary;
+}
+
+.dark-mode .nuxt-link-exact-active {
+  @apply font-bold border-b-2 text-dark-secondary border-light-secondary;
+}
+
+.light-mode .nuxt-link-active {
+  @apply text-light-primary;
+}
+
+.dark-mode .nuxt-link-active {
+  @apply text-dark-primary;
+}
+
+.light-mode .fill-accent {
+  fill: #042586;
+}
+
+.dark-mode .fill-accent {
+  fill: #09e1fd;
+}
+
+.light-mode .fill-logo {
+  fill: #042586;
+}
+
+.dark-mode .fill-logo {
+  fill: #09e1fd;
+}
+
+.light-mode .fill-waveT {
+  fill: #bfcfff;
+}
+
+.dark-mode .fill-waveT {
+  fill: #252e42;
+}
+
+.light-mode .fill-waveB {
+  fill: #042586;
+}
+
+.dark-mode .fill-waveB {
+  fill: #252e42;
+}
+
+.light-mode .fill-selector {
+  fill: #bfcfff;
+}
+
+.dark-mode .fill-selector {
+  fill: #252e42;
+}
+
+.light-mode .fill-white {
+  fill: white;
+  stroke: #042586;
+}
+
+.dark-mode .fill-white {
+  fill: #252e42;
+  stroke: #09e1fd;
+}
+
+.light-mode .fill-logoInv {
+  fill: #bfcfff;
+}
+
+.dark-mode .fill-logoInv {
+  fill: #09e1fd;
+}
+
+.light-mode .fill-logoInv2 {
+  fill: #001247;
+}
+
+.dark-mode .fill-logoInv2 {
+  fill: #252e42;
+}
+
+.light-mode .fill-logoInv3 {
+  fill: #5555ca;
+}
+
+.dark-mode .fill-logoInv3 {
+  fill: #09e1fd;
+}
+
+.div-center {
+  @apply flex content-center justify-center;
+}
+
+.light-mode .card-accent {
+  @apply bg-light-accent text-light-secondary;
+}
+
+.light-mode .card-accent h4 {
+  @apply text-light-secondary;
+}
+
+.dark-mode .card-accent {
+  @apply bg-dark-accent text-dark;
+}
+
+.dark-mode .card-accent h4 {
+  @apply text-dark;
+}
+
+.light-mode .card-white {
+  @apply bg-light text-light-primary;
+}
+
+.light-mode .card-white h4 {
+  @apply text-light-secondary;
+}
+
+.dark-mode .card-white {
+  @apply bg-dark text-dark-primary;
+}
+
+.dark-mode .card-white h4 {
+  @apply text-dark-secondary;
+}
+
+.light-mode .card-primary {
+  @apply bg-light-primary text-light;
+}
+
+.light-mode .card-primary h4 {
+  @apply bg-light-primary text-light;
+}
+
+.dark-mode .card-primary {
+  @apply bg-dark-primary text-dark;
+}
+
+.dark-mode .card-primary h4 {
+  @apply text-dark;
+}
+
+.bottom-left {
+  @apply bottom-0 left-0;
+}

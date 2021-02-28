@@ -59,10 +59,16 @@
         </div>
       </div>
       <div class="flex items-start justify-center w-full sm:w-3/6 md:w-3/6">
-        <FormWomanHouse
-          class="w-full"
-          alt="Imágen Mujer con Casa"
-        ></FormWomanHouse>
+        <transition name="slide-fade">
+          <FormWomanHouse
+            v-show="showWoman"
+            class="w-full"
+            alt="Imágen Mujer con Casa"
+          />
+        </transition>
+        <transition name="slide-fade2">
+          <House v-show="showMan" class="w-full" alt="Imágen Hombre con Casa" />
+        </transition>
       </div>
     </div>
     <div class="mt-6 div-center sm:hidden md:hidden">
@@ -81,7 +87,7 @@
     <div class="w-11/12 my-6 div-center sm:hidden md:hidden">
       <div class="flex flex-col items-center justify-center">
         <div class="flex content-start justify-center items-strech">
-          <div class="flex justify-center mb-3">
+          <div class="flex justify-center w-3/6 mb-3">
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent dark:bg-dark-accent h-52 md:w-1/3 hover:shadow-md"
             >
@@ -97,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center mb-3">
+          <div class="flex justify-center w-3/6 mb-3">
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary dark:bg-dark-primary h-52 md:w-1/3 hover:shadow-md"
             >
@@ -115,7 +121,7 @@
           </div>
         </div>
         <div class="flex content-start justify-center items-strech">
-          <div class="flex justify-center mb-3">
+          <div class="flex justify-center w-3/6 mb-3">
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light dark:bg-dark h-52 md:w-1/3 hover:shadow-md"
             >
@@ -131,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center mb-3">
+          <div class="flex justify-center w-3/6 mb-3">
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent dark:bg-dark-accent h-52 md:w-1/3 hover:shadow-md"
             >
@@ -149,7 +155,7 @@
           </div>
         </div>
         <div class="flex content-start justify-center items-strech">
-          <div class="flex justify-center mb-3">
+          <div class="flex justify-center w-3/6 mb-3">
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary dark:bg-dark-primary h-52 md:w-1/3 hover:shadow-md"
             >
@@ -165,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center mb-3">
+          <div class="flex justify-center w-3/6 mb-3">
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light dark:bg-dark h-52 md:w-1/3 hover:shadow-md"
             >
@@ -314,6 +320,7 @@ export default {
     FormWomanHouse: () => import('./forms/FormWomanHouse'),
     CardProducto: () => import('./CardProducto'),
     FormInsurance: () => import('./forms/FormInsurance'),
+    House: () => import('./forms/House'),
   },
   data() {
     return {
@@ -463,9 +470,47 @@ export default {
           ],
         },
       ],
+      intervalo: null,
+      showWoman: true,
+      showMan: false,
     }
+  },
+  created() {
+    this.activarIntervalo()
+  },
+  beforeDestroy() {
+    clearInterval(this.intervalo)
+  },
+  methods: {
+    activarIntervalo() {
+      this.intervalo = setInterval(() => {
+        this.showWoman = !this.showWoman
+        this.showMan = !this.showMan
+      }, 10000)
+    },
   },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.slide-fade-enter-active {
+  opacity: 0;
+}
+.slide-fade-leave-active {
+  opacity: 0;
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  opacity: 0;
+}
+.slide-fade2-enter-active {
+  opacity: 0;
+}
+.slide-fade2-leave-active {
+  opacity: 0;
+}
+.slide-fade2-enter,
+.slide-fade2-leave-to {
+  opacity: 0;
+}
+</style>

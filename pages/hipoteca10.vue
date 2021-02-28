@@ -28,7 +28,7 @@
       <div class="flex w-11/12 my-4 flex-start sm:mt-16">
         <p class="text-sm text-justify sm:text-xl text-light dark:text-dark">
           <a class="font-bold text-light-primary dark:text-dark-primary"
-            >Hipoteca 10</a
+            >Hipoteca 10 </a
           ><span class="font-sm text-light-secondary dark:text-dark-secondary"
             >es capaz de conseguir los mejores tipos fijos y variables del
             mercado, dependiendo del perfil del cliente.</span

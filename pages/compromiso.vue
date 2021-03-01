@@ -41,7 +41,7 @@
         <p
           class="text-sm text-justify sm:text-xl text-light-accent dark:text-dark"
         >
-          <span class="font-bold">Hipoteca 10,</span>ya está adaptada a los
+          <span class="font-bold">Hipoteca 10,</span> ya está adaptada a los
           requisitos de la nueva ley, teniendo la confianza de que aquellos
           gestores que les ayuden en la tramitación de su hipoteca cuentan con
           sus correspondientes certificaciones.
@@ -58,8 +58,8 @@
         >
           HIPOTECAES10 S.L esta inscrito a través del Instituto Nacional de
           Consumo en el registro estatal de empresas de Intermediación
-          financiera con el número de registro<span class="font-bold"
-            >719.</span
+          financiera con el número de registro<span class="font-bold">
+            719.</span
           >
         </p>
       </div>
@@ -71,9 +71,8 @@
           >
             HIPOTECAES10 S.L esta inscrito a través del Instituto Nacional de
             Consumo en el registro estatal de empresas de Intermediación
-            financiera con el número de registro<span class="font-bold"
-              >719.</span
-            >
+            financiera con el número de registro
+            <span class="font-bold"> 719.</span>
           </p>
         </div>
       </div>

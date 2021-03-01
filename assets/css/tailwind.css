@@ -101,7 +101,7 @@
 }
 
 .div-center {
-  @apply flex content-center justify-center;
+  @apply flex items-center justify-center;
 }
 
 .light-mode .card-accent {

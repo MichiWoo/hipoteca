@@ -90,7 +90,8 @@
       >
         Para cualquier reclamación o queja, les dejamos enlace a nuestro<span
           class="font-bold"
-          >procedimiento</span
+        >
+          procedimiento </span
         >de resolución de reclamaciones.
       </p>
     </div>

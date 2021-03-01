@@ -29,7 +29,7 @@
         <p
           class="text-sm text-justify sm:text-xl text-light-accent dark:text-dark"
         >
-          <span class="font-bold">Hipoteca 10,</span>nace para dar repuesta a
+          <span class="font-bold">Hipoteca 10, </span>nace para dar repuesta a
           todos aquellos clientes, que necesitan sobre todo hipotecas 100%.
         </p>
       </div>

@@ -75,9 +75,11 @@
       <div
         class="text-sm text-justify select-one text-light-primary dark:text-dark-primary"
       >
-        He<a class="font-bold cursor-pointer" @click="openModal"
+        He
+        <a class="font-bold cursor-pointer" @click="openModal"
           >leído y acepto</a
-        >la información sobre protección de datos facilitada en la Web.
+        >
+        la información sobre protección de datos facilitada en la Web.
       </div>
     </div>
     <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:-2/6">

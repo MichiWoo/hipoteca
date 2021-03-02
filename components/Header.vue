@@ -69,6 +69,9 @@
         </div>
       </div>
     </div>
+    <div class="absolute left-0 z-0 w-full h-full -top-4">
+      <WaveT class="w-full h-full" alt="Imagen Forma de arriba" />
+    </div>
   </header>
 </template>
 
@@ -79,6 +82,7 @@ export default {
     Logo: () => import('../components/Logo'),
     Burger: () => import('../components/icons/Burger'),
     Checkbox: () => import('../components/Checkbox'),
+    WaveT: () => import('../components/forms/WaveT'),
   },
   methods: {
     toggle(val) {

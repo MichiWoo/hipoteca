@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="relative w-full mt-12 text-center bg-light-secondary dark:bg-dark"
-  >
+  <footer class="relative w-full mt-12 text-center">
     <div
       class="flex flex-col justify-center w-full h-full divide-x-0 divide-y md:flex-row md:justify-center md:items-center md:divide-x md:divide-y-0 divide-light-primary dark:divide-dark-accent"
     >
@@ -263,6 +261,9 @@
         </div>
       </div>
     </div>
+    <div class="absolute z-0 w-full -top-3 -left-1">
+      <WaveB class="w-full"></WaveB>
+    </div>
   </footer>
 </template>
 
@@ -271,6 +272,7 @@ export default {
   name: 'Footer',
   components: {
     LogoInv: () => import('../components/LogoInv'),
+    WaveB: () => import('../components/forms/WaveB'),
   },
 }
 </script>

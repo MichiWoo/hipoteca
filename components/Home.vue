@@ -87,7 +87,10 @@
     <div class="w-11/12 my-6 div-center sm:hidden md:hidden">
       <div class="flex flex-col items-center justify-center">
         <div class="flex content-start justify-center items-strech">
-          <div class="flex justify-center w-3/6 mb-3">
+          <div
+            class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            @click="scroll('h100')"
+          >
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent dark:bg-dark-accent h-52 md:w-1/3 hover:shadow-md"
             >
@@ -103,7 +106,10 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center w-3/6 mb-3">
+          <div
+            class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            @click="scroll('h80')"
+          >
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary dark:bg-dark-primary h-52 md:w-1/3 hover:shadow-md"
             >
@@ -121,7 +127,10 @@
           </div>
         </div>
         <div class="flex content-start justify-center items-strech">
-          <div class="flex justify-center w-3/6 mb-3">
+          <button
+            class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            @click="scroll('hfun')"
+          >
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light dark:bg-dark h-52 md:w-1/3 hover:shadow-md"
             >
@@ -136,8 +145,11 @@
                 Sin coste de gestión.
               </div>
             </div>
-          </div>
-          <div class="flex justify-center w-3/6 mb-3">
+          </button>
+          <button
+            class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            @click="scroll('hsbla')"
+          >
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent dark:bg-dark-accent h-52 md:w-1/3 hover:shadow-md"
             >
@@ -152,10 +164,13 @@
                 Financiamos los gastos.
               </div>
             </div>
-          </div>
+          </button>
         </div>
         <div class="flex content-start justify-center items-strech">
-          <div class="flex justify-center w-3/6 mb-3">
+          <button
+            class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            @click="scroll('hcvid')"
+          >
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary dark:bg-dark-primary h-52 md:w-1/3 hover:shadow-md"
             >
@@ -170,8 +185,11 @@
                 Por si tu banco no te quiere lo suficiente.
               </div>
             </div>
-          </div>
-          <div class="flex justify-center w-3/6 mb-3">
+          </button>
+          <button
+            class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            @click="scroll('hsue')"
+          >
             <div
               class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light dark:bg-dark h-52 md:w-1/3 hover:shadow-md"
             >
@@ -186,7 +204,7 @@
                 Hipoteca auto construcción.
               </div>
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
@@ -194,8 +212,9 @@
       class="hidden w-11/12 my-6 sm:flex sm:justify-center sm:flex-wrap md:flex md:justify-center md:flex-wrap"
     >
       <div class="flex justify-center w-3/12 mb-3">
-        <div
+        <button
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-accent dark:bg-dark-accent hover:shadow-md"
+          @click="scroll('h100')"
         >
           <h3
             class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
@@ -207,11 +226,12 @@
           >
             Para conseguir el 100% de la Compra Venta.
           </div>
-        </div>
+        </button>
       </div>
       <div class="flex justify-center w-3/12 mb-3">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-primary dark:bg-dark-primary hover:shadow-md"
+          @click="scroll('h80')"
         >
           <h3
             class="text-lg font-black tracking-wide text-light dark:text-dark"
@@ -228,6 +248,7 @@
       <div class="flex justify-center w-3/12 mb-3">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light dark:bg-dark hover:shadow-md"
+          @click="scroll('hfun')"
         >
           <h3
             class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
@@ -244,6 +265,7 @@
       <div class="flex justify-center w-3/12 mb-3">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-accent dark:bg-dark-accent hover:shadow-md"
+          @click="scroll('hsbla')"
         >
           <h3
             class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
@@ -260,6 +282,7 @@
       <div class="flex justify-center w-3/12 mb-3">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-primary dark:bg-dark-primary hover:shadow-md"
+          @click="scroll('hcvid')"
         >
           <h3
             class="text-lg font-black tracking-wide text-light dark:text-dark"
@@ -276,6 +299,7 @@
       <div class="flex justify-center w-3/12 mb-3">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light dark:bg-dark hover:shadow-md"
+          @click="scroll('hsue')"
         >
           <h3
             class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
@@ -301,6 +325,7 @@
     <div class="flex-col w-full div-center">
       <CardProducto
         v-for="p in productos"
+        :ref="p.ref"
         :key="p.id"
         :producto="p"
       ></CardProducto>
@@ -327,6 +352,7 @@ export default {
       productos: [
         {
           id: 1,
+          ref: 'h100',
           title: 'Hipoteca 100%',
           type: 'accent',
           data: [
@@ -346,6 +372,7 @@ export default {
         },
         {
           id: 2,
+          ref: 'h80',
           title: 'Hipoteca 80%',
           type: 'primary',
           data: [
@@ -369,6 +396,7 @@ export default {
         },
         {
           id: 3,
+          ref: 'hfun',
           title: 'Hipoteca Funcionario',
           type: 'white',
           data: [
@@ -395,6 +423,7 @@ export default {
         },
         {
           id: 4,
+          ref: 'hsbla',
           title: 'Hipoteca sin Blanca',
           type: 'primary',
           data: [
@@ -422,6 +451,7 @@ export default {
         },
         {
           id: 5,
+          ref: 'hcvid',
           title: 'Hipoteca Cambio de Vida',
           type: 'accent',
           data: [
@@ -446,6 +476,7 @@ export default {
         },
         {
           id: 6,
+          ref: 'hsue',
           title: 'Hipoteca la casa de mis sueños',
           type: 'white',
           data: [
@@ -487,6 +518,9 @@ export default {
         this.showWoman = !this.showWoman
         this.showMan = !this.showMan
       }, 10000)
+    },
+    scroll(where) {
+      this.$refs[where][0].$el.scrollIntoView({ behavior: 'smooth' })
     },
   },
 }

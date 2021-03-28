@@ -50,7 +50,7 @@
         </div>
       </div>
       <div
-        class="z-10 flex items-center justify-center w-1/6 h-8 lg:justify-end sm:justify-end sm:w-3/12 lg:w-1/12 sm:mt-8"
+        class="z-10 flex items-center justify-center w-1/6 h-8 lg:justify-center sm:justify-end sm:w-3/12 lg:w-1/12 sm:mt-8"
       >
         <Checkbox
           aria-label="Checkbox cambiar Modo Oscuro"

@@ -6,7 +6,7 @@
       class="flex items-center w-11/12 sm:w-9/12 md:w-9/12 lg:w-9/12 justity-between sm:justify-around sm:mb-2 md:justify-around md:mb-2"
     >
       <div
-        class="flex flex-col items-start justify-start w-full sm:w-3/6 md:w-3/6 lg:w-3/6"
+        class="flex flex-col items-start justify-start w-full sm:w-3/6 md:w-3/6 lg:w-4/6"
       >
         <div class="flex justify-start mb-4">
           <h1
@@ -58,7 +58,7 @@
           </button>
         </div>
       </div>
-      <div class="flex items-start justify-center w-full sm:w-3/6 md:w-3/6">
+      <div class="flex items-start justify-center w-full sm:w-3/6 md:w-2/6">
         <transition name="slide-fade">
           <FormWomanHouse
             v-show="showWoman"
@@ -211,7 +211,7 @@
     <div
       class="hidden w-11/12 my-6 sm:flex sm:justify-center sm:flex-wrap md:flex md:justify-center md:flex-wrap"
     >
-      <div class="flex justify-center w-3/12 mb-3">
+      <div class="flex justify-center w-3/12 mb-3 lg:h-48">
         <button
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-accent dark:bg-dark-accent hover:shadow-md"
           @click="scroll('h100')"
@@ -228,7 +228,7 @@
           </div>
         </button>
       </div>
-      <div class="flex justify-center w-3/12 mb-3">
+      <div class="flex justify-center w-3/12 mb-3 lg:h-48">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-primary dark:bg-dark-primary hover:shadow-md"
           @click="scroll('h80')"
@@ -245,7 +245,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center w-3/12 mb-3">
+      <div class="flex justify-center w-3/12 mb-3 lg:h-48">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light dark:bg-dark hover:shadow-md"
           @click="scroll('hfun')"
@@ -262,7 +262,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center w-3/12 mb-3">
+      <div class="flex justify-center w-3/12 mb-3 lg:h-48">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-accent dark:bg-dark-accent hover:shadow-md"
           @click="scroll('hsbla')"
@@ -279,7 +279,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center w-3/12 mb-3">
+      <div class="flex justify-center w-3/12 mb-3 lg:h-48">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-primary dark:bg-dark-primary hover:shadow-md"
           @click="scroll('hcvid')"
@@ -296,7 +296,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center w-3/12 mb-3">
+      <div class="flex justify-center w-3/12 mb-3 lg:h-48">
         <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light dark:bg-dark hover:shadow-md"
           @click="scroll('hsue')"

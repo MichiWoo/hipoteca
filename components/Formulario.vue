@@ -82,13 +82,13 @@
         la información sobre protección de datos facilitada en la Web.
       </div>
     </div>
-    <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:-2/6">
+    <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
       <ButtonSubmit
         text="Enviar"
         aria-label="Botón para enviar el formulario"
       ></ButtonSubmit>
     </div>
-    <div class="flex justify-center w-9/12 sm:w-4/6 lg:-2/6">
+    <div class="flex justify-center w-9/12 sm:w-4/6 lg:w-2/6">
       <h6
         class="text-sm text-justify text-light-primary dark:text-dark-primary"
       >
@@ -100,8 +100,8 @@
         solicitar su supresión cuando los datos ya no sean necesarios.
       </h6>
     </div>
-    <div class="flex justify-center mt-2 mb-2">
-      <div class="flex justify-center w-9/12 sm:w-4/6 lg:-2/6">
+    <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
+      <div class="flex justify-center">
         <h6
           class="text-sm text-justify text-light-secondary dark:text-dark-accent"
         >

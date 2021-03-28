@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-col py-16 div-center sm:py-32" :class="classCard">
+  <div class="flex-col w-full py-16 div-center sm:py-32" :class="classCard">
     <div class="flex items-center justify-center mb-6 sm:mb-12">
       <h4 class="text-base font-bold sm:text-3xl">{{ producto.title }}</h4>
     </div>

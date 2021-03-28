@@ -1,10 +1,10 @@
 <template>
-  <footer class="relative w-full mt-12 text-center">
+  <footer class="relative w-full mt-12 text-center sm:h-64">
     <div
       class="flex flex-col justify-center w-full h-full divide-x-0 divide-y md:flex-row md:justify-center md:items-center md:divide-x md:divide-y-0 divide-light-primary dark:divide-dark-accent"
     >
       <div
-        class="z-10 flex flex-col justify-center mt-8 mb-4 md:my-16 md:mr-16"
+        class="z-10 flex flex-col justify-center mt-8 mb-4 lg:w-2/6 md:my-16 md:mr-16"
       >
         <div class="flex items-center justify-center my-2 mt-4">
           <LogoInv class="w-3/5" alt="Logo Hipoteca 10 invertido" />
@@ -27,7 +27,7 @@
           </h3>
         </div>
       </div>
-      <div class="z-10 flex flex-col items-center justify-center w-full">
+      <div class="z-10 flex flex-col items-center justify-center lg:w-2/6">
         <div
           class="flex items-center justify-center w-full my-4 sm:mt-12 sm:ml-16"
         >
@@ -261,8 +261,8 @@
         </div>
       </div>
     </div>
-    <div class="absolute z-0 w-full -top-3 -left-1">
-      <WaveB class="w-full"></WaveB>
+    <div class="absolute top-0 bottom-0 left-0 right-0 z-0">
+      <WaveB class="w-full h-full"></WaveB>
     </div>
   </footer>
 </template>

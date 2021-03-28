@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center justify-center mt-12">
-    <div class="hidden w-7/12 mb-16 sm:flex sm:justify-around sm:items-center">
+    <div class="hidden w-9/12 mb-16 sm:flex sm:justify-around sm:items-center">
       <div class="flex flex-col items-center justify-center w-3/6 ml-8">
         <h1
           class="text-5xl font-bold text-light-secondary dark:text-dark-accent"
@@ -8,7 +8,7 @@
           Sobre Nosotros
         </h1>
       </div>
-      <div class="flex items-center justify-center w-3/6 mr-8">
+      <div class="flex items-center justify-center w-2/6 mr-8">
         <FormContrato class="w-full"></FormContrato>
       </div>
     </div>

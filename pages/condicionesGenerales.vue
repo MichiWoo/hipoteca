@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center justify-center mt-12">
+  <div class="flex flex-col items-center justify-center mt-4 lg:mt-12">
     <div class="w-11/12 my-2 text-center sm:w-4/6 div-center sm:my-8">
       <h1
-        class="text-4xl font-bold text-light-secondary dark:text-dark-primary"
+        class="text-3xl font-bold lg:text-4xl text-light-secondary dark:text-dark-primary"
       >
         Condiciones Generales de Contratación
       </h1>
@@ -208,7 +208,7 @@
         encuentra publicado en la tabla de tarifas que éstos encontrarán en
         nuestras oficinas y que serán de aplicación en función del tipo de la
         operación contratada finalmente, siempre y cuando se suscriba por LOS
-        CLIENTES la oferta vinculante que le presente Hipotecaes10 SL ,
+        CLIENTES la oferta vinculante que le presente Hipotecaes10 SL,
         minutándose aparte los impuestos y gastos que no se paguen a través de
         Hipotecaes10 SL, como por ejemplo, notaría, registro, impuestos,
         gestoría, etc. así como los servicios y productos que puedan ser

@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center justify-center mt-12">
-    <div class="w-full sm:w-4/6 div-center sm:mb-16">
+  <div class="flex flex-col items-center justify-center mt-4 lg:mt-12">
+    <div class="w-11/12 sm:w-4/6 div-center sm:mb-16">
       <h1
-        class="text-4xl font-bold text-light-secondary dark:text-dark-primary"
+        class="text-3xl font-bold lg:text-4xl text-light-secondary dark:text-dark-primary"
       >
         Política de Privacidad
       </h1>

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center justify-center mt-12 sm:mt-4">
-    <div class="hidden w-7/12 mb-16 sm:flex sm:justify-around sm:items-center">
+    <div class="hidden w-9/12 mb-16 sm:flex sm:justify-around sm:items-center">
       <div class="flex items-center w-3/6 ml-8 flex-start">
         <h1
           class="text-5xl font-bold text-light-secondary dark:text-dark-accent"
@@ -8,7 +8,7 @@
           Nuestro Método<br />de Trabajo
         </h1>
       </div>
-      <div class="flex items-center justify-center w-3/6 mr-8">
+      <div class="flex items-center justify-center w-2/6 mr-8">
         <FormEntrevista class="w-full"></FormEntrevista>
       </div>
     </div>

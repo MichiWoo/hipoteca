@@ -64,7 +64,7 @@
             NOMBRE DEL DOMINIO:<a
               class="font-bold"
               href="https:hipoteca10.es"
-              target="_black"
+              target="_blank"
               rel="noreferer noopener"
               aria-label="link a www.hipoteca10.es"
               >www.hipoteca10.es</a

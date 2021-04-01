@@ -25,7 +25,7 @@
     <div
       class="flex flex-col items-center content-center w-full my-6 bg-light-accent dark:bg-dark-accent"
     >
-      <div class="flex w-11/12 my-4 flex-start sm:mt-16">
+      <div class="flex w-11/12 my-4 div-center sm:mt-16">
         <p class="text-sm text-justify sm:text-xl text-light dark:text-dark">
           <a class="font-bold text-light-primary dark:text-dark-primary"
             >Hipoteca 10 </a

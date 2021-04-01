@@ -53,6 +53,7 @@
           ><button
             class="hidden w-full p-2 ml-2 text-xl rounded-lg sm:block sm:w-4/5 sm:p-4 md:w-4/5 md:p-4 bg-light-primary dark:bg-dark-primary border-light-primary dark:border-text-dark-primary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
             aria-label="Botón Solicitar Estudio"
+            @click="goToForm"
           >
             Solicitar Estudio
           </button>
@@ -521,6 +522,9 @@ export default {
     },
     scroll(where) {
       this.$refs[where][0].$el.scrollIntoView({ behavior: 'smooth' })
+    },
+    goToForm() {
+      this.$store.commit('goToForm', true)
     },
   },
 }

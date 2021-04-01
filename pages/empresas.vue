@@ -10,6 +10,7 @@
         <div class="w-3/6 mt-6 div-center">
           <button
             class="w-full p-3 rounded-lg bg-light-secondary dark:bg-dark-secondary border-light-secondary dark:border-text-dark-secondary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            @click="goToForm"
           >
             Impulsa tu negocio
           </button>
@@ -37,6 +38,7 @@
     <div class="w-11/12 mt-6 div-center sm:hidden">
       <button
         class="w-full p-3 rounded-lg bg-light-secondary dark:bg-dark-secondary border-light-secondary dark:border-text-dark-secondary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+        @click="goToForm"
       >
         Impulsa tu negocio
       </button>
@@ -272,6 +274,11 @@ export default {
           'Hipoteca10 está especializada en conseguir para sus clientes financiaciones para compra de vivienda, por encima del 80%.',
       },
     ],
+  },
+  methods: {
+    goToForm() {
+      this.$store.commit('goToForm', true)
+    },
   },
 }
 </script>

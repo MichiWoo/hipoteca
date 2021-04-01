@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center mt-8">
+  <div ref="formulario" class="flex flex-col items-center justify-center mt-8">
     <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <h5
         class="text-base sm:text-xl text-light-secondary dark:text-dark-secondary"
@@ -105,20 +105,39 @@
         <h6
           class="text-sm text-justify text-light-secondary dark:text-dark-accent"
         >
-          HIPOTECAES10 SL, ESTA DADA DE ALTA EN EL REGISTRO DEL BANCO DE ESPAÑA,
-          SEGÚN LA LEY 05/2019, COMO INTERMEDIARIO DE CREDITO INMOBILIARIO CON
-          NUMERO DE REGISTRO D061.
+          <a
+            href="https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/registro-de-intermediarios/registro-de-intermediarios-de-credito-inmobiliario-y-prestamistas-inmobiliarios.html"
+            target="_blank"
+            rel="noreferer noopener"
+          >
+            HIPOTECAES10 SL, ESTA DADA DE ALTA EN EL REGISTRO DEL BANCO DE
+            ESPAÑA, SEGÚN LA LEY 05/2019, COMO INTERMEDIARIO DE CREDITO
+            INMOBILIARIO CON NUMERO DE REGISTRO D061.
+          </a>
         </h6>
       </div>
     </div>
-    <div class="flex justify-center mt-2 mb-2">
-      <div class="flex justify-center w-9/12 sm:w-1/6">
+    <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
+      <div class="flex justify-center">
+        <h6
+          class="text-sm text-justify text-light-secondary dark:text-dark-accent"
+        >
+          <a href="/mail/i_p.pdf" target="_blank" rel="noreferer noopener">
+            Documento de información pre contractural.
+          </a>
+        </h6>
+      </div>
+    </div>
+    <div class="flex justify-center w-9/12 mt-2 mb-2 lg:w-2/6">
+      <div class="flex justify-center w-full">
         <div class="relative w-full bg-light-secondary pb-2/12">
-          <img
-            class="absolute object-cover w-full h-full"
-            src="/aecosan.jpg"
-            alt="Logo Aecosan"
-          />
+          <a href="/aecosan.html" target="_blank" rel="noreferer noopener">
+            <img
+              class="absolute object-cover w-full h-full"
+              src="/aecosan.jpg"
+              alt="Logo Aecosan"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -138,6 +157,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    goToForm: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
@@ -153,6 +176,11 @@ export default {
   watch: {
     aceptaTerm() {
       this.acepta = this.aceptaTerm
+    },
+    goToForm() {
+      if (this.goToForm) {
+        this.scroll('formulario')
+      }
     },
   },
   methods: {
@@ -173,6 +201,10 @@ export default {
     },
     openModal() {
       this.$emit('openModal', true)
+    },
+    scroll(where) {
+      this.$refs[where].scrollIntoView({ behavior: 'smooth' })
+      this.$store.commit('goToForm', false)
     },
   },
 }

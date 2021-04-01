@@ -31,9 +31,25 @@
         >
           No todos los intermediarios de crédito que se publicitan cumplen con
           la legalidad vigente, recogida en la
-          <span class="font-bold">Ley 2/2009,</span>
+          <span class="font-bold">
+            <a
+              href="https://www.boe.es/buscar/doc.php?id=BOE-A-2009-5391"
+              target="_blank"
+              rel="noreferer noopener"
+            >
+              Ley 2/2009,
+            </a>
+          </span>
           en la
-          <span class="font-bold">Ley 5/2019</span>
+          <span class="font-bold">
+            <a
+              href="https://www.boe.es/buscar/doc.php?id=BOE-A-2019-3814"
+              target="_blank"
+              rel="noreferer noopener"
+            >
+              Ley 5/2019
+            </a>
+          </span>
           que regulan nuestra actuación de cara a los consumidores.
         </p>
       </div>
@@ -58,9 +74,12 @@
         >
           HIPOTECAES10 S.L esta inscrito a través del Instituto Nacional de
           Consumo en el registro estatal de empresas de Intermediación
-          financiera con el número de registro<span class="font-bold">
-            719.</span
-          >
+          financiera con el número de registro
+          <span class="font-bold">
+            <a href="/aecosan.html" target="_blank" rel="noreferer noopener">
+              719.
+            </a>
+          </span>
         </p>
       </div>
       <div class="items-center justify-center hidden w-10/12 sm:flex">
@@ -77,7 +96,13 @@
         </div>
       </div>
       <div class="w-11/12 my-4 div-center sm:hidden">
-        <img src="/lopd.png" />
+        <a
+          href="https://www.ozoniaconsultores.es/lopdweb/?p_id=308"
+          target="_blank"
+          rel="noreferer noopener"
+        >
+          <img src="/lopd.png" />
+        </a>
       </div>
       <div class="w-11/12 my-4 div-center sm:hidden">
         <p
@@ -90,7 +115,15 @@
         </p>
       </div>
       <div class="items-center justify-center hidden w-10/12 sm:flex">
-        <div class="w-2/6 my-4 div-center"><img src="/lopd.png" /></div>
+        <div class="w-2/6 my-4 div-center">
+          <a
+            href="https://www.ozoniaconsultores.es/lopdweb/?p_id=308"
+            target="_blank"
+            rel="noreferer noopener"
+          >
+            <img src="/lopd.png" />
+          </a>
+        </div>
         <div class="w-4/6 my-4 div-center">
           <p
             class="text-xl text-justify text-light-primary dark:text-dark-primary"
@@ -125,7 +158,8 @@
       <div class="w-11/12 my-4 div-center sm:hidden">
         <span
           class="text-sm font-bold text-center text-light-primary dark:text-dark-primary"
-          >http://www.agpd.es/portalwebAGPD/ficheros</span
+        >
+          http://www.agpd.es/portalwebAGPD/ficheros</span
         >
       </div>
       <div class="items-center justify-center hidden w-10/12 sm:flex">
@@ -148,7 +182,8 @@
               href="http://www.agpd.es/portalwebAGPD/ficheros"
               rel="noopener noreferer"
               target="_blank"
-              >http://www.agpd.es/portalwebAGPD/ficheros</a
+            >
+              http://www.agpd.es/portalwebAGPD/ficheros</a
             >
           </p>
         </div>

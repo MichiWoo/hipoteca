@@ -50,6 +50,11 @@
         >
           Teléfono: 910758169
         </p>
+        <p
+          class="mb-2 text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
+        >
+          <a href="mailto:info@hipoteca10.es"> info@hipoteca10.es </a>
+        </p>
       </div>
     </div>
     <div class="w-11/12 my-4 div-center sm:hidden"><img src="/mapa.png" /></div>
@@ -81,6 +86,11 @@
         >
           Teléfono: 910758169
         </p>
+        <p
+          class="mb-2 text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
+        >
+          <a href="mailto:info@hipoteca10.es"> info@hipoteca10.es </a>
+        </p>
       </div>
       <div class="w-11/12 my-4 div-center"><img src="/mapa.png" /></div>
     </div>
@@ -88,10 +98,11 @@
       <p
         class="mt-2 text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
       >
-        Para cualquier reclamación o queja, les dejamos enlace a nuestro<span
-          class="font-bold"
-        >
-          procedimiento </span
+        Para cualquier reclamación o queja, les dejamos enlace a nuestro
+        <span class="font-bold">
+          <a href="PROCEDIMIENTO RESOLUCION DE RECLAMACIONES.pdf">
+            procedimiento
+          </a> </span
         >de resolución de reclamaciones.
       </p>
     </div>

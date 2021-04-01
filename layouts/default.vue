@@ -13,7 +13,11 @@
     <Menu v-show="showMenuDialog" @closeMenu="closeMenu" />
     <Header @showMenu="showMenu" />
     <Nuxt />
-    <Formulario :acepta-term="aceptaTerm" @openModal="openModal" />
+    <Formulario
+      :acepta-term="aceptaTerm"
+      :go-to-form="goToForm"
+      @openModal="openModal"
+    />
     <Footer />
     <CookiesContainer @verCookies="showCookiesConf = true" />
   </div>
@@ -39,6 +43,7 @@ export default {
       showCookiesConf: false,
       showCookiesAll: false,
       dataCookies: {},
+      goToForm: false,
     }
   },
   mounted() {
@@ -59,6 +64,12 @@ export default {
       this.$cookies.set('verCookie', 'si', '2m')
       this.showCookiesAll = true
     }
+    this.$store.watch(
+      Object.getOwnPropertyDescriptor(this.$store.state, 'inForm').get,
+      (data) => {
+        this.goToForm = data
+      }
+    )
   },
   methods: {
     showMenu(val) {

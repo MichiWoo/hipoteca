@@ -12,7 +12,7 @@
           <h1
             class="hidden text-4xl font-bold sm:block md:block text-light-secondary dark:text-dark-accent"
           >
-            Te ayudamos a<br />encontrar tu hipoteca<br />perfecta.
+            Te ayudamos a<br />encontrar la hipoteca<br />perfecta para ti.
           </h1>
           <h1
             class="text-base font-bold text-light-secondary dark:text-dark-accent sm:hidden md:hidden"
@@ -24,7 +24,7 @@
           <h2
             class="text-2xl font-bold text-light-primary dark:text-dark-accent"
           >
-            SOMOS ESPECIALISTAS EN<br />HIPOTECAS 100%
+            ESPECIALISTAS EN<br />HIPOTECAS 100%
           </h2>
         </div>
         <div class="flex items-center justify-around w-full sm:w-3/4 md:w-3/4">
@@ -74,7 +74,7 @@
     </div>
     <div class="mt-6 div-center sm:hidden md:hidden">
       <h2 class="text-base font-bold text-light-primary dark:text-dark-accent">
-        SOMOS ESPECIALISTAS EN HIPOTECAS 100%
+        ESPECIALISTAS EN HIPOTECAS 100%
       </h2>
     </div>
     <div class="w-11/12 mt-6 div-center sm:hidden md:hidden">
@@ -143,7 +143,7 @@
               <div
                 class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
               >
-                Sin coste de gestión.
+                Posibilidad 100% de Tasación.
               </div>
             </div>
           </button>
@@ -213,7 +213,7 @@
       class="hidden w-11/12 my-6 sm:flex sm:justify-center sm:flex-wrap md:flex md:justify-center md:flex-wrap"
     >
       <div class="flex justify-center w-3/12 mb-3 lg:h-48">
-        <button
+        <div
           class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-accent dark:bg-dark-accent hover:shadow-md"
           @click="scroll('h100')"
         >
@@ -227,7 +227,7 @@
           >
             Para conseguir el 100% de la Compra Venta.
           </div>
-        </button>
+        </div>
       </div>
       <div class="flex justify-center w-3/12 mb-3 lg:h-48">
         <div
@@ -259,7 +259,7 @@
           <div
             class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
           >
-            Sin coste de gestión.
+            Posibilidad 100% de Tasación.
           </div>
         </div>
       </div>
@@ -367,7 +367,7 @@ export default {
             {
               id: 5,
               text:
-                'Dependiendo del perfil, posibilidad de conseguir 100% de Cv, 90% de Tasacion.',
+                'Dependiendo del perfil, posibilidad de conseguir 100% de CV, 90% de Tasacion.',
             },
           ],
         },
@@ -418,7 +418,7 @@ export default {
             {
               id: 4,
               text:
-                'Sin coste de gestión, si tu necesidad de financiación es inferior al 90% de la Cv o 80% de Tasación.',
+                'Sin coste de gestión, si tu necesidad de financiación es inferior al 90% de la CV o 80% de Tasación.',
             },
           ],
         },
@@ -446,7 +446,7 @@ export default {
             {
               id: 4,
               text:
-                'Olvídate de que te llamen de 15 bancos distintos, un gestor personal para tu operación.',
+                'Nuestro acompañamiento dura todo el proceso, solo pagas si firmas.',
             },
           ],
         },
@@ -487,7 +487,7 @@ export default {
             },
             {
               id: 2,
-              text: 'Sin necesidad de que tengas comprado el suelo',
+              text: 'Sin necesidad de que tengas comprado el suelo.',
             },
             {
               id: 3,

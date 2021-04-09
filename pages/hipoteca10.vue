@@ -22,10 +22,30 @@
     <div class="div-center sm:hidden">
       <FormDashboard class="w-11/12"></FormDashboard>
     </div>
+    <div class="flex flex-col items-center w-full my-4 flex-start">
+      <div class="w-11/12 my-4 sm:mt-16">
+        <p
+          class="text-sm text-justify sm:text-xl text-light-primary dark:text-dark-primary"
+        >
+          Hipoteca 10, nombre comercial de Hipotecaes10 SL, es un intermediario
+          de crédito inmobiliario, dado de alta en el Registro del Banco de
+          España, con numero D061, conforme a los requisitos de la ley 05/2019.
+        </p>
+      </div>
+      <div class="w-11/12 my-4">
+        <p
+          class="text-sm text-justify sm:text-xl text-m sm:mb-16 text-light-primary dark:text-dark-primary"
+        >
+          Somos un equipo de especialistas, con años de experiencia en la
+          tramitación de hipotecas, que te ayudara a conseguir la mejor hipoteca
+          que se adapte a tus necesidades.
+        </p>
+      </div>
+    </div>
     <div
       class="flex flex-col items-center content-center w-full my-6 bg-light-accent dark:bg-dark-accent"
     >
-      <div class="flex w-11/12 my-4 div-center sm:mt-16">
+      <div class="flex w-11/12 my-4 sm:mt-16">
         <p class="text-sm text-justify sm:text-xl text-light dark:text-dark">
           <a class="font-bold text-light-primary dark:text-dark-primary"
             >Hipoteca 10 </a
@@ -35,7 +55,7 @@
           >
         </p>
       </div>
-      <div class="w-11/12 my-4 div-center sm:mb-16">
+      <div class="w-11/12 my-4 sm:mb-16">
         <p
           class="text-sm text-justify sm:text-xl text-light-secondary dark:text-dark-secondary"
         >
@@ -97,26 +117,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center content-center w-full my-4">
-      <div class="w-11/12 my-4 div-center sm:mt-16">
-        <p
-          class="text-sm text-justify sm:text-xl text-light-primary dark:text-dark-primary"
-        >
-          Hipoteca 10, nombre comercial de Hipotecaes10 SL, es un intermediario
-          de crédito inmobiliario, dado de alta en el Registro del Banco de
-          España, con numero D061, conforme a los requisitos de la ley 05/2019.
-        </p>
-      </div>
-      <div class="w-11/12 my-4 div-center">
-        <p
-          class="text-sm text-justify sm:text-xl text-m sm:mb-16 text-light-primary dark:text-dark-primary"
-        >
-          Somos un equipo de especialistas, con años de experiencia en la
-          tramitación de hipotecas, que te ayudara a conseguir la mejor hipoteca
-          que se adapte a tus necesidades.
-        </p>
-      </div>
-    </div>
+
     <div
       class="flex flex-col items-center content-center w-full my-6 bg-light-accent dark:bg-dark-accent"
     >

@@ -26,7 +26,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
   ],
-  modules: ['@nuxtjs/axios', '@nuxtjs/robots'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap'],
   axios: {},
   build: {
     extend(config, { isClient }) {
@@ -49,5 +49,9 @@ export default {
     Disallow: '/',
     Allow: '/',
     Sitemap: 'https://www.hipoteca10.es/sitemap.xml',
+  },
+  sitemap: {
+    hostname: 'https://hipoteca10.es',
+    gzip: true,
   },
 }

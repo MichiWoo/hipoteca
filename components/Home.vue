@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center my-6 sm:my-12 md:my-12 lg:my-12"
+    class="flex flex-col items-center justify-center w-full my-6 sm:my-12 md:my-12 lg:my-12"
   >
     <div
       class="flex items-center w-11/12 sm:w-9/12 md:w-9/12 lg:w-9/12 justity-between sm:justify-around sm:mb-2 md:justify-around md:mb-2"

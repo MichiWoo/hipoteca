@@ -26,7 +26,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
   ],
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/robots'],
   axios: {},
   build: {
     extend(config, { isClient }) {
@@ -44,4 +44,10 @@ export default {
     whitelist: ['dark-mode'],
   },
   telemetry: false,
+  robots: {
+    UserAgent: '*',
+    Disallow: '/',
+    Allow: '/',
+    Sitemap: 'https://www.hipoteca10.es/sitemap.xml',
+  },
 }

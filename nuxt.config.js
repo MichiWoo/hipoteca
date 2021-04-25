@@ -25,6 +25,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxtjs/google-analytics',
   ],
   modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap'],
   axios: {},
@@ -53,5 +54,8 @@ export default {
   sitemap: {
     hostname: 'https://hipoteca10.es',
     gzip: true,
+  },
+  googleAnalytics: {
+    id: 'UA-98350560-1',
   },
 }

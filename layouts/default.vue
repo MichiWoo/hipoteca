@@ -112,6 +112,9 @@ export default {
     activarCookieAnalitics() {
       window['ga-disable-UA-98350560-1'] = false
     },
+    desactivarCookieAnalitics() {
+      window['ga-disable-UA-98350560-1'] = false
+    },
     aceptarCookies() {
       const expiration = new Date()
       expiration.setTime(expiration.getTime() + 60000 * 60 * 24 * 60)

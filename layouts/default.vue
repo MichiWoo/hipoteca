@@ -51,6 +51,7 @@ export default {
     }
   },
   mounted() {
+    this.desactivarCookieAnalitics()
     const existeCookieInicio = this.$cookies.isKey('verCookie')
     const existeCookiePreferencias = this.$cookies.isKey('preferencesCookies')
     if (existeCookieInicio) {
@@ -170,10 +171,11 @@ export default {
       }
     },
     activarCookieAnalitics() {
-      window['ga-disable-UA-98350560-1'] = false
+      this.$ga.page(this.$router)
+      this.$ga.enable()
     },
     desactivarCookieAnalitics() {
-      window['ga-disable-UA-98350560-1'] = false
+      this.$ga.disable()
     },
     aceptarCookies() {
       const expiration = new Date()
@@ -221,6 +223,8 @@ export default {
       this.$cookies.set('preferencesCookies', myText, expiration, '2m')
       if (marketing) {
         this.activarCookieAnalitics()
+      } else {
+        this.desactivarCookieAnalitics()
       }
     },
     async submitForm(form) {

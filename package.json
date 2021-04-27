@@ -16,7 +16,8 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.4",
+    "nuxt-validate": "^1.0.1",
     "vue-cookies": "^1.7.4"
   },
   "devDependencies": {

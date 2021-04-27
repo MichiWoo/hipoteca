@@ -86,6 +86,7 @@
       <ButtonSubmit
         text="Enviar"
         aria-label="Botón para enviar el formulario"
+        @clicked="checkForm"
       ></ButtonSubmit>
     </div>
     <div class="flex justify-center w-9/12 sm:w-4/6 lg:w-2/6">
@@ -205,6 +206,30 @@ export default {
     scroll(where) {
       this.$refs[where].scrollIntoView({ behavior: 'smooth' })
       this.$store.commit('goToForm', false)
+    },
+    checkForm() {
+      if (
+        this.nombre &&
+        this.telefono &&
+        this.localidad &&
+        this.email &&
+        this.comentario &&
+        this.acepta
+      ) {
+        this.submitForm()
+      }
+    },
+
+    submitForm() {
+      const myFormObj = {
+        nombre: this.nombre,
+        telefono: this.telefono,
+        localidad: this.localidad,
+        email: this.email,
+        comentario: this.comentario,
+        acepta: this.acepta,
+      }
+      this.$emit('submitForm', myFormObj)
     },
   },
 }

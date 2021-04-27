@@ -27,8 +27,15 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/google-analytics',
   ],
-  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap'],
-  axios: {},
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    'nuxt-validate',
+  ],
+  axios: {
+    baseURL: '',
+  },
   build: {
     extend(config, { isClient }) {
       const isProd = process.env.NODE_ENV === 'production'
@@ -57,5 +64,8 @@ export default {
   },
   googleAnalytics: {
     id: 'UA-98350560-1',
+  },
+  nuxtValidate: {
+    lang: 'es',
   },
 }

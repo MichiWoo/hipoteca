@@ -242,7 +242,10 @@ export default {
           console.error(err)
         })
       if (data.success) {
+        this.$toast.global.my_success()
         this.saveDataForm(form)
+      } else {
+        this.$toast.global.my_error()
       }
     },
     async getIp() {
@@ -279,7 +282,7 @@ export default {
       formData.append('mail', form.email)
       formData.append('mensaje', form.comentario)
       formData.append('telefono', form.telefono)
-      formData.append('movil', '')
+      formData.append('movil', this.isMobile)
       formData.append('ip', this.ip)
       formData.append('localidad', form.localidad)
 

@@ -32,6 +32,7 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     'nuxt-validate',
+    '@nuxtjs/toast',
   ],
   axios: {
     baseURL: '',
@@ -67,5 +68,26 @@ export default {
   },
   nuxtValidate: {
     lang: 'es',
+  },
+  toast: {
+    position: 'bottom-right',
+    register: [
+      {
+        name: 'my_error',
+        message: 'Oops...Ha ocurrido un error al enviar el Email.',
+        options: {
+          type: 'error',
+          duration: 3000,
+        },
+      },
+      {
+        name: 'my_success',
+        message: 'El Email ha sido enviado exitosamente.',
+        options: {
+          type: 'success',
+          duration: 3000,
+        },
+      },
+    ],
   },
 }

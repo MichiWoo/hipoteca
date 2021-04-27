@@ -16,7 +16,7 @@ export default {
           'Hipoteca10 está especializada en conseguir para sus clientes financiaciones para compra de vivienda, por encima del 80%.',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/LogoH10.ico' }],
   },
   css: [],
   plugins: ['~/plugins/vue-cookies.js'],

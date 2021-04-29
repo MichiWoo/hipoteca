@@ -28,8 +28,9 @@
           </h2>
         </div>
         <div class="flex items-center justify-around w-full sm:w-3/4 md:w-3/4">
-          <button
-            class="w-full p-2 mr-2 text-base rounded-lg sm:w-4/5 sm:p-4 md:w-4/5 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+          <a
+            class="w-full p-2 mr-2 text-base text-center rounded-lg sm:w-4/5 sm:p-4 md:w-4/5 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            href="tel:+34910758169"
             aria-label="Botón CTA"
           >
             <svg
@@ -49,8 +50,9 @@
             ><span
               class="font-bold text-light-secondary dark:text-dark-secondary"
               >910758169</span
-            ></button
-          ><button
+            >
+          </a>
+          <button
             class="hidden w-full p-2 ml-2 text-xl rounded-lg sm:block sm:w-4/5 sm:p-4 md:w-4/5 md:p-4 bg-light-primary dark:bg-dark-primary border-light-primary dark:border-text-dark-primary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
             aria-label="Botón Solicitar Estudio"
             @click="goToForm"

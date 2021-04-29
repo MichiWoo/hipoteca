@@ -49,7 +49,6 @@ export default {
   telemetry: false,
   robots: {
     UserAgent: '*',
-    Disallow: '/',
     Allow: '/',
     Sitemap: 'https://www.hipoteca10.es/sitemap.xml',
   },

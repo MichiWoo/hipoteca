@@ -1,6 +1,11 @@
 <template>
   <div>
     <ModalTerminos v-show="showModal" @closeModal="closeModal" />
+    <ModalInfo
+      v-show="showModalInfo"
+      :config="configModalInfo"
+      @closeModal="closeModalInfo"
+    />
     <ModalCookies
       v-show="showCookiesConf"
       :data-cookies="dataCookies"
@@ -18,6 +23,7 @@
       :go-to-form="goToForm"
       @openModal="openModal"
       @submitForm="submitForm"
+      @erroInForm="erroInForm"
     />
     <Footer />
     <CookiesContainer @verCookies="showCookiesConf = true" />
@@ -35,6 +41,7 @@ export default {
     CookiesContainer: () => import('../components/CookiesContainer'),
     ModalCookies: () => import('../components/ModalCookies'),
     ModalCookiesAll: () => import('../components/ModalCookiesAll'),
+    ModalInfo: () => import('../components/ModalInfo'),
   },
   data() {
     return {
@@ -48,6 +55,8 @@ export default {
       ip: '',
       isMobile: false,
       idSesion: '',
+      configModalInfo: {},
+      showModalInfo: false,
     }
   },
   mounted() {
@@ -240,17 +249,28 @@ export default {
         data: formData,
         url: '/mail/enviarMail2.php',
       }
-      const data = await this.$axios(options)
-        .then((res) => res.data)
-        .catch((err) => {
-          console.error(err)
+      await this.$axios(options)
+        .then((res) => {
+          if (res.data.success) {
+            this.displayModal(
+              'Enviado',
+              'El email se envio correctamente.',
+              'OK',
+              's'
+            )
+            this.saveDataForm(form)
+          } else {
+            this.displayModal(
+              'Error',
+              'Ops, el email no se ha se envio correctamente.',
+              'OK',
+              'e'
+            )
+          }
         })
-      if (data.success) {
-        this.$toast.global.my_success()
-        this.saveDataForm(form)
-      } else {
-        this.$toast.global.my_error()
-      }
+        .catch((err) => {
+          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
+        })
     },
     async getIp() {
       const URL_API = 'https://api.ipify.org/?format=json'
@@ -272,12 +292,11 @@ export default {
         data: formData,
         url: '/gestor/addIp.php',
       }
-      const saveForm = await this.$axios(options)
+      await this.$axios(options)
         .then((res) => res.data)
         .catch((err) => {
-          console.error(err)
+          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
         })
-      console.log(saveForm)
     },
     async saveDataForm(form) {
       const formData = new FormData()
@@ -297,12 +316,34 @@ export default {
         url: '/gestor/addForm.php',
       }
 
-      const saveForm = await this.$axios(options)
+      await this.$axios(options)
         .then((res) => res.data)
         .catch((err) => {
-          console.error(err)
+          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
         })
-      console.log(saveForm)
+    },
+    displayModal(title, text, textOk, type) {
+      this.configModalInfo = {
+        title,
+        text,
+        textOk,
+        type,
+      }
+      this.showModalInfo = true
+    },
+    closeModalInfo() {
+      this.showModalInfo = false
+      this.configModalInfo = {}
+    },
+    erroInForm(e) {
+      if (e === 'a') {
+        this.displayModal(
+          'Error',
+          'Debe aceptar los términos y condiciones primero.',
+          'OK',
+          'e'
+        )
+      }
     },
   },
 }

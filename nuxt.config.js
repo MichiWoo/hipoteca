@@ -27,13 +27,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/google-analytics',
   ],
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
-    'nuxt-validate',
-    '@nuxtjs/toast',
-  ],
+  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap'],
   axios: {
     baseURL: '',
   },
@@ -65,29 +59,5 @@ export default {
   },
   googleAnalytics: {
     id: 'UA-98350560-1',
-  },
-  nuxtValidate: {
-    lang: 'es',
-  },
-  toast: {
-    position: 'bottom-right',
-    register: [
-      {
-        name: 'my_error',
-        message: 'Oops...Ha ocurrido un error al enviar el Email.',
-        options: {
-          type: 'error',
-          duration: 3000,
-        },
-      },
-      {
-        name: 'my_success',
-        message: 'El Email ha sido enviado exitosamente.',
-        options: {
-          type: 'success',
-          duration: 3000,
-        },
-      },
-    ],
   },
 }

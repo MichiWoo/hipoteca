@@ -10,6 +10,7 @@
         <div class="w-3/6 mt-6 div-center">
           <button
             class="w-full p-3 rounded-lg bg-light-secondary dark:bg-dark-secondary border-light-secondary dark:border-text-dark-secondary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            aria-label="Botón CTA"
             @click="goToForm"
           >
             Impulsa tu negocio
@@ -38,6 +39,7 @@
     <div class="w-11/12 mt-6 div-center sm:hidden">
       <button
         class="w-full p-3 rounded-lg bg-light-secondary dark:bg-dark-secondary border-light-secondary dark:border-text-dark-secondary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+        aria-label="Botón CTA"
         @click="goToForm"
       >
         Impulsa tu negocio

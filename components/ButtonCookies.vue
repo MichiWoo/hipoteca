@@ -1,6 +1,7 @@
 <template>
   <button
     class="w-full p-2 rounded-lg bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light-secondary dark:text-dark-secondary hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50 hover:text-light-primary dark-hover:text-dark-primary"
+    aria-label="Botón cookies"
     @click="clicked"
   >
     <svg

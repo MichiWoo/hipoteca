@@ -100,7 +100,10 @@
       >
         Para cualquier reclamación o queja, les dejamos enlace a nuestro
         <span class="font-bold">
-          <a href="PROCEDIMIENTO RESOLUCION DE RECLAMACIONES.pdf">
+          <a
+            href="procedimiento_ resolucion_de_reclamaciones.pdf"
+            target="_blank"
+          >
             procedimiento
           </a> </span
         >de resolución de reclamaciones.

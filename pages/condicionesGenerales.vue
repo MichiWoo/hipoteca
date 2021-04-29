@@ -21,7 +21,8 @@
       <div
         class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
-        NOMBRE DEL DOMINIO:<a
+        NOMBRE DEL DOMINIO:
+        <a
           class="font-bold"
           href="https:hipoteca10.es"
           target="_black"
@@ -44,7 +45,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -60,7 +61,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Hipoteca10 SL, dispone de la página web www.hipoteca10.es.
       </div>
@@ -68,7 +69,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -84,7 +85,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Hipoteca10, es una empresa que actúa en el mercado español como
         Intermediario de Crédito Inmobiliario, y presta sus servicios bajo el
@@ -113,7 +114,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -129,7 +130,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Hipotecaes10 SL se compromete a seleccionar, entre los productos que se
         ofrecen en el mercado, los que mejor se adapten a las características
@@ -151,7 +152,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -167,7 +168,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Hipoteca10 actuando como intermediarios de crédito o sus representantes
         designados recabarán la información que resulte necesaria sobre la
@@ -183,7 +184,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -199,7 +200,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         El precio total que LOS CLIENTES deberán abonar a Hipotecaes10 SL por su
         labor de intermediación financiera, tras haber seleccionado, entre los
@@ -231,7 +232,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -247,7 +248,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Los honorarios serán abonados a en Hipotecaes10 SL el momento de la
         firma del nuevo crédito o préstamo hipotecario, a través de un talón, o
@@ -258,7 +259,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -274,7 +275,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Hipoteca 10, procederá, ante la solicitud del cliente, a comunicar la
         existencia y, cuando se conozca, el importe de las comisiones u otros
@@ -293,7 +294,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -309,7 +310,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Los consumidores podrán desistir del contrato de intermediación suscrito
         con en Hipotecaes10 SL los catorce días naturales siguientes a la
@@ -333,7 +334,7 @@
     </div>
     <div class="flex w-11/12 sm:w-4/6 flex-start">
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         En cumplimiento de lo dispuesto en la L.O.P.D. 15/1999, de 13 de
         diciembre, de Protección de Datos de Carácter Personal, y en el Real
@@ -346,7 +347,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -362,7 +363,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Los datos de carácter personal facilitados por los consumidores a través
         del formulario o correo electrónico quedarán registrados en el fichero
@@ -378,7 +379,7 @@
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -394,7 +395,7 @@
         </svg>
       </div>
       <div
-        class="text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
+        class="ml-2 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-base"
       >
         Los consumidores autorizan a solicitar informe en su nombre a la Central
         de información de Riesgos del Banco de España (C.I.R.B.E) y a cualquier
@@ -407,9 +408,9 @@
       <div
         class="flex items-start content-start justify-center mt-1 text-xs sm:text-base"
       >
-        <div class="flex items-start justify-center w-24 h-24 sm:w-16 sm:h-16">
+        <div class="flex items-start content-start justify-center mt-1">
           <svg
-            class="text-light-primary dark:text-dark-primary"
+            class="w-4 h-4 text-light-primary dark:text-dark-primary"
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
@@ -443,7 +444,7 @@
       >
         <div class="flex items-start justify-center w-24 h-24 sm:w-16 sm:h-16">
           <svg
-            class="text-xs text-light-primary dark:text-dark-primary sm:text-base"
+            class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"

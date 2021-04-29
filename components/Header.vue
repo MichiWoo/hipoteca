@@ -19,32 +19,44 @@
           >
         </div>
         <div class="div-center">
-          <NuxtLink class="text-base text-light-primary" to="nuestroMetodo"
+          <NuxtLink
+            class="text-base text-light-primary dark:text-dark-primary"
+            to="nuestroMetodo"
             >Nuestro Método de Trabajo</NuxtLink
           >
         </div>
         <div class="div-center">
-          <NuxtLink class="text-base text-light-primary" to="hipoteca10"
+          <NuxtLink
+            class="text-base text-light-primary dark:text-dark-primary"
+            to="hipoteca10"
             >Hipoteca 10</NuxtLink
           >
         </div>
         <div class="div-center">
-          <NuxtLink class="text-base text-light-primary" to="compromiso"
+          <NuxtLink
+            class="text-base text-light-primary dark:text-dark-primary"
+            to="compromiso"
             >Nuestro Compromiso</NuxtLink
           >
         </div>
         <div class="div-center">
-          <NuxtLink class="text-base text-light-primary" to="empresas"
+          <NuxtLink
+            class="text-base text-light-primary dark:text-dark-primary"
+            to="empresas"
             >Empresas</NuxtLink
           >
         </div>
         <div class="div-center">
-          <NuxtLink class="text-base text-light-primary" to="nosotros"
+          <NuxtLink
+            class="text-base text-light-primary dark:text-dark-primary"
+            to="nosotros"
             >Sobre Nosotros</NuxtLink
           >
         </div>
         <div class="div-center">
-          <NuxtLink class="text-base text-light-primary" to="contacto"
+          <NuxtLink
+            class="text-base text-light-primary dark:text-dark-primary"
+            to="contacto"
             >Contáctanos</NuxtLink
           >
         </div>

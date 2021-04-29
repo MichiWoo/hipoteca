@@ -81,6 +81,7 @@
       <button
         class="w-full p-3 rounded-lg bg-light-primary dark:bg-dark-primary border-light-primary dark:border-text-dark-primary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
         aria-label="Botón Solicitar Estudio"
+        @click="goToForm"
       >
         Solicitar Estudio
       </button>
@@ -130,6 +131,7 @@
         <div class="flex content-start justify-center items-strech">
           <button
             class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            aria-label="Botón Hipoteca Funcionario"
             @click="scroll('hfun')"
           >
             <div
@@ -149,6 +151,7 @@
           </button>
           <button
             class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            aria-label="Botón Hipoteca sin blanca"
             @click="scroll('hsbla')"
           >
             <div
@@ -162,7 +165,7 @@
               <div
                 class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis dark:text-dark-secondary"
               >
-                Financiamos los gastos.
+                Posibilidad de financiar el 100% de la compra más los gastos.
               </div>
             </div>
           </button>
@@ -170,6 +173,7 @@
         <div class="flex content-start justify-center items-strech">
           <button
             class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            aria-label="Botón Hipoteca Cambio de Vida"
             @click="scroll('hcvid')"
           >
             <div
@@ -189,6 +193,7 @@
           </button>
           <button
             class="flex justify-center w-3/6 mb-3 cursor-pointer"
+            aria-label="Botón Hipoteca Casa de mis sueños"
             @click="scroll('hsue')"
           >
             <div
@@ -197,7 +202,7 @@
               <h3
                 class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
               >
-                Hipoteca la casade mis sueños
+                Hipoteca la casa de mis sueños
               </h3>
               <div
                 class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
@@ -276,7 +281,7 @@
           <div
             class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis dark:text-dark-secondary"
           >
-            Financiamos los gastos.
+            Posibilidad de financiar el 100% de la compra más los gastos.
           </div>
         </div>
       </div>
@@ -305,7 +310,7 @@
           <h3
             class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
           >
-            Hipoteca la casade mis sueños
+            Hipoteca la casa de mis sueños
           </h3>
           <div
             class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
@@ -336,6 +341,12 @@
         class="w-full h-1 bg-light-primary dark:bg-dark-primary border-1 border-light-primary dark:border-dark-primary"
       ></div>
     </div>
+    <div class="w-11/12 my-12 text-center div-center">
+      <span class="text-lg font-semibold text-light-primary"
+        >(*) Todas las ofertas están sujetas a aprobación bancaria, por alguna
+        de las entidades con las que colaboramos.</span
+      >
+    </div>
   </div>
 </template>
 
@@ -354,7 +365,7 @@ export default {
         {
           id: 1,
           ref: 'h100',
-          title: 'Hipoteca 100%',
+          title: 'Hipoteca 100% (*)',
           type: 'accent',
           data: [
             { id: 1, text: 'Hasta el 100% del valor de la compra venta.' },
@@ -374,7 +385,7 @@ export default {
         {
           id: 2,
           ref: 'h80',
-          title: 'Hipoteca 80%',
+          title: 'Hipoteca 80% (*)',
           type: 'primary',
           data: [
             {
@@ -393,12 +404,16 @@ export default {
               text:
                 'Olvídate de que te llamen de 15 bancos distintos, un gestor personal para tu operación.',
             },
+            {
+              id: 5,
+              text: 'Gestión personalizada sin coste.',
+            },
           ],
         },
         {
           id: 3,
           ref: 'hfun',
-          title: 'Hipoteca Funcionario',
+          title: 'Hipoteca Funcionario 100% (*)',
           type: 'white',
           data: [
             {
@@ -453,7 +468,7 @@ export default {
         {
           id: 5,
           ref: 'hcvid',
-          title: 'Hipoteca Cambio de Vida',
+          title: 'Hipoteca Cambio de Vida (*)',
           type: 'accent',
           data: [
             { id: 1, text: 'Si quieres cambiar de banco.' },
@@ -478,7 +493,7 @@ export default {
         {
           id: 6,
           ref: 'hsue',
-          title: 'Hipoteca la casa de mis sueños',
+          title: 'Hipoteca la casa de mis sueños (*)',
           type: 'white',
           data: [
             {

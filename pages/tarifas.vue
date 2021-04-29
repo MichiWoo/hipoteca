@@ -54,21 +54,25 @@
       <div
         class="ml-1 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-sm"
       >
-        El precio total que los consumidores deberán abonar a Hipoteca10 por su
-        labor de intermediación financiera, PARA OPERACIONES DE COMPRA DE
-        VIVIENDA, tras haber seleccionado, entre los productos que se ofrecen en
-        el mercado, los que mejor se adaptan a las características del crédito
-        solicitado por aquéllos, será de mil novecientos Euros (1.900€) para
-        préstamos entre 0€ y 100.000, dos mil novecientos Euros (2.900€) para
-        préstamos entre 100.001€ y 200.000€, tres mil novecientos Euros (3.900€)
-        para préstamos entre 200.001€ y 400.000€, y del 1% del importe del
-        préstamo para préstamos por encima de 400.000€, siempre y cuando se
-        suscriba finalmente por los consumidores la oferta vinculante que le
-        presente hipoteca10.es. En el supuesto que los consumidores decidieran
-        no firmar el nuevo crédito o préstamo recomendado por hipoteca10.es,
-        aquéllos no tendrán que pagar a la citada empresa cantidad alguna,
-        siendo todos los servicios prestados hasta ese momento por
-        www.hipoteca10.es totalmente GRATUITOS para los consumidores.
+        Hipoteca10 entre las diversas modalidades de servicios de intermediación
+        de crédito inmobiliario que ofrece a sus clientes, existen algunas que
+        serán totalmente gratuitas para el cliente, y para aquellas gestiones
+        que si deba abonar algún tipo de comisión, el precio total que los
+        consumidores deberán abonar a Hipoteca10 por su labor de intermediación
+        financiera, PARA OPERACIONES DE COMPRA DE VIVIENDA, tras haber
+        seleccionado, entre los productos que se ofrecen en el mercado, los que
+        mejor se adaptan a las características del crédito solicitado por
+        aquéllos, será de mil novecientos Euros (1.900€) para préstamos entre 0€
+        y 100.000, dos mil novecientos Euros (2.900€) para préstamos entre
+        100.001€ y 200.000€, tres mil novecientos Euros (3.900€) para préstamos
+        entre 200.001€ y 400.000€, y del 1% del importe del préstamo para
+        préstamos por encima de 400.000€, siempre y cuando se suscriba
+        finalmente por los consumidores la oferta vinculante que le presente
+        hipoteca10.es. En el supuesto que los consumidores decidieran no firmar
+        el nuevo crédito o préstamo recomendado por hipoteca10.es, aquéllos no
+        tendrán que pagar a la citada empresa cantidad alguna, siendo todos los
+        servicios prestados hasta ese momento por www.hipoteca10.es totalmente
+        GRATUITOS para los consumidores.
       </div>
     </div>
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
@@ -83,7 +87,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -107,7 +111,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -131,7 +135,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -155,7 +159,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -179,7 +183,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -224,7 +228,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -248,7 +252,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -272,7 +276,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -296,7 +300,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -320,7 +324,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -344,7 +348,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -368,7 +372,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"

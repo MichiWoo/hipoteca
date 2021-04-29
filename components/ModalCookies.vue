@@ -30,7 +30,7 @@
             >
           </div>
           <div>
-            <button @click="closeModal('c')">
+            <button aria-label="Cerrar Modal" @click="closeModal('c')">
               <svg
                 class="inline w-6 h-6 transition duration-150 text-light-primary dark:text-dark-primary"
                 aria-hidden="true"

@@ -26,7 +26,7 @@
           >
         </div>
         <div>
-          <button @click="closeModal('c')">
+          <button aria-label="Botón Cerrar Modal" @click="closeModal('c')">
             <svg
               class="inline w-6 h-6 transition duration-150 text-light-primary dark:text-dark-primary"
               aria-hidden="true"
@@ -512,11 +512,13 @@
         <div class="flex justify-end px-5 py-4">
           <button
             class="px-3 py-2 text-sm transition duration-150 text-light-secondary hover:text-light-secondary"
+            aria-label="Botón Cancelar Modal"
             @click="closeModal('c')"
           >
             Cancelar</button
           ><button
             class="px-3 py-2 mr-1 text-sm transition duration-150 rounded bg-light-primary text-light hover:bg-ligth-primary"
+            aria-label="Botón Aceptar Terminos"
             @click="closeModal('ok')"
           >
             Aceptar Términos y Condiciones

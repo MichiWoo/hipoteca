@@ -12,7 +12,7 @@
         class="text-sm text-center sm:text-base text-light-primary dark:text-dark-primary"
       >
         Hipoteca 10 es tu solución, Contacta con Nosotros para conseguir tu
-        hipoteca 100%(*).
+        hipoteca.
       </p>
     </div>
     <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
@@ -217,6 +217,14 @@ export default {
         this.acepta
       ) {
         this.submitForm()
+      } else {
+        this.submitError()
+      }
+    },
+
+    submitError() {
+      if (!this.acepta) {
+        this.$emit('erroInForm', 'a')
       }
     },
 

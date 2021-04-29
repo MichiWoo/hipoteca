@@ -64,7 +64,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -91,7 +91,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -125,7 +125,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -153,7 +153,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -180,7 +180,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -211,7 +211,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -240,7 +240,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -487,7 +487,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-accent sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -516,7 +516,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -545,7 +545,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -574,7 +574,7 @@
     <div class="flex w-full px-5 py-2 sm:w-4/6 flex-start">
       <div class="flex items-start content-start justify-center mt-1">
         <svg
-          class="text-xs text-light-primary dark:text-dark-primary sm:text-sm"
+          class="w-4 h-4 text-light-primary dark:text-dark-accent sm:w-4 sm:h-4"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"

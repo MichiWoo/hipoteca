@@ -27,7 +27,7 @@
             >
           </div>
           <div>
-            <button @click="closeModal('c')">
+            <button aria-label="Cerrar Modal" @click="closeModal('c')">
               <svg
                 class="inline w-6 h-6 transition duration-150 text-light-primary dark:text-dark-primary"
                 aria-hidden="true"
@@ -69,6 +69,7 @@
           <div class="mx-1 div-center">
             <button
               class="p-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-primary dark:bg-dark-primary border-light-accent dark:border-text-dark-accent text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+              aria-label="Botón Aceptar Cookies"
               @click="aceptarCookies"
             >
               Aceptar Todas
@@ -77,6 +78,7 @@
           <div class="mx-1 div-center">
             <button
               class="p-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-danger dark:bg-dark-danger border-light-danger dark:border-text-dark-danger text-light dark:text-dark-text hover:bg-light-primary hover:ring-2 hover:ring-light-primary hover:ring-opacity-50"
+              aria-label="Botón Rechazar Cookies"
               @click="rechazarCookies"
             >
               Rechazar Todas
@@ -85,6 +87,7 @@
           <div class="mx-1 div-center">
             <button
               class="p-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light-primary dark:text-dark-text-primary hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+              aria-label="Botón Ajustes de Cookies"
               @click="ajustesCookies"
             >
               Ajustes

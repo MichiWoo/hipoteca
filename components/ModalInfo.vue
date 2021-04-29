@@ -45,7 +45,7 @@
             }}</span>
           </div>
           <div>
-            <button aria-label="Boton Cerrar Modal" @click="closeModal">
+            <button aria-label="Botón Cerrar Modal" @click="closeModal">
               <svg
                 class="inline w-6 h-6 transition duration-150 text-light-primary dark:text-dark-primary"
                 aria-hidden="true"
@@ -75,7 +75,7 @@
           <div class="mx-1 div-center">
             <button
               class="px-6 py-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-primary dark:bg-dark-primary border-light-accent dark:border-text-dark-accent text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
-              aria-label="Boton Cerrar Modal"
+              aria-label="Botón Cerrar Modal"
               @click="closeModal"
             >
               {{ config.textOk }}

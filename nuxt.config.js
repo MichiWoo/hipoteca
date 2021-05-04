@@ -54,7 +54,6 @@ export default {
   },
   sitemap: {
     hostname: 'https://hipoteca10.es',
-    gzip: true,
   },
   googleAnalytics: {
     id: 'UA-98350560-1',

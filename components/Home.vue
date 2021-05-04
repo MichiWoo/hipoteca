@@ -6,13 +6,13 @@
       class="flex items-center w-11/12 sm:w-9/12 md:w-9/12 lg:w-9/12 justity-between sm:justify-around sm:mb-2 md:justify-around md:mb-2"
     >
       <div
-        class="flex flex-col items-start justify-start w-full sm:w-3/6 md:w-3/6 lg:w-4/6"
+        class="flex flex-col items-start justify-start w-full sm:w-3/6 md:w-4/6 lg:w-5/6"
       >
-        <div class="flex justify-start mb-4">
+        <div class="flex justify-start mb-4 sm:w-4/6">
           <h1
             class="hidden text-4xl font-bold sm:block md:block text-light-secondary dark:text-dark-accent"
           >
-            Te ayudamos a<br />encontrar la hipoteca<br />perfecta para ti.
+            Te ayudamos a encontrar la hipoteca perfecta para ti.
           </h1>
           <h1
             class="text-base font-bold text-light-secondary dark:text-dark-accent sm:hidden md:hidden"
@@ -20,19 +20,31 @@
             Te ayudamos a encontrar tu hipoteca perfecta.
           </h1>
         </div>
-        <div class="justify-start hidden mb-6 sm:flex md:flex">
+        <div class="justify-start hidden mb-6 sm:flex md:flex sm:w-4/6">
           <h2
             class="text-2xl font-bold text-light-primary dark:text-dark-accent"
           >
-            ESPECIALISTAS EN<br />HIPOTECAS 100%
+            SOMOS ESPECIALISTAS EN HIPOTECAS 100%
           </h2>
         </div>
-        <div class="flex items-center justify-around w-full sm:w-3/4 md:w-3/4">
+        <div class="flex items-center justify-around w-full sm:w-3/6 md:w-2/4">
+          <button
+            class="hidden w-full p-2 text-xl rounded-lg sm:block sm:p-4 md:p-4 bg-light-primary dark:bg-dark-primary border-light-primary dark:border-text-dark-primary text-light dark:text-dark-text hover:bg-light-accent hover:text-light-secondary hover:font-bold hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            aria-label="Botón Solicitar Estudio"
+            @click="goToForm"
+          >
+            Solicita tu Estudio, es Gratis !!!
+          </button>
+        </div>
+        <div
+          class="items-center justify-around hidden w-3/6 mt-4 sm:flex sm:w-3/6 md:w-2/4"
+        >
           <a
-            class="w-full p-2 mr-2 text-base text-center rounded-lg sm:w-4/5 sm:p-4 md:w-4/5 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            class="w-4/6 p-2 text-base text-center rounded-lg sm:p-4 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
             href="tel:+34910758169"
             aria-label="Botón CTA"
           >
+            <span class="font-bold text-light-secondary"> ó Llámanos al </span>
             <svg
               class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-secondary dark:text-dark-secondary svg-inline--fa fa-phone-alt fa-w-16"
               aria-hidden="true"
@@ -52,13 +64,6 @@
               >910758169</span
             >
           </a>
-          <button
-            class="hidden w-full p-2 ml-2 text-xl rounded-lg sm:block sm:w-4/5 sm:p-4 md:w-4/5 md:p-4 bg-light-primary dark:bg-dark-primary border-light-primary dark:border-text-dark-primary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
-            aria-label="Botón Solicitar Estudio"
-            @click="goToForm"
-          >
-            Solicitar Estudio
-          </button>
         </div>
       </div>
       <div class="flex items-start justify-center w-full sm:w-3/6 md:w-2/6">
@@ -74,9 +79,9 @@
         </transition>
       </div>
     </div>
-    <div class="mt-6 div-center sm:hidden md:hidden">
+    <div class="w-11/12 mt-6 text-center div-center sm:hidden md:hidden">
       <h2 class="text-base font-bold text-light-primary dark:text-dark-accent">
-        ESPECIALISTAS EN HIPOTECAS 100%
+        SOMOS ESPECIALISTAS EN HIPOTECAS 100%
       </h2>
     </div>
     <div class="w-11/12 mt-6 div-center sm:hidden md:hidden">
@@ -85,8 +90,36 @@
         aria-label="Botón Solicitar Estudio"
         @click="goToForm"
       >
-        Solicitar Estudio
+        Solicita tu Estudio, es Gratis !!!
       </button>
+    </div>
+    <div
+      class="items-center justify-around hidden w-11/12 mt-6 div-center sm:hidden md:hidden"
+    >
+      <a
+        class="w-4/6 p-2 text-base text-center rounded-lg sm:p-4 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+        href="tel:+34910758169"
+        aria-label="Botón CTA"
+      >
+        <span class="font-bold text-light-secondary"> ó Llámanos al </span>
+        <svg
+          class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-secondary dark:text-dark-secondary svg-inline--fa fa-phone-alt fa-w-16"
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="phone-alt"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="currentColor"
+            d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+          ></path></svg
+        ><span class="font-bold text-light-secondary dark:text-dark-secondary"
+          >910758169</span
+        >
+      </a>
     </div>
     <div class="w-11/12 my-6 div-center sm:hidden md:hidden">
       <div class="flex flex-col items-center justify-center">

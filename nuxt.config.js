@@ -27,7 +27,12 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/google-analytics',
   ],
-  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-adsense',
+  ],
   axios: {
     baseURL: '',
   },
@@ -57,5 +62,8 @@ export default {
   },
   googleAnalytics: {
     id: 'UA-98350560-1',
+  },
+  'google-adsense': {
+    id: 'ca-pub-169-973-7450',
   },
 }

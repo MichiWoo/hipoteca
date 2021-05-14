@@ -139,6 +139,13 @@ export default {
       mm = '0' + mm
     }
     this.idSesion = yy + mm + dd + text
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      // eslint-disable-next-line no-undef
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+    gtag('config', 'AW-854025985')
     this.getIp()
   },
   methods: {
@@ -258,6 +265,7 @@ export default {
               'OK',
               's'
             )
+            this.$ga.event('form', 'click', 'adsense', 1)
             this.saveDataForm(form)
           } else {
             this.displayModal(
@@ -348,5 +356,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

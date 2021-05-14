@@ -17,6 +17,13 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/LogoH10.ico' }],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=AW-854025985',
+        async: true,
+        defer: true,
+      },
+    ],
   },
   css: [],
   plugins: ['~/plugins/vue-cookies.js'],
@@ -27,12 +34,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/google-analytics',
   ],
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/google-adsense',
-  ],
+  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap'],
   axios: {
     baseURL: '',
   },
@@ -62,8 +64,5 @@ export default {
   },
   googleAnalytics: {
     id: 'UA-98350560-1',
-  },
-  'google-adsense': {
-    id: 'ca-pub-169-973-7450',
   },
 }

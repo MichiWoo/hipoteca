@@ -44,7 +44,7 @@
             href="tel:+34910758169"
             aria-label="Botón CTA"
           >
-            <span class="font-bold text-light-secondary">Llámanos al </span>
+            <span class="font-bold text-light-secondary">ó Llámanos al </span>
             <svg
               class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-secondary dark:text-dark-secondary svg-inline--fa fa-phone-alt fa-w-16"
               aria-hidden="true"
@@ -101,7 +101,7 @@
         href="tel:+34910758169"
         aria-label="Botón CTA"
       >
-        <span class="font-bold text-light-secondary">Llámanos al </span>
+        <span class="font-bold text-light-secondary">ó Llámanos al </span>
         <svg
           class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-secondary dark:text-dark-secondary svg-inline--fa fa-phone-alt fa-w-16"
           aria-hidden="true"

@@ -266,6 +266,7 @@ export default {
               's'
             )
             this.$ga.event('form', 'click', 'adsense', 1)
+            this.$gtm.push({ event: 'click' })
             this.saveDataForm(form)
           } else {
             this.displayModal(

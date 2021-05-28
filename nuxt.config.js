@@ -36,7 +36,7 @@ export default {
   ],
   modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap', '@nuxtjs/gtm'],
   axios: {
-    baseURL: 'https://hipoteca10.es',
+    baseURL: '',
   },
   build: {
     extend(config, { isClient }) {

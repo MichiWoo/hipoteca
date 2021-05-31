@@ -237,12 +237,12 @@
               <h3
                 class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
               >
-                Hipoteca la casa de mis sueños
+                Hipoteca Autopromotor
               </h3>
               <div
                 class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
               >
-                Hipoteca auto construcción.
+                Para construir la hipoteca de tus sueños.
               </div>
             </div>
           </button>
@@ -345,12 +345,12 @@
           <h3
             class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
           >
-            Hipoteca la casa de mis sueños
+            Hipoteca Autopromotor
           </h3>
           <div
             class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
           >
-            Hipoteca auto construcción.
+            Para construir la hipoteca de tus sueños.
           </div>
         </div>
       </div>
@@ -528,24 +528,28 @@ export default {
         {
           id: 6,
           ref: 'hsue',
-          title: 'Hipoteca la casa de mis sueños (*)',
+          title: 'Hipoteca Autopromotor (*)',
           type: 'white',
           data: [
             {
               id: 1,
-              text: 'Con los máximos porcentajes del mercado.',
+              text: 'Hipoteca auto construcción.',
             },
             {
               id: 2,
-              text: 'Sin necesidad de que tengas comprado el suelo.',
+              text: 'Con los máximos porcentajes del mercado.',
             },
             {
               id: 3,
+              text: 'Sin necesidad de que tengas comprado el suelo.',
+            },
+            {
+              id: 4,
               text:
                 'Sabemos de la complejidad de este tipo de operaciones, y somos especialistas en ellas.',
             },
             {
-              id: 4,
+              id: 5,
               text:
                 'Y si estas perdido, trabajamos que colaboradores que te ayudan con la búsqueda del suelo, del arquitecto, las licencias del ayuntamiento, y demás cuestiones básicas de este tipo de proyectos.',
             },

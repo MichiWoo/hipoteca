@@ -123,6 +123,19 @@ export default {
     for (let i = 0; i < 4; i++) {
       text += possible.charAt(Math.floor(Math.random() * possible.length))
     }
+    const hoy = new Date()
+    let dd = hoy.getDate()
+    let mm = hoy.getMonth() + 1
+    const yyyy = hoy.getFullYear()
+    const yyyystr = yyyy.toString()
+    const yy = yyyystr.substr(2, 3)
+    if (dd < 10) {
+      dd = '0' + dd
+    }
+    if (mm < 10) {
+      mm = '0' + mm
+    }
+    this.idSesion = yy + mm + dd + text
     this.getIp()
   },
   methods: {

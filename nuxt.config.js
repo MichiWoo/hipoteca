@@ -34,9 +34,14 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/google-analytics',
   ],
-  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/sitemap', '@nuxtjs/gtm'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/gtm',
+  ],
   axios: {
-    baseURL: '',
+    baseURL: 'https://hipoteca10.es',
   },
   build: {
     extend(config, { isClient }) {

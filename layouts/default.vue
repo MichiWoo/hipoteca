@@ -52,7 +52,6 @@ export default {
       showCookiesAll: false,
       dataCookies: {},
       goToForm: false,
-      ip: '',
       isMobile: false,
       idSesion: '',
       configModalInfo: {},
@@ -136,7 +135,7 @@ export default {
       mm = '0' + mm
     }
     this.idSesion = yy + mm + dd + text
-    this.getIp()
+    this.saveIp()
   },
   methods: {
     showMenu(val) {
@@ -271,18 +270,9 @@ export default {
           this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
         })
     },
-    async getIp() {
-      const URL_API = 'https://api.ipify.org/?format=json'
-      const respuestaRaw = await this.$axios.$get(URL_API)
-      this.ip = respuestaRaw.ip
-      if (this.ip.length > 0) {
-        this.saveIp()
-      }
-    },
     async saveIp() {
       const formData = new FormData()
       formData.append('id', this.idSesion)
-      formData.append('ip', this.ip)
       formData.append('pagina', window.location.href)
       formData.append('movil', this.isMobile)
       const options = {
@@ -305,7 +295,6 @@ export default {
       formData.append('mensaje', form.comentario)
       formData.append('telefono', form.telefono)
       formData.append('movil', this.isMobile)
-      formData.append('ip', this.ip)
       formData.append('localidad', form.localidad)
 
       const options = {

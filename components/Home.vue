@@ -1,21 +1,65 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center w-full my-6 sm:my-12 md:my-12 lg:my-12"
+    class="
+      flex flex-col
+      items-center
+      justify-center
+      w-full
+      my-6
+      sm:my-12
+      md:my-12
+      lg:my-12
+    "
   >
     <div
-      class="flex items-center w-11/12 sm:w-9/12 md:w-9/12 lg:w-9/12 justity-between sm:justify-around sm:mb-2 md:justify-around md:mb-2"
+      class="
+        flex
+        items-center
+        w-11/12
+        sm:w-9/12
+        md:w-9/12
+        lg:w-9/12
+        justity-between
+        sm:justify-around
+        sm:mb-2
+        md:justify-around
+        md:mb-2
+      "
     >
       <div
-        class="flex flex-col items-start justify-start w-full sm:w-3/6 md:w-4/6 lg:w-5/6"
+        class="
+          flex flex-col
+          items-start
+          justify-start
+          w-full
+          sm:w-3/6
+          md:w-4/6
+          lg:w-5/6
+        "
       >
         <div class="flex justify-start mb-4 sm:w-4/6">
           <h1
-            class="hidden text-4xl font-bold sm:block md:block text-light-secondary dark:text-dark-accent"
+            class="
+              hidden
+              text-4xl
+              font-bold
+              sm:block
+              md:block
+              text-light-secondary
+              dark:text-dark-accent
+            "
           >
             Te ayudamos a encontrar la hipoteca perfecta para ti.
           </h1>
           <h1
-            class="text-base font-bold text-light-secondary dark:text-dark-accent sm:hidden md:hidden"
+            class="
+              text-base
+              font-bold
+              text-light-secondary
+              dark:text-dark-accent
+              sm:hidden
+              md:hidden
+            "
           >
             Te ayudamos a encontrar tu hipoteca perfecta.
           </h1>
@@ -29,7 +73,26 @@
         </div>
         <div class="flex items-center justify-around w-full sm:w-3/6 md:w-2/4">
           <button
-            class="hidden w-full p-2 text-xl rounded-lg sm:block sm:p-4 md:p-4 bg-light-primary dark:bg-dark-primary border-light-primary dark:border-text-dark-primary text-light dark:text-dark-text hover:bg-light-accent hover:text-light-secondary hover:font-bold hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            class="
+              hidden
+              w-full
+              p-2
+              text-xl
+              rounded-lg
+              sm:block
+              sm:p-4
+              md:p-4
+              bg-light-primary
+              dark:bg-dark-primary
+              border-light-primary
+              dark:border-text-dark-primary
+              text-light
+              dark:text-dark-text
+              hover:bg-light-accent
+              hover:text-light-secondary
+              hover:font-bold
+              hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+            "
             aria-label="Botón Solicitar Estudio"
             @click="goToForm"
           >
@@ -37,16 +100,52 @@
           </button>
         </div>
         <div
-          class="items-center justify-around hidden w-3/6 mt-4 sm:flex sm:w-3/6 md:w-2/4"
+          class="
+            items-center
+            justify-around
+            hidden
+            w-3/6
+            mt-4
+            sm:flex
+            sm:w-3/6
+            md:w-2/4
+          "
         >
           <a
-            class="w-4/6 p-2 text-base text-center rounded-lg sm:p-4 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            class="
+              w-4/6
+              p-2
+              text-base text-center
+              rounded-lg
+              sm:p-4
+              md:p-4
+              bg-light-accent
+              dark:bg-dark-accent
+              border-light-accent
+              dark:border-text-dark-accent
+              text-light
+              sm:text-xl
+              dark:text-dark-text
+              hover:bg-light-accent
+              hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+            "
             href="tel:+34910758169"
             aria-label="Botón CTA"
           >
             <span class="font-bold text-light-secondary">ó Llámanos al </span>
             <svg
-              class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-secondary dark:text-dark-secondary svg-inline--fa fa-phone-alt fa-w-16"
+              class="
+                relative
+                inline-flex
+                w-6
+                h-4
+                rounded-full
+                bg-light-transparent
+                text-light-secondary
+                dark:text-dark-secondary
+                svg-inline--fa
+                fa-phone-alt fa-w-16
+              "
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
@@ -86,7 +185,19 @@
     </div>
     <div class="w-11/12 mt-6 div-center sm:hidden md:hidden">
       <button
-        class="w-full p-3 rounded-lg bg-light-primary dark:bg-dark-primary border-light-primary dark:border-text-dark-primary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+        class="
+          w-full
+          p-3
+          rounded-lg
+          bg-light-primary
+          dark:bg-dark-primary
+          border-light-primary
+          dark:border-text-dark-primary
+          text-light
+          dark:text-dark-text
+          hover:bg-light-accent
+          hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+        "
         aria-label="Botón Solicitar Estudio"
         @click="goToForm"
       >
@@ -94,16 +205,52 @@
       </button>
     </div>
     <div
-      class="items-center justify-around hidden w-11/12 mt-6 div-center sm:hidden md:hidden"
+      class="
+        items-center
+        justify-around
+        hidden
+        w-11/12
+        mt-6
+        div-center
+        sm:hidden
+        md:hidden
+      "
     >
       <a
-        class="w-4/6 p-2 text-base text-center rounded-lg sm:p-4 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+        class="
+          w-4/6
+          p-2
+          text-base text-center
+          rounded-lg
+          sm:p-4
+          md:p-4
+          bg-light-accent
+          dark:bg-dark-accent
+          border-light-accent
+          dark:border-text-dark-accent
+          text-light
+          sm:text-xl
+          dark:text-dark-text
+          hover:bg-light-accent
+          hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+        "
         href="tel:+34910758169"
         aria-label="Botón CTA"
       >
         <span class="font-bold text-light-secondary">ó Llámanos al </span>
         <svg
-          class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-secondary dark:text-dark-secondary svg-inline--fa fa-phone-alt fa-w-16"
+          class="
+            relative
+            inline-flex
+            w-6
+            h-4
+            rounded-full
+            bg-light-transparent
+            text-light-secondary
+            dark:text-dark-secondary
+            svg-inline--fa
+            fa-phone-alt fa-w-16
+          "
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -129,15 +276,45 @@
             @click="scroll('h100')"
           >
             <div
-              class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent dark:bg-dark-accent h-52 md:w-1/3 hover:shadow-md"
+              class="
+                flex flex-col
+                justify-between
+                w-full
+                p-4
+                mx-2
+                rounded-md
+                shadow-lg
+                bg-light-accent
+                dark:bg-dark-accent
+                h-52
+                md:w-1/3
+                hover:shadow-md
+              "
             >
               <h3
-                class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+                class="
+                  text-lg
+                  font-black
+                  tracking-wide
+                  text-light-secondary
+                  dark:text-dark-secondary
+                "
               >
                 Hipoteca 100%
               </h3>
               <div
-                class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis dark:text-dark-secondary"
+                class="
+                  block
+                  overflow-hidden
+                  text-sm
+                  font-normal
+                  leading-7
+                  break-words
+                  text-light-secondary
+                  max-h-14
+                  overflow-ellipsis
+                  dark:text-dark-secondary
+                "
               >
                 Para conseguir el 100% de la Compra Venta.
               </div>
@@ -145,20 +322,50 @@
           </div>
           <div
             class="flex justify-center w-3/6 mb-3 cursor-pointer"
-            @click="scroll('h80')"
+            @click="scroll('hsue')"
           >
             <div
-              class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary dark:bg-dark-primary h-52 md:w-1/3 hover:shadow-md"
+              class="
+                flex flex-col
+                justify-between
+                w-full
+                p-4
+                mx-2
+                rounded-md
+                shadow-lg
+                bg-light
+                dark:bg-dark
+                h-52
+                md:w-1/3
+                hover:shadow-md
+              "
             >
               <h3
-                class="text-lg font-black tracking-wide text-light dark:text-dark"
+                class="
+                  text-lg
+                  font-black
+                  tracking-wide
+                  text-light-secondary
+                  dark:text-dark-secondary
+                "
               >
-                Hipoteca 80
+                Hipoteca Autopromotor
               </h3>
               <div
-                class="block overflow-hidden text-sm font-normal leading-7 break-words text-light max-h-14 overflow-ellipsis dark:text-dark"
+                class="
+                  block
+                  overflow-hidden
+                  text-sm
+                  font-normal
+                  leading-7
+                  break-words
+                  text-light-primary
+                  max-h-14
+                  overflow-ellipsis
+                  dark:text-dark-primary
+                "
               >
-                Sin coste de gestión.
+                Para construir la casa de tus sueños.
               </div>
             </div>
           </div>
@@ -170,15 +377,45 @@
             @click="scroll('hfun')"
           >
             <div
-              class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light dark:bg-dark h-52 md:w-1/3 hover:shadow-md"
+              class="
+                flex flex-col
+                justify-between
+                w-full
+                p-4
+                mx-2
+                rounded-md
+                shadow-lg
+                bg-light
+                dark:bg-dark
+                h-52
+                md:w-1/3
+                hover:shadow-md
+              "
             >
               <h3
-                class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+                class="
+                  text-lg
+                  font-black
+                  tracking-wide
+                  text-light-secondary
+                  dark:text-dark-secondary
+                "
               >
                 Hipoteca Funcionario
               </h3>
               <div
-                class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
+                class="
+                  block
+                  overflow-hidden
+                  text-sm
+                  font-normal
+                  leading-7
+                  break-words
+                  text-light-primary
+                  max-h-14
+                  overflow-ellipsis
+                  dark:text-dark-primary
+                "
               >
                 Posibilidad 100% de Tasación.
               </div>
@@ -190,15 +427,45 @@
             @click="scroll('hsbla')"
           >
             <div
-              class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent dark:bg-dark-accent h-52 md:w-1/3 hover:shadow-md"
+              class="
+                flex flex-col
+                justify-between
+                w-full
+                p-4
+                mx-2
+                rounded-md
+                shadow-lg
+                bg-light-accent
+                dark:bg-dark-accent
+                h-52
+                md:w-1/3
+                hover:shadow-md
+              "
             >
               <h3
-                class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+                class="
+                  text-lg
+                  font-black
+                  tracking-wide
+                  text-light-secondary
+                  dark:text-dark-secondary
+                "
               >
                 Hipoteca sin Blanca
               </h3>
               <div
-                class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis dark:text-dark-secondary"
+                class="
+                  block
+                  overflow-hidden
+                  text-sm
+                  font-normal
+                  leading-7
+                  break-words
+                  text-light-secondary
+                  max-h-14
+                  overflow-ellipsis
+                  dark:text-dark-secondary
+                "
               >
                 Posibilidad de financiar el 100% de la compra más los gastos.
               </div>
@@ -212,15 +479,45 @@
             @click="scroll('hcvid')"
           >
             <div
-              class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary dark:bg-dark-primary h-52 md:w-1/3 hover:shadow-md"
+              class="
+                flex flex-col
+                justify-between
+                w-full
+                p-4
+                mx-2
+                rounded-md
+                shadow-lg
+                bg-light-primary
+                dark:bg-dark-primary
+                h-52
+                md:w-1/3
+                hover:shadow-md
+              "
             >
               <h3
-                class="text-lg font-black tracking-wide text-light dark:text-dark"
+                class="
+                  text-lg
+                  font-black
+                  tracking-wide
+                  text-light
+                  dark:text-dark
+                "
               >
                 Hipoteca cambio de Vida
               </h3>
               <div
-                class="block overflow-hidden text-sm font-normal leading-7 break-words text-light max-h-14 overflow-ellipsis dark:text-dark"
+                class="
+                  block
+                  overflow-hidden
+                  text-sm
+                  font-normal
+                  leading-7
+                  break-words
+                  text-light
+                  max-h-14
+                  overflow-ellipsis
+                  dark:text-dark
+                "
               >
                 Por si tu banco no te quiere lo suficiente.
               </div>
@@ -229,20 +526,50 @@
           <button
             class="flex justify-center w-3/6 mb-3 cursor-pointer"
             aria-label="Botón Hipoteca Casa de mis sueños"
-            @click="scroll('hsue')"
+            @click="scroll('h80')"
           >
             <div
-              class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light dark:bg-dark h-52 md:w-1/3 hover:shadow-md"
+              class="
+                flex flex-col
+                justify-between
+                w-full
+                p-4
+                mx-2
+                rounded-md
+                shadow-lg
+                bg-light-primary
+                dark:bg-dark-primary
+                h-52
+                md:w-1/3
+                hover:shadow-md
+              "
             >
               <h3
-                class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+                class="
+                  text-lg
+                  font-black
+                  tracking-wide
+                  text-light
+                  dark:text-dark
+                "
               >
-                Hipoteca Autopromotor
+                Hipoteca 80
               </h3>
               <div
-                class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
+                class="
+                  block
+                  overflow-hidden
+                  text-sm
+                  font-normal
+                  leading-7
+                  break-words
+                  text-light
+                  max-h-14
+                  overflow-ellipsis
+                  dark:text-dark
+                "
               >
-                Para construir la hipoteca de tus sueños.
+                Sin coste de gestión.
               </div>
             </div>
           </button>
@@ -250,20 +577,60 @@
       </div>
     </div>
     <div
-      class="hidden w-11/12 my-6 sm:flex sm:justify-center sm:flex-wrap md:flex md:justify-center md:flex-wrap"
+      class="
+        hidden
+        w-11/12
+        my-6
+        sm:flex
+        sm:justify-center
+        sm:flex-wrap
+        md:flex
+        md:justify-center
+        md:flex-wrap
+      "
     >
       <div class="flex justify-center w-3/12 mb-3 cursor-pointer lg:h-48">
         <div
-          class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-accent dark:bg-dark-accent hover:shadow-md"
+          class="
+            flex flex-col
+            justify-between
+            w-full
+            p-8
+            mx-2
+            my-4
+            text-center
+            rounded-md
+            shadow-lg
+            bg-light-accent
+            dark:bg-dark-accent
+            hover:shadow-md
+          "
           @click="scroll('h100')"
         >
           <h3
-            class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+            class="
+              text-lg
+              font-black
+              tracking-wide
+              text-light-secondary
+              dark:text-dark-secondary
+            "
           >
             Hipoteca 100%
           </h3>
           <div
-            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis dark:text-dark-secondary"
+            class="
+              block
+              overflow-hidden
+              text-sm
+              font-normal
+              leading-7
+              break-words
+              text-light-secondary
+              max-h-14
+              overflow-ellipsis
+              dark:text-dark-secondary
+            "
           >
             Para conseguir el 100% de la Compra Venta.
           </div>
@@ -271,33 +638,93 @@
       </div>
       <div class="flex justify-center w-3/12 mb-3 cursor-pointer lg:h-48">
         <div
-          class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-primary dark:bg-dark-primary hover:shadow-md"
-          @click="scroll('h80')"
+          class="
+            flex flex-col
+            justify-between
+            w-full
+            p-8
+            mx-2
+            my-4
+            text-center
+            rounded-md
+            shadow-lg
+            bg-light
+            dark:bg-dark
+            hover:shadow-md
+          "
+          @click="scroll('hsue')"
         >
           <h3
-            class="text-lg font-black tracking-wide text-light dark:text-dark"
+            class="
+              text-lg
+              font-black
+              tracking-wide
+              text-light-secondary
+              dark:text-dark-secondary
+            "
           >
-            Hipoteca 80
+            Hipoteca Autopromotor
           </h3>
           <div
-            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light max-h-14 overflow-ellipsis dark:text-dark"
+            class="
+              block
+              overflow-hidden
+              text-sm
+              font-normal
+              leading-7
+              break-words
+              text-light-primary
+              max-h-14
+              overflow-ellipsis
+              dark:text-dark-primary
+            "
           >
-            Sin coste de gestión.
+            Para construir la casa de tus sueños.
           </div>
         </div>
       </div>
       <div class="flex justify-center w-3/12 mb-3 cursor-pointer lg:h-48">
         <div
-          class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light dark:bg-dark hover:shadow-md"
+          class="
+            flex flex-col
+            justify-between
+            w-full
+            p-8
+            mx-2
+            my-4
+            text-center
+            rounded-md
+            shadow-lg
+            bg-light
+            dark:bg-dark
+            hover:shadow-md
+          "
           @click="scroll('hfun')"
         >
           <h3
-            class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+            class="
+              text-lg
+              font-black
+              tracking-wide
+              text-light-secondary
+              dark:text-dark-secondary
+            "
           >
             Hipoteca Funcionario
           </h3>
           <div
-            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
+            class="
+              block
+              overflow-hidden
+              text-sm
+              font-normal
+              leading-7
+              break-words
+              text-light-primary
+              max-h-14
+              overflow-ellipsis
+              dark:text-dark-primary
+            "
           >
             Posibilidad 100% de Tasación.
           </div>
@@ -305,16 +732,46 @@
       </div>
       <div class="flex justify-center w-3/12 mb-3 cursor-pointer lg:h-48">
         <div
-          class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-accent dark:bg-dark-accent hover:shadow-md"
+          class="
+            flex flex-col
+            justify-between
+            w-full
+            p-8
+            mx-2
+            my-4
+            text-center
+            rounded-md
+            shadow-lg
+            bg-light-accent
+            dark:bg-dark-accent
+            hover:shadow-md
+          "
           @click="scroll('hsbla')"
         >
           <h3
-            class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+            class="
+              text-lg
+              font-black
+              tracking-wide
+              text-light-secondary
+              dark:text-dark-secondary
+            "
           >
             Hipoteca sin Blanca
           </h3>
           <div
-            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis dark:text-dark-secondary"
+            class="
+              block
+              overflow-hidden
+              text-sm
+              font-normal
+              leading-7
+              break-words
+              text-light-secondary
+              max-h-14
+              overflow-ellipsis
+              dark:text-dark-secondary
+            "
           >
             Posibilidad de financiar el 100% de la compra más los gastos.
           </div>
@@ -322,7 +779,20 @@
       </div>
       <div class="flex justify-center w-3/12 mb-3 cursor-pointer lg:h-48">
         <div
-          class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light-primary dark:bg-dark-primary hover:shadow-md"
+          class="
+            flex flex-col
+            justify-between
+            w-full
+            p-8
+            mx-2
+            my-4
+            text-center
+            rounded-md
+            shadow-lg
+            bg-light-primary
+            dark:bg-dark-primary
+            hover:shadow-md
+          "
           @click="scroll('hcvid')"
         >
           <h3
@@ -331,7 +801,18 @@
             Hipoteca cambio de Vida
           </h3>
           <div
-            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light max-h-14 overflow-ellipsis dark:text-dark"
+            class="
+              block
+              overflow-hidden
+              text-sm
+              font-normal
+              leading-7
+              break-words
+              text-light
+              max-h-14
+              overflow-ellipsis
+              dark:text-dark
+            "
           >
             Por si tu banco no te quiere lo suficiente.
           </div>
@@ -339,25 +820,56 @@
       </div>
       <div class="flex justify-center w-3/12 mb-3 cursor-pointer lg:h-48">
         <div
-          class="flex flex-col justify-between w-full p-8 mx-2 my-4 text-center rounded-md shadow-lg bg-light dark:bg-dark hover:shadow-md"
-          @click="scroll('hsue')"
+          class="
+            flex flex-col
+            justify-between
+            w-full
+            p-8
+            mx-2
+            my-4
+            text-center
+            rounded-md
+            shadow-lg
+            bg-light-primary
+            dark:bg-dark-primary
+            hover:shadow-md
+          "
+          @click="scroll('h80')"
         >
           <h3
-            class="text-lg font-black tracking-wide text-light-secondary dark:text-dark-secondary"
+            class="text-lg font-black tracking-wide text-light dark:text-dark"
           >
-            Hipoteca Autopromotor
+            Hipoteca 80
           </h3>
           <div
-            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis dark:text-dark-primary"
+            class="
+              block
+              overflow-hidden
+              text-sm
+              font-normal
+              leading-7
+              break-words
+              text-light
+              max-h-14
+              overflow-ellipsis
+              dark:text-dark
+            "
           >
-            Para construir la hipoteca de tus sueños.
+            Sin coste de gestión.
           </div>
         </div>
       </div>
     </div>
     <div class="w-11/12 my-12 div-center">
       <div
-        class="w-full h-1 bg-light-primary dark:bg-dark-primary border-1 border-light-primary dark:border-dark-primary"
+        class="
+          w-full
+          h-1
+          bg-light-primary
+          dark:bg-dark-primary
+          border-1 border-light-primary
+          dark:border-dark-primary
+        "
       ></div>
     </div>
     <div class="w-11/12 mb-12 sm:w-2/6 md:w-2/6 div-center">
@@ -373,7 +885,14 @@
     </div>
     <div class="w-11/12 my-12 div-center">
       <div
-        class="w-full h-1 bg-light-primary dark:bg-dark-primary border-1 border-light-primary dark:border-dark-primary"
+        class="
+          w-full
+          h-1
+          bg-light-primary
+          dark:bg-dark-primary
+          border-1 border-light-primary
+          dark:border-dark-primary
+        "
       ></div>
     </div>
     <div class="w-11/12 my-12 text-center div-center">
@@ -412,8 +931,7 @@ export default {
             { id: 4, text: 'Cobramos a éxito.' },
             {
               id: 5,
-              text:
-                'Dependiendo del perfil, posibilidad de conseguir 100% de CV, 90% de Tasacion.',
+              text: 'Dependiendo del perfil, posibilidad de conseguir 100% de CV, 90% de Tasacion.',
             },
           ],
         },
@@ -425,19 +943,16 @@ export default {
           data: [
             {
               id: 1,
-              text:
-                'Si buscas que alguien te acompañe en el proceso de la búsqueda de la hipoteca que mejor encaje con tu perfil.',
+              text: 'Si buscas que alguien te acompañe en el proceso de la búsqueda de la hipoteca que mejor encaje con tu perfil.',
             },
             { id: 2, text: 'Sin coste de tramitación por nuestra parte.' },
             {
               id: 3,
-              text:
-                'Pensada para operaciones en las que solo se necesite el 80% de CV o de Tasación, el menor de los dos.',
+              text: 'Pensada para operaciones en las que solo se necesite el 80% de CV o de Tasación, el menor de los dos.',
             },
             {
               id: 4,
-              text:
-                'Olvídate de que te llamen de 15 bancos distintos, un gestor personal para tu operación.',
+              text: 'Olvídate de que te llamen de 15 bancos distintos, un gestor personal para tu operación.',
             },
             {
               id: 5,
@@ -453,13 +968,11 @@ export default {
           data: [
             {
               id: 1,
-              text:
-                'Para conseguir las mejores condiciones con un servicio personalizado, y adaptándose a todas la necesidades de financiación que necesites.',
+              text: 'Para conseguir las mejores condiciones con un servicio personalizado, y adaptándose a todas la necesidades de financiación que necesites.',
             },
             {
               id: 2,
-              text:
-                'Posibilidad de 100% de Compra Venta o 100% de valor de Tasación (El menor de los dos).',
+              text: 'Posibilidad de 100% de Compra Venta o 100% de valor de Tasación (El menor de los dos).',
             },
             {
               id: 3,
@@ -467,8 +980,7 @@ export default {
             },
             {
               id: 4,
-              text:
-                'Sin coste de gestión, si tu necesidad de financiación es inferior al 90% de la CV o 80% de Tasación.',
+              text: 'Sin coste de gestión, si tu necesidad de financiación es inferior al 90% de la CV o 80% de Tasación.',
             },
           ],
         },
@@ -480,23 +992,19 @@ export default {
           data: [
             {
               id: 1,
-              text:
-                'Para aquellas compras de casa, donde no se tiene nada ahorrado.',
+              text: 'Para aquellas compras de casa, donde no se tiene nada ahorrado.',
             },
             {
               id: 2,
-              text:
-                'Necesidad de un doble garantia para poder sacar la operación.',
+              text: 'Necesidad de un doble garantia para poder sacar la operación.',
             },
             {
               id: 3,
-              text:
-                'Hipoteca por el importe del 100% de la Compra venta y los gastos asociados a la compra ( ITP o IVA, Notaria, registro, GESTORIA de la escritura de Compra).',
+              text: 'Hipoteca por el importe del 100% de la Compra venta y los gastos asociados a la compra ( ITP o IVA, Notaria, registro, GESTORIA de la escritura de Compra).',
             },
             {
               id: 4,
-              text:
-                'Nuestro acompañamiento dura todo el proceso, solo pagas si firmas.',
+              text: 'Nuestro acompañamiento dura todo el proceso, solo pagas si firmas.',
             },
           ],
         },
@@ -515,13 +1023,11 @@ export default {
             },
             {
               id: 5,
-              text:
-                'Pensada, para operaciones de financiación hasta el 80% de la tasación.',
+              text: 'Pensada, para operaciones de financiación hasta el 80% de la tasación.',
             },
             {
               id: 6,
-              text:
-                'Coste de tramitación ajustado a tu perfil, pudiendo ser totalmente gratuita nuestra gestión.',
+              text: 'Coste de tramitación ajustado a tu perfil, pudiendo ser totalmente gratuita nuestra gestión.',
             },
           ],
         },
@@ -545,13 +1051,11 @@ export default {
             },
             {
               id: 4,
-              text:
-                'Sabemos de la complejidad de este tipo de operaciones, y somos especialistas en ellas.',
+              text: 'Sabemos de la complejidad de este tipo de operaciones, y somos especialistas en ellas.',
             },
             {
               id: 5,
-              text:
-                'Y si estas perdido, trabajamos que colaboradores que te ayudan con la búsqueda del suelo, del arquitecto, las licencias del ayuntamiento, y demás cuestiones básicas de este tipo de proyectos.',
+              text: 'Y si estas perdido, trabajamos que colaboradores que te ayudan con la búsqueda del suelo, del arquitecto, las licencias del ayuntamiento, y demás cuestiones básicas de este tipo de proyectos.',
             },
           ],
         },

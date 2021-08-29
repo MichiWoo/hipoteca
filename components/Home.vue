@@ -167,14 +167,30 @@
       </div>
       <div class="flex items-start justify-center w-full sm:w-3/6 md:w-2/6">
         <transition name="slide-fade">
-          <FormWomanHouse
+          <nuxt-img
             v-show="showWoman"
-            class="w-full"
-            alt="Imágen Mujer con Casa"
+            provider="static"
+            sizes="sm:200px md:400px lg:800px"
+            src="/womanHouse.svg"
+            alt="Mujer con  una casa"
+            loading="lazy"
+            width="1024"
+            height="800"
+            quality="75"
           />
         </transition>
         <transition name="slide-fade2">
-          <House v-show="showMan" class="w-full" alt="Imágen Hombre con Casa" />
+          <nuxt-img
+            v-show="showMan"
+            provider="static"
+            sizes="sm:200px md:400px lg:800px"
+            src="/house.svg"
+            alt="Hombre con un casa"
+            loading="lazy"
+            width="1024"
+            height="800"
+            quality="75"
+          />
         </transition>
       </div>
     </div>
@@ -873,7 +889,16 @@
       ></div>
     </div>
     <div class="w-11/12 mb-12 sm:w-2/6 md:w-2/6 div-center">
-      <FormInsurance class="w-full" alt="Imágen Casa"></FormInsurance>
+      <nuxt-img
+        provider="static"
+        sizes="sm:200px md:400px lg:800px"
+        src="/insurance.svg"
+        alt="Imágen de una casa"
+        loading="lazy"
+        width="1024"
+        height="800"
+        quality="75"
+      />
     </div>
     <div class="flex-col w-full div-center">
       <CardProducto
@@ -908,10 +933,7 @@
 export default {
   name: 'Home',
   components: {
-    FormWomanHouse: () => import('./forms/FormWomanHouse'),
     CardProducto: () => import('./CardProducto'),
-    FormInsurance: () => import('./forms/FormInsurance'),
-    House: () => import('./forms/House'),
   },
   data() {
     return {

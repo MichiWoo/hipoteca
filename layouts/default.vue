@@ -70,12 +70,10 @@ export default {
           marketing: cookiePrefences.marketing === 'si',
           analitics: cookiePrefences.analiticas === 'si',
         }
-      } else {
-        this.showCookiesConf = true
       }
     } else {
       this.$cookies.set('verCookie', 'si', '2m')
-      this.showCookiesAll = true
+      this.showCookiesAll = false
     }
     this.$store.watch(
       Object.getOwnPropertyDescriptor(this.$store.state, 'inForm').get,

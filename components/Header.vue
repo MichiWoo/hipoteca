@@ -1,15 +1,44 @@
 <template>
   <header class="relative w-full mx-auto">
     <div
-      class="flex items-start justify-around mx-4 mt-4 sm:mt-2 lg:mt-6 lg:items-center"
+      class="
+        flex
+        items-start
+        justify-around
+        mx-4
+        mt-4
+        sm:mt-2
+        lg:mt-6
+        lg:items-center
+      "
     >
       <div class="z-10 w-3/6 sm:w-4/12 lg:w-2/12 sm:mt-4 lg:ml-12">
         <NuxtLink
-          class="flex items-center mr-6 text-lg font-bold flex-start text-light-primary dark:text-dark-accent nuxt-link-exact-active nuxt-link-active"
+          class="
+            flex
+            items-center
+            mr-6
+            text-lg
+            font-bold
+            flex-start
+            text-light-primary
+            dark:text-dark-accent
+            nuxt-link-exact-active nuxt-link-active
+          "
           to="/"
           aria-label="Link a Inicio"
         >
-          <Logo class="w-full" alt="Logo Hipoteca10"></Logo>
+          <nuxt-img
+            provider="static"
+            sizes="sm:200px md:400px lg:800px"
+            class="w-full"
+            src="/logo.svg"
+            alt="Logo Hipoteca10"
+            loading="lazy"
+            width="1024"
+            height="800"
+            quality="75"
+          />
         </NuxtLink>
       </div>
       <div class="z-10 items-center hidden w-9/12 mt-8 lg:flex justify-evenly">
@@ -61,18 +90,17 @@
           >
         </div>
       </div>
-      <div
-        class="z-10 flex items-center justify-center w-1/6 h-8 lg:justify-center sm:justify-end sm:w-3/12 lg:w-1/12 sm:mt-8"
-      >
-        <Checkbox
-          aria-label="Checkbox cambiar Modo Oscuro"
-          @changeMode="toggle"
-        ></Checkbox>
-      </div>
       <div class="z-10 w-2/6 sm:w-4/12 lg:hidden">
         <div class="flex items-start justify-end w-full">
           <button
-            class="transition-colors duration-300 ease-linear text-light-primary dark:text-dark-primary focus:outline-none"
+            class="
+              transition-colors
+              duration-300
+              ease-linear
+              text-light-primary
+              dark:text-dark-primary
+              focus:outline-none
+            "
             aria-label="Botón Menú"
             @click="showMenu"
           >
@@ -91,9 +119,7 @@
 export default {
   name: 'Header',
   components: {
-    Logo: () => import('../components/Logo'),
     Burger: () => import('../components/icons/Burger'),
-    Checkbox: () => import('../components/Checkbox'),
     WaveT: () => import('../components/forms/WaveT'),
   },
   methods: {

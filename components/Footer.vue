@@ -1,27 +1,74 @@
 <template>
   <footer class="relative w-full mt-12 text-center sm:h-64">
     <div
-      class="flex flex-col justify-center w-full h-full divide-x-0 divide-y md:flex-row md:justify-center md:items-center md:divide-x md:divide-y-0 divide-light-primary dark:divide-dark-accent"
+      class="
+        flex flex-col
+        justify-center
+        w-full
+        h-full
+        divide-x-0 divide-y
+        md:flex-row
+        md:justify-center
+        md:items-center
+        md:divide-x md:divide-y-0
+        divide-light-primary
+        dark:divide-dark-accent
+      "
     >
       <div
-        class="z-10 flex flex-col justify-center mt-8 mb-4 lg:w-2/6 md:my-16 md:mr-16"
+        class="
+          z-10
+          flex flex-col
+          justify-center
+          mt-8
+          mb-4
+          lg:w-2/6
+          md:my-16
+          md:mr-16
+        "
       >
         <div class="flex items-center justify-center my-2 mt-4">
-          <LogoInv class="w-3/5" alt="Logo Hipoteca 10 invertido" />
+          <nuxt-img
+            provider="static"
+            class="sm:w-2/5 w:1/5"
+            sizes="sm:100px md:100px lg:100px"
+            src="/LogoInv.svg"
+            alt="Logo Hipoteca 10 invertido"
+            loading="lazy"
+            quality="75"
+          />
         </div>
         <div class="flex flex-col items-center justify-center">
           <h3
-            class="text-xs font-bold sm:text-base text-light-accent dark:text-dark-primary"
+            class="
+              text-xs
+              font-bold
+              sm:text-base
+              text-light-accent
+              dark:text-dark-primary
+            "
           >
             © Derechos Reservados Hipoteca 10.
           </h3>
           <h3
-            class="text-xs font-bold sm:text-base text-light-accent dark:text-dark-primary"
+            class="
+              text-xs
+              font-bold
+              sm:text-base
+              text-light-accent
+              dark:text-dark-primary
+            "
           >
             Carrera San Jerónimo 18.
           </h3>
           <h3
-            class="text-xs font-bold sm:text-base text-light-accent dark:text-dark-primary"
+            class="
+              text-xs
+              font-bold
+              sm:text-base
+              text-light-accent
+              dark:text-dark-primary
+            "
           >
             28014. Madrid
           </h3>
@@ -34,7 +81,20 @@
           <div class="flex items-center justify-center mr-4">
             <span class="relative flex w-2 h-2 mr-1"
               ><svg
-                class="absolute inline-flex w-full h-full duration-300 rounded-full animate-ping bg-light-transparent border-1 border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent"
+                class="
+                  absolute
+                  inline-flex
+                  w-full
+                  h-full
+                  duration-300
+                  rounded-full
+                  animate-ping
+                  bg-light-transparent
+                  border-1 border-light-accent
+                  dark:border-dark-accent
+                  text-light-accent
+                  dark:text-dark-accent
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -49,7 +109,16 @@
                   d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
                 ></path></svg
               ><svg
-                class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-accent dark:text-dark-primary"
+                class="
+                  relative
+                  inline-flex
+                  w-6
+                  h-4
+                  rounded-full
+                  bg-light-transparent
+                  text-light-accent
+                  dark:text-dark-primary
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -66,7 +135,12 @@
             ></span>
             <div class="flex ml-2">
               <h3
-                class="text-xs font-bold text-light-accent dark:text-dark-primary"
+                class="
+                  text-xs
+                  font-bold
+                  text-light-accent
+                  dark:text-dark-primary
+                "
               >
                 <Nuxt-link to="/legal" aria-label="Link a sección Aviso Legal"
                   >Aviso Legal</Nuxt-link
@@ -77,7 +151,22 @@
           <div class="flex items-center justify-center">
             <span class="relative flex w-2 h-2 mr-1"
               ><svg
-                class="absolute inline-flex w-full h-full duration-300 rounded-full animate-ping bg-light-transparent border-1 border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent svg-inline--fa fa-link fa-w-16"
+                class="
+                  absolute
+                  inline-flex
+                  w-full
+                  h-full
+                  duration-300
+                  rounded-full
+                  animate-ping
+                  bg-light-transparent
+                  border-1 border-light-accent
+                  dark:border-dark-accent
+                  text-light-accent
+                  dark:text-dark-accent
+                  svg-inline--fa
+                  fa-link fa-w-16
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -92,7 +181,18 @@
                   d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
                 ></path></svg
               ><svg
-                class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-accent dark:text-dark-primary svg-inline--fa fa-link fa-w-16"
+                class="
+                  relative
+                  inline-flex
+                  w-6
+                  h-4
+                  rounded-full
+                  bg-light-transparent
+                  text-light-accent
+                  dark:text-dark-primary
+                  svg-inline--fa
+                  fa-link fa-w-16
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -109,7 +209,12 @@
             ></span>
             <div class="flex ml-2">
               <h3
-                class="text-xs font-bold text-light-accent dark:text-dark-primary"
+                class="
+                  text-xs
+                  font-bold
+                  text-light-accent
+                  dark:text-dark-primary
+                "
               >
                 <Nuxt-link
                   to="/politicaPrivacidad"
@@ -124,7 +229,22 @@
           <div class="flex items-center justify-center mr-4">
             <span class="relative flex w-2 h-2 mr-1"
               ><svg
-                class="absolute inline-flex w-full h-full duration-300 rounded-full animate-ping bg-light-transparent border-1 border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent svg-inline--fa fa-link fa-w-16"
+                class="
+                  absolute
+                  inline-flex
+                  w-full
+                  h-full
+                  duration-300
+                  rounded-full
+                  animate-ping
+                  bg-light-transparent
+                  border-1 border-light-accent
+                  dark:border-dark-accent
+                  text-light-accent
+                  dark:text-dark-accent
+                  svg-inline--fa
+                  fa-link fa-w-16
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -139,7 +259,18 @@
                   d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
                 ></path></svg
               ><svg
-                class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-accent dark:text-dark-primary svg-inline--fa fa-link fa-w-16"
+                class="
+                  relative
+                  inline-flex
+                  w-6
+                  h-4
+                  rounded-full
+                  bg-light-transparent
+                  text-light-accent
+                  dark:text-dark-primary
+                  svg-inline--fa
+                  fa-link fa-w-16
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -156,7 +287,12 @@
             ></span>
             <div class="flex ml-2">
               <h3
-                class="text-xs font-bold text-light-accent dark:text-dark-primary"
+                class="
+                  text-xs
+                  font-bold
+                  text-light-accent
+                  dark:text-dark-primary
+                "
               >
                 <Nuxt-link
                   to="/politicaCookies"
@@ -169,7 +305,22 @@
           <div class="flex items-center justify-center mr-1">
             <span class="relative flex w-2 h-2 mr-1"
               ><svg
-                class="absolute inline-flex w-full h-full duration-300 rounded-full animate-ping bg-light-transparent border-1 border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent svg-inline--fa fa-link fa-w-16"
+                class="
+                  absolute
+                  inline-flex
+                  w-full
+                  h-full
+                  duration-300
+                  rounded-full
+                  animate-ping
+                  bg-light-transparent
+                  border-1 border-light-accent
+                  dark:border-dark-accent
+                  text-light-accent
+                  dark:text-dark-accent
+                  svg-inline--fa
+                  fa-link fa-w-16
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -184,7 +335,18 @@
                   d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
                 ></path></svg
               ><svg
-                class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-accent dark:text-dark-primary svg-inline--fa fa-link fa-w-16"
+                class="
+                  relative
+                  inline-flex
+                  w-6
+                  h-4
+                  rounded-full
+                  bg-light-transparent
+                  text-light-accent
+                  dark:text-dark-primary
+                  svg-inline--fa
+                  fa-link fa-w-16
+                "
                 aria-label="Icono de Link"
                 aria-hidden="true"
                 focusable="false"
@@ -201,7 +363,12 @@
             ></span>
             <div class="flex ml-2">
               <h3
-                class="text-xs font-bold text-light-accent dark:text-dark-primary"
+                class="
+                  text-xs
+                  font-bold
+                  text-light-accent
+                  dark:text-dark-primary
+                "
               >
                 <Nuxt-link to="/tarifas" aria-label="Link a sección Tarifas"
                   >Anuncios y tarifas</Nuxt-link
@@ -215,7 +382,22 @@
         >
           <span class="relative flex w-2 h-2 mr-1">
             <svg
-              class="absolute inline-flex w-full h-full duration-300 rounded-full animate-ping bg-light-transparent border-1 border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent svg-inline--fa fa-link fa-w-16"
+              class="
+                absolute
+                inline-flex
+                w-full
+                h-full
+                duration-300
+                rounded-full
+                animate-ping
+                bg-light-transparent
+                border-1 border-light-accent
+                dark:border-dark-accent
+                text-light-accent
+                dark:text-dark-accent
+                svg-inline--fa
+                fa-link fa-w-16
+              "
               aria-label="Icono de Link"
               aria-hidden="true"
               focusable="false"
@@ -231,7 +413,18 @@
               ></path>
             </svg>
             <svg
-              class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-accent dark:text-dark-primary svg-inline--fa fa-link fa-w-16"
+              class="
+                relative
+                inline-flex
+                w-6
+                h-4
+                rounded-full
+                bg-light-transparent
+                text-light-accent
+                dark:text-dark-primary
+                svg-inline--fa
+                fa-link fa-w-16
+              "
               aria-label="Icono de Link"
               aria-hidden="true"
               focusable="false"
@@ -271,7 +464,6 @@
 export default {
   name: 'Footer',
   components: {
-    LogoInv: () => import('../components/LogoInv'),
     WaveB: () => import('../components/forms/WaveB'),
   },
 }

@@ -2,14 +2,24 @@
   <div ref="formulario" class="flex flex-col items-center justify-center mt-8">
     <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <h5
-        class="text-base sm:text-xl text-light-secondary dark:text-dark-secondary"
+        class="
+          text-base
+          sm:text-xl
+          text-light-secondary
+          dark:text-dark-secondary
+        "
       >
         Formulario de Contacto
       </h5>
     </div>
     <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
       <p
-        class="text-sm text-center sm:text-base text-light-primary dark:text-dark-primary"
+        class="
+          text-sm text-center
+          sm:text-base
+          text-light-primary
+          dark:text-dark-primary
+        "
       >
         Hipoteca 10 es tu solución, Contacta con Nosotros para conseguir tu
         hipoteca.
@@ -58,7 +68,25 @@
       class="flex items-start justify-start w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6"
     >
       <div
-        class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 border-2 rounded bg-light dark:bg-dark text-light-primary dark:text-dark-primary border-light-primary dark:border-dark-primary focus-within:border-light-accent dark-focus-within:border-dark-accent"
+        class="
+          flex
+          items-center
+          justify-center
+          flex-shrink-0
+          w-6
+          h-6
+          mr-2
+          border-2
+          rounded
+          bg-light
+          dark:bg-dark
+          text-light-primary
+          dark:text-dark-primary
+          border-light-primary
+          dark:border-dark-primary
+          focus-within:border-light-accent
+          dark-focus-within:border-dark-accent
+        "
       >
         <input
           v-model="acepta"
@@ -73,7 +101,12 @@
         </svg>
       </div>
       <div
-        class="text-sm text-justify select-one text-light-primary dark:text-dark-primary"
+        class="
+          text-sm text-justify
+          select-one
+          text-light-primary
+          dark:text-dark-primary
+        "
       >
         He
         <a class="font-bold cursor-pointer" @click="openModal"
@@ -104,7 +137,10 @@
     <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
       <div class="flex justify-center">
         <h6
-          class="text-sm text-justify text-light-secondary dark:text-dark-accent"
+          class="
+            text-sm text-justify text-light-secondary
+            dark:text-dark-accent
+          "
         >
           <a
             href="https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/registro-de-intermediarios/registro-de-intermediarios-de-credito-inmobiliario-y-prestamistas-inmobiliarios.html"
@@ -121,7 +157,10 @@
     <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
       <div class="flex justify-center">
         <h6
-          class="text-sm text-justify text-light-secondary dark:text-dark-accent"
+          class="
+            text-sm text-justify text-light-secondary
+            dark:text-dark-accent
+          "
         >
           <a href="/mail/i_p.pdf" target="_blank" rel="noreferer noopener">
             Documento de información pre contractural.
@@ -133,10 +172,13 @@
       <div class="flex justify-center w-full">
         <div class="relative w-full bg-light-secondary pb-2/12">
           <a href="/aecosan.html" target="_blank" rel="noreferer noopener">
-            <img
+            <nuxt-img
+              sizes="sm:200px md:400px lg:800px"
               class="absolute object-cover w-full h-full"
               src="/aecosan.jpg"
               alt="Logo Aecosan"
+              loading="lazy"
+              quality="75"
             />
           </a>
         </div>

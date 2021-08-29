@@ -1,5 +1,6 @@
 export default {
-  ssr: true,
+  ssr: false,
+  target: 'static',
   head: {
     title: 'Hipoteca 10',
     htmlAttrs: {
@@ -16,13 +17,6 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/LogoH10.ico' }],
-    script: [
-      {
-        src: 'https://www.googletagmanager.com/gtag/js?id=AW-854025985',
-        async: true,
-        defer: true,
-      },
-    ],
   },
   css: [],
   plugins: ['~/plugins/vue-cookies.js'],

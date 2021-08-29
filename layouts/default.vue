@@ -268,7 +268,7 @@ export default {
           this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
         })
     },
-    async saveIp() {
+    saveIp() {
       const formData = new FormData()
       formData.append('id', this.idSesion)
       formData.append('pagina', window.location.href)
@@ -279,7 +279,7 @@ export default {
         data: formData,
         url: '/gestor/addIp.php',
       }
-      await this.$axios(options)
+      this.$axios(options)
         .then((res) => res.data)
         .catch((err) => {
           this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')

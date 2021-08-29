@@ -1,6 +1,5 @@
 export default {
-  ssr: false,
-  target: 'static',
+  ssr: true,
   head: {
     title: 'Hipoteca 10',
     htmlAttrs: {

@@ -1,31 +1,22 @@
 <template>
-  <div ref="formulario" class="flex flex-col items-center justify-center mt-8">
-    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
+  <div
+    ref="formulario"
+    class="flex flex-col items-center justify-center w-full sm:w-4/6"
+  >
+    <div class="flex justify-center w-full my-4">
       <h5
         class="
           text-base
           sm:text-xl
-          text-light-secondary
+          text-light-secondary text-justify
           dark:text-dark-secondary
-        "
-      >
-        Formulario de Contacto
-      </h5>
-    </div>
-    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
-      <p
-        class="
-          text-sm text-center
-          sm:text-base
-          text-light-primary
-          dark:text-dark-primary
         "
       >
         Hipoteca 10 es tu solución, Contacta con Nosotros para conseguir tu
         hipoteca.
-      </p>
+      </h5>
     </div>
-    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
       <Input
         placeholder="Nombre Completo"
         type-input="text"
@@ -33,7 +24,7 @@
         @changeText="changeName"
       />
     </div>
-    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
       <Input
         placeholder="Teléfono"
         type-input="text"
@@ -41,7 +32,7 @@
         @changeText="changePhone"
       />
     </div>
-    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
       <Input
         placeholder="Localidad"
         type-input="text"
@@ -49,7 +40,7 @@
         @changeText="changeCity"
       />
     </div>
-    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
       <Input
         placeholder="Email"
         type-input="text"
@@ -57,7 +48,7 @@
         @changeText="changeEmail"
       />
     </div>
-    <div class="flex justify-center w-9/12 my-4 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
       <TextArea
         placeholder="Cuentános tu caso"
         aria-label="Campo de texto para los comentarios"
@@ -65,7 +56,7 @@
       />
     </div>
     <div
-      class="flex items-start justify-start w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6"
+      class="flex items-start justify-start w-full mt-2 mb-2 sm:w-4/6 lg:w-full"
     >
       <div
         class="
@@ -115,14 +106,14 @@
         la información sobre protección de datos facilitada en la Web.
       </div>
     </div>
-    <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6 lg:w-full">
       <ButtonSubmit
         text="Enviar"
         aria-label="Botón para enviar el formulario"
         @clicked="checkForm"
       ></ButtonSubmit>
     </div>
-    <div class="flex justify-center w-9/12 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full sm:w-4/6 lg:w-full">
       <h6
         class="text-sm text-justify text-light-primary dark:text-dark-primary"
       >
@@ -134,7 +125,7 @@
         solicitar su supresión cuando los datos ya no sean necesarios.
       </h6>
     </div>
-    <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6 lg:w-full">
       <div class="flex justify-center">
         <h6
           class="
@@ -154,7 +145,7 @@
         </h6>
       </div>
     </div>
-    <div class="flex justify-center w-9/12 mt-2 mb-2 sm:w-4/6 lg:w-2/6">
+    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6 lg:w-full">
       <div class="flex justify-center">
         <h6
           class="
@@ -168,7 +159,7 @@
         </h6>
       </div>
     </div>
-    <div class="flex justify-center w-9/12 mt-2 mb-2 lg:w-2/6">
+    <div class="flex justify-center w-full mt-2 mb-2 lg:w-full">
       <div class="flex justify-center w-full">
         <div class="relative w-full bg-light-secondary pb-2/12">
           <a href="/aecosan.html" target="_blank" rel="noreferer noopener">

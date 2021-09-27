@@ -1,5 +1,6 @@
 export default {
-  ssr: true,
+  ssr: false,
+  target: 'static',
   head: {
     title: 'Hipoteca 10',
     htmlAttrs: {
@@ -34,7 +35,7 @@ export default {
     '@nuxtjs/gtm',
   ],
   axios: {
-    baseURL: 'https://hipoteca10.es',
+    baseURL: '',
   },
   build: {
     extend(config, { isClient }) {

@@ -18,13 +18,6 @@
     <Menu v-show="showMenuDialog" @closeMenu="closeMenu" />
     <Header @showMenu="showMenu" />
     <Nuxt />
-    <Formulario
-      :acepta-term="aceptaTerm"
-      :go-to-form="goToForm"
-      @openModal="openModal"
-      @submitForm="submitForm"
-      @erroInForm="erroInForm"
-    />
     <Footer />
     <CookiesContainer @verCookies="showCookiesConf = true" />
   </div>
@@ -36,7 +29,6 @@ export default {
     Header: () => import('../components/Header'),
     Footer: () => import('../components/Footer'),
     Menu: () => import('../components/Menu'),
-    Formulario: () => import('../components/Formulario'),
     ModalTerminos: () => import('../components/ModalTerminos'),
     CookiesContainer: () => import('../components/CookiesContainer'),
     ModalCookies: () => import('../components/ModalCookies'),
@@ -73,7 +65,7 @@ export default {
       }
     } else {
       this.$cookies.set('verCookie', 'si', '2m')
-      this.showCookiesAll = false
+      this.showCookiesAll = true
     }
     this.$store.watch(
       Object.getOwnPropertyDescriptor(this.$store.state, 'inForm').get,
@@ -268,7 +260,7 @@ export default {
           this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
         })
     },
-    saveIp() {
+    async saveIp() {
       const formData = new FormData()
       formData.append('id', this.idSesion)
       formData.append('pagina', window.location.href)
@@ -279,7 +271,7 @@ export default {
         data: formData,
         url: '/gestor/addIp.php',
       }
-      this.$axios(options)
+      await this.$axios(options)
         .then((res) => res.data)
         .catch((err) => {
           this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')

@@ -13,91 +13,66 @@
   >
     <div
       class="
-        flex
-        items-center
-        w-11/12
+        flex flex-col
+        items-start
+        w-10/12
         sm:w-9/12
         md:w-9/12
-        lg:w-9/12
+        lg:w-11/12
         justity-between
+        sm:flex-row
         sm:justify-around
         sm:mb-2
         md:justify-around
         md:mb-2
+        mt-8
       "
     >
-      <div
-        class="
-          flex flex-col
-          items-start
-          justify-start
-          w-full
-          sm:w-3/6
-          md:w-4/6
-          lg:w-5/6
-        "
-      >
-        <div class="flex justify-start mb-4 sm:w-4/6">
+      <div class="w-0 sm:w-1/12" />
+      <div class="flex-col justify-center item-center">
+        <div class="flex justify-start mb-8 sm:w-3/6">
           <h1
             class="
-              hidden
-              text-4xl
+              text-2xl
               font-bold
-              sm:block
-              md:block
               text-light-secondary
               dark:text-dark-accent
+              sm:text-4xl
+              text-center
+              sm:text-left
             "
           >
             Te ayudamos a encontrar la hipoteca perfecta para ti.
           </h1>
-          <h1
+        </div>
+        <div class="justify-start mb-12 sm:flex md:flex sm:w-4/6">
+          <h2
             class="
               text-base
               font-bold
-              text-light-secondary
+              text-light-primary
               dark:text-dark-accent
-              sm:hidden
-              md:hidden
+              sm:text-xl
+              text-center
+              sm:text-left
             "
-          >
-            Te ayudamos a encontrar tu hipoteca perfecta.
-          </h1>
-        </div>
-        <div class="justify-start hidden mb-6 sm:flex md:flex sm:w-4/6">
-          <h2
-            class="text-2xl font-bold text-light-primary dark:text-dark-accent"
           >
             SOMOS ESPECIALISTAS EN HIPOTECAS 100%
           </h2>
         </div>
-        <div class="flex items-center justify-around w-full sm:w-3/6 md:w-2/4">
-          <button
-            class="
-              hidden
-              w-full
-              p-2
-              text-xl
-              rounded-lg
-              sm:block
-              sm:p-4
-              md:p-4
-              bg-light-primary
-              dark:bg-dark-primary
-              border-light-primary
-              dark:border-text-dark-primary
-              text-light
-              dark:text-dark-text
-              hover:bg-light-accent
-              hover:text-light-secondary
-              hover:font-bold
-              hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-            "
-            aria-label="Botón Solicitar Estudio"
-            @click="goToForm"
-          >
-            Solicita tu Estudio, sin Compromiso!
-          </button>
+        <div
+          class="
+            flex
+            items-center
+            justify-around
+            w-full
+            sm:w-3/6
+            md:w-2/4
+            text-light-primary text-base text-bold
+            sm:text-xl
+          "
+        >
+          Solicita tu Estudio, sin Compromiso!
         </div>
         <div
           class="
@@ -105,7 +80,7 @@
             justify-around
             hidden
             w-3/6
-            mt-4
+            mt-8
             sm:flex
             sm:w-3/6
             md:w-2/4
@@ -113,7 +88,72 @@
         >
           <a
             class="
-              w-4/6
+              w-5/6
+              p-2
+              text-base text-center
+              rounded-lg
+              sm:p-4
+              md:p-4
+              bg-light-accent
+              dark:bg-dark-accent
+              border-light-accent
+              dark:border-text-dark-accent
+              text-light
+              sm:text-xl
+              dark:text-dark-text
+              hover:bg-light-accent
+              hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+            "
+            href="tel:+34910758169"
+            aria-label="Botón CTA"
+          >
+            <span class="font-bold text-light-secondary">ó Llámanos al </span>
+            <svg
+              class="
+                relative
+                inline-flex
+                w-6
+                h-4
+                rounded-full
+                bg-light-transparent
+                text-light-secondary
+                dark:text-dark-secondary
+                svg-inline--fa
+                fa-phone-alt fa-w-16
+              "
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="phone-alt"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+              ></path></svg
+            ><span
+              class="font-bold text-light-secondary dark:text-dark-secondary"
+              >910758169</span
+            >
+          </a>
+        </div>
+        <div
+          class="
+            items-center
+            justify-around
+            hidden
+            w-11/12
+            mt-6
+            div-center
+            sm:hidden
+            md:hidden
+          "
+        >
+          <a
+            class="
+              w-full
               p-2
               text-base text-center
               rounded-lg
@@ -165,125 +205,11 @@
           </a>
         </div>
       </div>
-      <div class="flex items-start justify-center w-full sm:w-3/6 md:w-2/6">
-        <transition name="slide-fade">
-          <nuxt-img
-            v-show="showWoman"
-            provider="static"
-            sizes="sm:200px md:400px lg:800px"
-            src="/womanHouse.svg"
-            alt="Mujer con  una casa"
-            loading="lazy"
-            width="1024"
-            height="800"
-            quality="75"
-          />
-        </transition>
-        <transition name="slide-fade2">
-          <nuxt-img
-            v-show="showMan"
-            provider="static"
-            sizes="sm:200px md:400px lg:800px"
-            src="/house.svg"
-            alt="Hombre con un casa"
-            loading="lazy"
-            width="1024"
-            height="800"
-            quality="75"
-          />
-        </transition>
+      <div class="flex items-start justify-center w-full sm:w-3/6">
+        <Formulario />
       </div>
     </div>
-    <div class="w-11/12 mt-6 text-center div-center sm:hidden md:hidden">
-      <h2 class="text-base font-bold text-light-primary dark:text-dark-accent">
-        SOMOS ESPECIALISTAS EN HIPOTECAS 100%
-      </h2>
-    </div>
-    <div class="w-11/12 mt-6 div-center sm:hidden md:hidden">
-      <button
-        class="
-          w-full
-          p-3
-          rounded-lg
-          bg-light-primary
-          dark:bg-dark-primary
-          border-light-primary
-          dark:border-text-dark-primary
-          text-light
-          dark:text-dark-text
-          hover:bg-light-accent
-          hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-        "
-        aria-label="Botón Solicitar Estudio"
-        @click="goToForm"
-      >
-        Solicita tu Estudio, sin Compromiso!
-      </button>
-    </div>
-    <div
-      class="
-        items-center
-        justify-around
-        hidden
-        w-11/12
-        mt-6
-        div-center
-        sm:hidden
-        md:hidden
-      "
-    >
-      <a
-        class="
-          w-4/6
-          p-2
-          text-base text-center
-          rounded-lg
-          sm:p-4
-          md:p-4
-          bg-light-accent
-          dark:bg-dark-accent
-          border-light-accent
-          dark:border-text-dark-accent
-          text-light
-          sm:text-xl
-          dark:text-dark-text
-          hover:bg-light-accent
-          hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-        "
-        href="tel:+34910758169"
-        aria-label="Botón CTA"
-      >
-        <span class="font-bold text-light-secondary">ó Llámanos al </span>
-        <svg
-          class="
-            relative
-            inline-flex
-            w-6
-            h-4
-            rounded-full
-            bg-light-transparent
-            text-light-secondary
-            dark:text-dark-secondary
-            svg-inline--fa
-            fa-phone-alt fa-w-16
-          "
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="phone-alt"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-        >
-          <path
-            fill="currentColor"
-            d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
-          ></path></svg
-        ><span class="font-bold text-light-secondary dark:text-dark-secondary"
-          >910758169</span
-        >
-      </a>
-    </div>
+
     <div class="w-11/12 my-6 div-center sm:hidden md:hidden">
       <div class="flex flex-col items-center justify-center">
         <div class="flex content-start justify-center items-strech">
@@ -934,6 +860,7 @@ export default {
   name: 'Home',
   components: {
     CardProducto: () => import('./CardProducto'),
+    Formulario: () => import('./Formulario.vue'),
   },
   data() {
     return {

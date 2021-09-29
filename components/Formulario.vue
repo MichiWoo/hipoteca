@@ -1,14 +1,12 @@
 <template>
   <div
     ref="formulario"
-    class="flex flex-col items-center justify-center w-full sm:w-4/6"
+    class="flex flex-col items-center justify-center w-full"
   >
     <div class="flex justify-center w-full my-4">
       <h5
         class="
-          text-base
-          sm:text-xl
-          text-light-secondary text-justify
+          text-sm text-light-secondary text-justify
           dark:text-dark-secondary
         "
       >
@@ -16,7 +14,7 @@
         hipoteca.
       </h5>
     </div>
-    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full my-1 sm:w-4/6">
       <Input
         placeholder="Nombre Completo"
         type-input="text"
@@ -24,7 +22,7 @@
         @changeText="changeName"
       />
     </div>
-    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full my-1 sm:w-4/6">
       <Input
         placeholder="Teléfono"
         type-input="text"
@@ -32,7 +30,7 @@
         @changeText="changePhone"
       />
     </div>
-    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full my-1 sm:w-4/6">
       <Input
         placeholder="Localidad"
         type-input="text"
@@ -40,7 +38,7 @@
         @changeText="changeCity"
       />
     </div>
-    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full my-1 sm:w-4/6">
       <Input
         placeholder="Email"
         type-input="text"
@@ -48,16 +46,15 @@
         @changeText="changeEmail"
       />
     </div>
-    <div class="flex justify-center w-full my-4 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full my-1 sm:w-4/6">
       <TextArea
         placeholder="Cuentános tu caso"
         aria-label="Campo de texto para los comentarios"
+        rows="1"
         @changeText="changeComment"
       />
     </div>
-    <div
-      class="flex items-start justify-start w-full mt-2 mb-2 sm:w-4/6 lg:w-full"
-    >
+    <div class="flex items-start justify-start w-full mt-2 mb-2 sm:w-4/6">
       <div
         class="
           flex
@@ -93,7 +90,9 @@
       </div>
       <div
         class="
-          text-sm text-justify
+          text-xs
+          sm:text-sm
+          text-justify
           select-one
           text-light-primary
           dark:text-dark-primary
@@ -106,16 +105,21 @@
         la información sobre protección de datos facilitada en la Web.
       </div>
     </div>
-    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full mt-1 mb-2 sm:w-4/6">
       <ButtonSubmit
         text="Enviar"
         aria-label="Botón para enviar el formulario"
         @clicked="checkForm"
       ></ButtonSubmit>
     </div>
-    <div class="flex justify-center w-full sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full sm:w-4/6">
       <h6
-        class="text-sm text-justify text-light-primary dark:text-dark-primary"
+        class="
+          text-xs
+          sm:text-sm
+          text-justify text-light-primary
+          dark:text-dark-primary
+        "
       >
         Tratamos la información que nos facilita con el fin de prestarles el
         servicio solicitado. Los datos proporcionados se conservarán hasta que
@@ -125,11 +129,13 @@
         solicitar su supresión cuando los datos ya no sean necesarios.
       </h6>
     </div>
-    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6">
       <div class="flex justify-center">
         <h6
           class="
-            text-sm text-justify text-light-secondary
+            text-xs
+            sm:text-sm
+            text-justify text-light-secondary
             dark:text-dark-accent
           "
         >
@@ -145,11 +151,13 @@
         </h6>
       </div>
     </div>
-    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6 lg:w-full">
+    <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6">
       <div class="flex justify-center">
         <h6
           class="
-            text-sm text-justify text-light-secondary
+            text-xs
+            sm:text-sm
+            text-justify text-light-secondary
             dark:text-dark-accent
           "
         >
@@ -159,7 +167,7 @@
         </h6>
       </div>
     </div>
-    <div class="flex justify-center w-full mt-2 mb-2 lg:w-full">
+    <div class="flex justify-center w-full mt-2 mb-2 sm:w-3/6">
       <div class="flex justify-center w-full">
         <div class="relative w-full bg-light-secondary pb-2/12">
           <a href="/aecosan.html" target="_blank" rel="noreferer noopener">

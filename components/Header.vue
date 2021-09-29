@@ -6,13 +6,13 @@
         items-start
         justify-around
         mx-4
-        mt-4
+        mt-2
         sm:mt-2
-        lg:mt-6
+        lg:mt-2
         lg:items-center
       "
     >
-      <div class="z-10 w-3/6 sm:w-4/12 lg:w-2/12 sm:mt-4 lg:ml-12">
+      <div class="z-10 w-3/6 sm:w-4/12 lg:w-2/12 sm:mt-2 lg:ml-12">
         <NuxtLink
           class="
             flex

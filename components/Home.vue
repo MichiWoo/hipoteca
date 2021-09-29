@@ -1,16 +1,5 @@
 <template>
-  <div
-    class="
-      flex flex-col
-      items-center
-      justify-center
-      w-full
-      my-6
-      sm:my-12
-      md:my-12
-      lg:my-12
-    "
-  >
+  <div class="flex flex-col items-center justify-center w-full my-6 sm:my-2">
     <div
       class="
         flex flex-col
@@ -25,12 +14,12 @@
         sm:mb-2
         md:justify-around
         md:mb-2
-        mt-8
+        mt-4
       "
     >
       <div class="w-0 sm:w-1/12" />
       <div class="flex-col justify-center item-center">
-        <div class="flex justify-start mb-8 sm:w-3/6">
+        <div class="flex justify-start my-16 sm:w-5/6">
           <h1
             class="
               text-2xl
@@ -45,7 +34,7 @@
             Te ayudamos a encontrar la hipoteca perfecta para ti.
           </h1>
         </div>
-        <div class="justify-start mb-12 sm:flex md:flex sm:w-4/6">
+        <div class="justify-start mb-2 sm:mb-12 sm:flex md:flex sm:w-4/6">
           <h2
             class="
               text-base
@@ -206,7 +195,7 @@
         </div>
       </div>
       <div class="flex items-start justify-center w-full sm:w-3/6">
-        <Formulario />
+        <Formulario @openModal="openModal" />
       </div>
     </div>
 
@@ -1032,6 +1021,10 @@ export default {
     },
     goToForm() {
       this.$store.commit('goToForm', true)
+    },
+
+    openModal() {
+      this.$emit('openModal', true)
     },
   },
 }

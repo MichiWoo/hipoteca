@@ -17,7 +17,7 @@
     />
     <Menu v-show="showMenuDialog" @closeMenu="closeMenu" />
     <Header @showMenu="showMenu" />
-    <Nuxt />
+    <Nuxt @openModal="openModal" />
     <Footer />
     <CookiesContainer @verCookies="showCookiesConf = true" />
   </div>

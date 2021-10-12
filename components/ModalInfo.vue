@@ -1,16 +1,54 @@
 <template>
   <div
-    class="fixed top-0 bottom-0 left-0 right-0 z-40 flex flex-col items-center justify-center w-full h-full overflow-x-hidden overflow-y-auto bg-dark opacity-95"
+    class="
+      fixed
+      top-0
+      bottom-0
+      left-0
+      right-0
+      z-40
+      flex flex-col
+      items-center
+      justify-center
+      w-full
+      h-full
+      overflow-x-hidden overflow-y-auto
+      bg-dark
+      opacity-95
+    "
   >
     <div
-      class="relative z-50 w-full mt-6 mb-3 overflow-auto rounded-lg shadow-lg opacity-100 sm:w-2/6 h-2/6 sm:h-2/6 md:h-2/6 bg-light"
+      class="
+        relative
+        z-50
+        w-full
+        mt-6
+        mb-3
+        overflow-auto
+        rounded-lg
+        shadow-lg
+        opacity-100
+        sm:w-2/6
+        h-2/6
+        sm:h-2/6
+        md:h-2/6
+        bg-light
+      "
     >
       <div class="flex flex-col justify-center align-center">
         <div class="flex justify-between px-5 py-4 border-2 border-light">
           <div>
             <svg
               v-show="config.type === 'e'"
-              class="inline w-6 h-6 text-light-secondary dark:text-dark-secondary svg-inline--fa fa-exclamation-triangle fa-w-18"
+              class="
+                inline
+                w-6
+                h-6
+                text-light-secondary
+                dark:text-dark-secondary
+                svg-inline--fa
+                fa-exclamation-triangle fa-w-18
+              "
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
@@ -26,7 +64,15 @@
             </svg>
             <svg
               v-show="config.type === 's'"
-              class="inline w-6 h-6 text-light-secondary dark:text-dark-secondary svg-inline--fa fa-exclamation-triangle fa-w-18"
+              class="
+                inline
+                w-6
+                h-6
+                text-light-secondary
+                dark:text-dark-secondary
+                svg-inline--fa
+                fa-exclamation-triangle fa-w-18
+              "
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
@@ -47,7 +93,15 @@
           <div>
             <button aria-label="Botón Cerrar Modal" @click="closeModal">
               <svg
-                class="inline w-6 h-6 transition duration-150 text-light-primary dark:text-dark-primary"
+                class="
+                  inline
+                  w-6
+                  h-6
+                  transition
+                  duration-150
+                  text-light-primary
+                  dark:text-dark-primary
+                "
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
@@ -74,7 +128,24 @@
         <div class="flex items-center justify-end">
           <div class="mx-1 div-center">
             <button
-              class="px-6 py-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-primary dark:bg-dark-primary border-light-accent dark:border-text-dark-accent text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+              class="
+                px-6
+                py-1
+                text-sm
+                rounded-lg
+                sm:px-4
+                sm:py-2
+                md:px-4
+                md:py-2
+                bg-light-primary
+                dark:bg-dark-primary
+                border-light-accent
+                dark:border-text-dark-accent
+                text-light
+                dark:text-dark-text
+                hover:bg-light-accent
+                hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+              "
               aria-label="Botón Cerrar Modal"
               @click="closeModal"
             >

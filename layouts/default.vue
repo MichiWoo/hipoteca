@@ -1,11 +1,5 @@
 <template>
   <div>
-    <ModalTerminos v-show="showModal" @closeModal="closeModal" />
-    <ModalInfo
-      v-show="showModalInfo"
-      :config="configModalInfo"
-      @closeModal="closeModalInfo"
-    />
     <ModalCookies
       v-show="showCookiesConf"
       :data-cookies="dataCookies"
@@ -17,7 +11,7 @@
     />
     <Menu v-show="showMenuDialog" @closeMenu="closeMenu" />
     <Header @showMenu="showMenu" />
-    <Nuxt @openModal="openModal" />
+    <Nuxt />
     <Footer />
     <CookiesContainer @verCookies="showCookiesConf = true" />
   </div>
@@ -29,25 +23,20 @@ export default {
     Header: () => import('../components/Header'),
     Footer: () => import('../components/Footer'),
     Menu: () => import('../components/Menu'),
-    ModalTerminos: () => import('../components/ModalTerminos'),
     CookiesContainer: () => import('../components/CookiesContainer'),
     ModalCookies: () => import('../components/ModalCookies'),
     ModalCookiesAll: () => import('../components/ModalCookiesAll'),
-    ModalInfo: () => import('../components/ModalInfo'),
   },
   data() {
     return {
       showMenuDialog: false,
       showModal: false,
-      aceptaTerm: false,
       showCookiesConf: false,
       showCookiesAll: false,
       dataCookies: {},
       goToForm: false,
       isMobile: false,
       idSesion: '',
-      configModalInfo: {},
-      showModalInfo: false,
     }
   },
   mounted() {
@@ -134,17 +123,6 @@ export default {
     closeMenu(val) {
       this.showMenuDialog = val
     },
-    openModal(val) {
-      this.showModal = val
-    },
-    closeModal(val) {
-      this.showModal = false
-      if (val === 'ok') {
-        this.aceptaTerm = true
-      } else {
-        this.aceptaTerm = false
-      }
-    },
     closeModalCookies(val) {
       this.showCookiesConf = false
       this.guardarCookiesPreferencias(val.marketing, val.analitics)
@@ -222,44 +200,6 @@ export default {
         this.desactivarCookieAnalitics()
       }
     },
-    async submitForm(form) {
-      const formData = new FormData()
-      formData.append('nombre', form.nombre)
-      formData.append('email', form.email)
-      formData.append('mensaje', form.comentario)
-      formData.append('telefono', form.telefono)
-      formData.append('localidad', form.localidad)
-      const options = {
-        method: 'POST',
-        headers: { 'content-type': 'application/form-data' },
-        data: formData,
-        url: '/mail/enviarMail2.php',
-      }
-      await this.$axios(options)
-        .then((res) => {
-          if (res.data.success) {
-            this.displayModal(
-              'Enviado',
-              'El email se envio correctamente.',
-              'OK',
-              's'
-            )
-            this.$ga.event('form', 'click', 'adsense', 1)
-            this.$gtm.push({ event: 'click' })
-            this.saveDataForm(form)
-          } else {
-            this.displayModal(
-              'Error',
-              'Ops, el email no se ha se envio correctamente.',
-              'OK',
-              'e'
-            )
-          }
-        })
-        .catch((err) => {
-          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
-        })
-    },
     async saveIp() {
       const formData = new FormData()
       formData.append('id', this.idSesion)
@@ -277,29 +217,6 @@ export default {
           this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
         })
     },
-    async saveDataForm(form) {
-      const formData = new FormData()
-      formData.append('id', this.idSesion)
-      formData.append('nombre', form.nombre)
-      formData.append('mail', form.email)
-      formData.append('mensaje', form.comentario)
-      formData.append('telefono', form.telefono)
-      formData.append('movil', this.isMobile)
-      formData.append('localidad', form.localidad)
-
-      const options = {
-        method: 'POST',
-        headers: { 'content-type': 'application/form-data' },
-        data: formData,
-        url: '/gestor/addForm.php',
-      }
-
-      await this.$axios(options)
-        .then((res) => res.data)
-        .catch((err) => {
-          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
-        })
-    },
     displayModal(title, text, textOk, type) {
       this.configModalInfo = {
         title,
@@ -308,20 +225,6 @@ export default {
         type,
       }
       this.showModalInfo = true
-    },
-    closeModalInfo() {
-      this.showModalInfo = false
-      this.configModalInfo = {}
-    },
-    erroInForm(e) {
-      if (e === 'a') {
-        this.displayModal(
-          'Error',
-          'Debe aceptar los términos y condiciones primero.',
-          'OK',
-          'e'
-        )
-      }
     },
   },
 }

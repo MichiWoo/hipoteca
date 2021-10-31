@@ -12,12 +12,13 @@
         lg:items-center
       "
     >
-      <div class="z-10 w-3/6 sm:w-4/12 lg:w-2/12 sm:mt-2 lg:ml-12">
+      <div class="z-10 w-3/6 sm:w-4/12 lg:w-1/12 sm:mt-2">
         <NuxtLink
           class="
             flex
             items-center
             mr-6
+            lg:mr-0
             text-lg
             font-bold
             flex-start
@@ -28,63 +29,53 @@
           to="/"
           aria-label="Link a Inicio"
         >
-          <nuxt-img
-            provider="static"
-            sizes="sm:200px md:400px lg:800px"
-            class="w-full"
-            src="/logo.svg"
-            alt="Logo Hipoteca10"
-            loading="lazy"
-            width="1024"
-            height="800"
-            quality="75"
-          />
+          <Logo class="w-full" aria-label="Logo Hipoteca 10"></Logo>
         </NuxtLink>
       </div>
       <div class="z-10 items-center hidden w-9/12 mt-8 lg:flex justify-evenly">
         <div class="div-center">
-          <NuxtLink class="text-base text-light-primary" to="/"
+          <NuxtLink class="text-xs text-light-primary xl:text-base" to="/"
             >Inicio</NuxtLink
           >
         </div>
         <div class="div-center">
           <NuxtLink
-            class="text-base text-light-primary dark:text-dark-primary"
+            class="text-xs text-light-primary xl:text-base"
             to="nuestroMetodo"
             >Nuestro Método de Trabajo</NuxtLink
           >
         </div>
         <div class="div-center">
           <NuxtLink
-            class="text-base text-light-primary dark:text-dark-primary"
+            class="text-xs text-light-primary xl:text-base"
             to="hipoteca10"
             >Hipoteca 10</NuxtLink
           >
         </div>
         <div class="div-center">
           <NuxtLink
-            class="text-base text-light-primary dark:text-dark-primary"
+            class="text-xs text-light-primary xl:text-base"
             to="compromiso"
             >Nuestro Compromiso</NuxtLink
           >
         </div>
         <div class="div-center">
           <NuxtLink
-            class="text-base text-light-primary dark:text-dark-primary"
+            class="text-xs text-light-primary xl:text-base"
             to="empresas"
             >Empresas</NuxtLink
           >
         </div>
         <div class="div-center">
           <NuxtLink
-            class="text-base text-light-primary dark:text-dark-primary"
+            class="text-xs text-light-primary xl:text-base"
             to="nosotros"
             >Sobre Nosotros</NuxtLink
           >
         </div>
         <div class="div-center">
           <NuxtLink
-            class="text-base text-light-primary dark:text-dark-primary"
+            class="text-xs text-light-primary xl:text-base"
             to="contacto"
             >Contáctanos</NuxtLink
           >
@@ -121,6 +112,7 @@ export default {
   components: {
     Burger: () => import('../components/icons/Burger'),
     WaveT: () => import('../components/forms/WaveT'),
+    Logo: () => import('../components/Logo'),
   },
   methods: {
     toggle(val) {

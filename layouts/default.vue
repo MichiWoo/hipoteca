@@ -114,6 +114,7 @@ export default {
       mm = '0' + mm
     }
     this.idSesion = yy + mm + dd + text
+    this.$store.commit('setIdSession', this.idSesion)
     this.saveIp()
   },
   methods: {

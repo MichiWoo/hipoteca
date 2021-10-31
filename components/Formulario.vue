@@ -10,7 +10,7 @@
       ref="formulario"
       class="flex flex-col items-center justify-center w-full"
     >
-      <div class="flex justify-center w-full my-4">
+      <div class="flex justify-center w-full my-1 sm:w-4/6">
         <h5
           class="
             text-sm text-light-secondary text-justify
@@ -221,6 +221,11 @@ export default {
       ocultarTexto: true,
     }
   },
+  computed: {
+    getIdSession() {
+      return this.$store.state.idSession
+    },
+  },
   watch: {
     aceptaTerm() {
       this.acepta = this.aceptaTerm
@@ -336,7 +341,7 @@ export default {
     },
     async saveDataForm() {
       const formData = new FormData()
-      formData.append('id', this.idSesion)
+      formData.append('id', this.getIdSession)
       formData.append('nombre', this.nombre)
       formData.append('mail', this.email)
       formData.append('mensaje', this.comentario)

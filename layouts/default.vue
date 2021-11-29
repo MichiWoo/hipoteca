@@ -138,7 +138,7 @@ export default {
           this.rechazarCookies()
           break
         case 'aj':
-          this.showCookiesConf()
+          this.showCookiesConf = true
           break
         case 'c':
           return false

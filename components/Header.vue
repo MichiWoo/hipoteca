@@ -12,7 +12,7 @@
         lg:items-center
       "
     >
-      <div class="z-10 w-3/6 sm:w-4/12 lg:w-1/12 sm:mt-2">
+      <div class="z-10 w-3/6 sm:w-4/12 sm:ml-4 lg:w-64 sm:mt-2">
         <NuxtLink
           class="
             flex
@@ -23,7 +23,6 @@
             font-bold
             flex-start
             text-light-primary
-            dark:text-dark-accent
             nuxt-link-exact-active nuxt-link-active
           "
           to="/"

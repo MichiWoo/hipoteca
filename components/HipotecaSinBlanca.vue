@@ -497,6 +497,7 @@ export default {
           ref: 'h100',
           title: 'Hipoteca 100% (*)',
           type: 'accent',
+          link: '/hipoteca100',
           data: [
             { id: 1, text: 'Hasta el 100% del valor de la compra venta.' },
             { id: 2, text: 'Solo necesitas aportar los gastos.' },
@@ -516,6 +517,7 @@ export default {
           ref: 'h80',
           title: 'Hipoteca 80% (*)',
           type: 'primary',
+          link: '/hipoteca80',
           data: [
             {
               id: 1,
@@ -541,6 +543,7 @@ export default {
           ref: 'hfun',
           title: 'Hipoteca Funcionario 100% (*)',
           type: 'white',
+          link: '/hipoteca-funcionario',
           data: [
             {
               id: 1,
@@ -565,6 +568,7 @@ export default {
           ref: 'hsbla',
           title: 'Hipoteca sin Blanca',
           type: 'primary',
+          link: '/hipoteca-sin-blanca',
           data: [
             {
               id: 1,
@@ -589,6 +593,7 @@ export default {
           ref: 'hcvid',
           title: 'Hipoteca Cambio de Vida (*)',
           type: 'accent',
+          link: '/hipoteca-cambio-de-vida',
           data: [
             { id: 1, text: 'Si quieres cambiar de banco.' },
             { id: 2, text: 'Si quieres mejorar condiciones.' },
@@ -612,6 +617,7 @@ export default {
           ref: 'hsue',
           title: 'Hipoteca Autopromotor (*)',
           type: 'white',
+          link: '/hipoteca-autopromotor',
           data: [
             {
               id: 1,

@@ -32,6 +32,9 @@
           <p class="text-sm text-justify sm:text-xl">{{ d.text }}</p>
         </div>
       </div>
+      <div class="flex flex-col items-center justify-center w-full mt-12">
+        <nuxt-link :to="producto.link"> Mostrar más... </nuxt-link>
+      </div>
     </div>
   </div>
 </template>

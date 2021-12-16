@@ -270,7 +270,7 @@
         Hipotecaes10 SL, como por ejemplo, notaría, registro, impuestos,
         gestoría, etc. así como los servicios y productos que puedan ser
         necesarios contratar durante la tramitación del crédito o préstamo, como
-        por ejemplo seguros, notas simples registrales, tasaciones o servicios
+        por ejemplo seguros, notas simples registrales, Tasaciónes o servicios
         jurídicos, entre otros. Así mismo lo honorarios profesionales de
         Hipotecaes10 SL podrán ser pactados en nota de encargo pactada
         voluntariamente entre los clientes y Hipotecaes10 SL. En el caso de la

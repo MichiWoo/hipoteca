@@ -41,7 +41,7 @@
           "
         >
           Hipoteca por el importe del 100% de la Compra venta y los gastos
-          asociados a la compra ( ITP o IVA, Notaria, registro y Gestoria, de la
+          asociados a la compra ( ITP o IVA, notaria, registro y gestoría, de la
           escritura de Compra).
         </div>
         <div
@@ -508,7 +508,7 @@ export default {
             { id: 4, text: 'Cobramos a éxito.' },
             {
               id: 5,
-              text: 'Dependiendo del perfil, posibilidad de conseguir 100% de CV, 90% de Tasacion.',
+              text: 'Dependiendo del perfil, posibilidad de conseguir 100% de CV, 90% de Tasación.',
             },
           ],
         },
@@ -547,7 +547,7 @@ export default {
           data: [
             {
               id: 1,
-              text: 'Para conseguir las mejores condiciones con un servicio personalizado, y adaptándose a todas la necesidades de financiación que necesites.',
+              text: 'Para conseguir las mejores condiciones con un servicio personalizado, y adaptándose a todas las necesidades de financiación que necesites.',
             },
             {
               id: 2,
@@ -580,7 +580,7 @@ export default {
             },
             {
               id: 3,
-              text: 'Hipoteca por el importe del 100% de la Compra venta y los gastos asociados a la compra ( ITP o IVA, Notaria, registro, GESTORIA de la escritura de Compra).',
+              text: 'Hipoteca por el importe del 100% de la Compra venta y los gastos asociados a la compra ( ITP o IVA, notaria, registro, gestoría de la escritura de Compra).',
             },
             {
               id: 4,

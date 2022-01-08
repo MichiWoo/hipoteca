@@ -62,59 +62,6 @@ export default {
         this.goToForm = data
       }
     )
-    const isMobile = {
-      Android: () => {
-        navigator.userAgent.match(/Android/i)
-      },
-      BlackBerry: () => {
-        return navigator.userAgent.match(/BlackBerry/i)
-      },
-      iOS: () => {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i)
-      },
-      Opera: () => {
-        return navigator.userAgent.match(/Opera Mini/i)
-      },
-      Windows: () => {
-        return navigator.userAgent.match(/IEMobile/i)
-      },
-      any: () => {
-        return (
-          isMobile.Android() ||
-          isMobile.BlackBerry() ||
-          isMobile.iOS() ||
-          isMobile.Opera() ||
-          isMobile.Windows()
-        )
-      },
-    }
-
-    if (isMobile.any()) {
-      this.isMobile = 1
-    } else {
-      this.isMobile = 0
-    }
-    let text = ''
-    const possible =
-      'AbcDE123IJKLMN67QRSTUVWXYZaBCdefghijklmn123opq45rs67tuv89wxyz0FGH45OP89'
-
-    for (let i = 0; i < 4; i++) {
-      text += possible.charAt(Math.floor(Math.random() * possible.length))
-    }
-    const hoy = new Date()
-    let dd = hoy.getDate()
-    let mm = hoy.getMonth() + 1
-    const yyyy = hoy.getFullYear()
-    const yyyystr = yyyy.toString()
-    const yy = yyyystr.substr(2, 3)
-    if (dd < 10) {
-      dd = '0' + dd
-    }
-    if (mm < 10) {
-      mm = '0' + mm
-    }
-    this.idSesion = yy + mm + dd + text
-    this.$store.commit('setIdSession', this.idSesion)
     this.saveIp()
   },
   methods: {
@@ -201,12 +148,16 @@ export default {
         this.desactivarCookieAnalitics()
       }
     },
-    saveIp() {
-      const fecha = this.$dateFns.format(new Date(), 'yyyy-MM-dd')
-      const obj = {
-        fecha,
-      }
-      this.$store.dispatch('createConexion', obj)
+    async saveIp() {
+      const createConexion = await fetch(
+        'http://localhost:8000/api/conexiones',
+        {
+          method: 'POST',
+          headers: {},
+        }
+      )
+      const result = await createConexion.json()
+      console.log(result)
     },
     displayModal(title, text, textOk, type) {
       this.configModalInfo = {

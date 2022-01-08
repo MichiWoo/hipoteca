@@ -34,24 +34,29 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
     '@nuxtjs/date-fns',
+    '@nuxtjs/auth-next',
   ],
   axios: {
-    baseURL: 'http://localhost:8000/api',
     credentials: true,
-    headers: {
-      common: {
-        Accept: 'application/json',
+    baseURL: 'http://localhost:8000/',
+  },
+  auth: {
+    strategies: {
+      laravelSanctum: {
+        provider: 'laravel/sanctum',
+        url: 'http://localhost:8000',
+        endpoints: {
+          login: {
+            url: '/login',
+          },
+          logout: {
+            url: '/logout',
+          },
+          user: {
+            url: 'api/user',
+          },
+        },
       },
-      delete: {},
-      get: {},
-      head: {},
-      post: {
-        'Content-Type': 'application/json',
-      },
-      put: {
-        'Content-Type': 'application/json',
-      },
-      patch: {},
     },
   },
   build: {

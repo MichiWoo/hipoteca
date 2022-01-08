@@ -1,13 +1,12 @@
 export const state = () => ({
+  csrfToken: '',
   inForm: false,
-  idSession: '',
   formularios: [],
   conexiones: [],
 })
 
 export const getters = (state) => ({
   getInForm: state.inForm,
-  getSession: state.idSession,
   formularios(state) {
     return state.formularios
   },
@@ -20,9 +19,6 @@ export const mutations = {
   goToForm(state, position) {
     state.inForm = position
   },
-  setIdSession(state, idSession) {
-    state.idSession = idSession
-  },
   SET_FORMULARIOS(state, formularios) {
     state.formularios = formularios
   },
@@ -32,16 +28,9 @@ export const mutations = {
   CREATE_CONEXION(state, conexion) {
     state.conexiones.push(conexion)
   },
-}
-
-export const actions = {
-  async createConexion({ commit }, conexion) {
-    console.log(JSON.stringify(conexion))
-    await this.$axios
-      .post('/conexiones', JSON.stringify(conexion))
-      .then((res) => {
-        commit('CREATE_CONEXION', res.data)
-      })
-      .catch((err) => console.log(err))
+  SET_CSRF_TOKEN(state, csrfToken) {
+    state.csrfToken = csrfToken
   },
 }
+
+export const actions = {}

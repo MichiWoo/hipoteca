@@ -201,22 +201,12 @@ export default {
         this.desactivarCookieAnalitics()
       }
     },
-    async saveIp() {
-      const formData = new FormData()
-      formData.append('id', this.idSesion)
-      formData.append('pagina', window.location.href)
-      formData.append('movil', this.isMobile)
-      const options = {
-        method: 'POST',
-        headers: { 'content-type': 'application/form-data' },
-        data: formData,
-        url: '/gestor/addIp.php',
+    saveIp() {
+      const fecha = this.$dateFns.format(new Date(), 'yyyy-MM-dd')
+      const obj = {
+        fecha,
       }
-      await this.$axios(options)
-        .then((res) => res.data)
-        .catch((err) => {
-          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
-        })
+      this.$store.dispatch('createConexion', obj)
     },
     displayModal(title, text, textOk, type) {
       this.configModalInfo = {

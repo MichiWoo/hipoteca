@@ -33,9 +33,26 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
+    '@nuxtjs/date-fns',
   ],
   axios: {
-    baseURL: '',
+    baseURL: 'http://localhost:8000/api',
+    credentials: true,
+    headers: {
+      common: {
+        Accept: 'application/json',
+      },
+      delete: {},
+      get: {},
+      head: {},
+      post: {
+        'Content-Type': 'application/json',
+      },
+      put: {
+        'Content-Type': 'application/json',
+      },
+      patch: {},
+    },
   },
   build: {
     extend(config, { isClient }) {

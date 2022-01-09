@@ -156,8 +156,7 @@ export default {
           headers: {},
         }
       )
-      const result = await createConexion.json()
-      console.log(result)
+      await createConexion.json()
     },
     displayModal(title, text, textOk, type) {
       this.configModalInfo = {

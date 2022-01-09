@@ -301,66 +301,46 @@ export default {
       }
       this.showModalInfo = true
     },
-    async submitForm(form) {
-      const formData = new FormData()
-      formData.append('nombre', this.nombre)
-      formData.append('email', this.email)
-      formData.append('mensaje', this.comentario)
-      formData.append('telefono', this.telefono)
-      formData.append('localidad', this.localidad)
-      const options = {
-        method: 'POST',
-        headers: { 'content-type': 'application/form-data' },
-        data: formData,
-        url: '/mail/enviarMail2.php',
-      }
-      await this.$axios(options)
-        .then((res) => {
-          if (res.data.success) {
-            this.displayModal(
-              'Enviado',
-              'El email se envio correctamente.',
-              'OK',
-              's'
-            )
-            this.$ga.event('form', 'click', 'adsense', 1)
-            this.$gtm.push({ event: 'click' })
-            this.saveDataForm(form)
-          } else {
-            this.displayModal(
-              'Error',
-              'Ops, el email no se ha se envio correctamente.',
-              'OK',
-              'e'
-            )
-          }
-        })
-        .catch((err) => {
-          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
-        })
+    submitForm(form) {
+      // Falta Enviar correo
+      this.saveDataForm(form)
     },
     async saveDataForm() {
-      const formData = new FormData()
-      formData.append('id', this.getIdSession)
-      formData.append('nombre', this.nombre)
-      formData.append('mail', this.email)
-      formData.append('mensaje', this.comentario)
-      formData.append('telefono', this.telefono)
-      formData.append('movil', 0)
-      formData.append('localidad', this.localidad)
-
-      const options = {
-        method: 'POST',
-        headers: { 'content-type': 'application/form-data' },
-        data: formData,
-        url: '/gestor/addForm.php',
+      try {
+        const data = {
+          nombre: this.nombre,
+          email: this.email,
+          mensaje: this.comentario,
+          telefono: this.telefono,
+          localidad: this.localidad,
+        }
+        const sendFormulario = await fetch(
+          'http://localhost:8000/api/formularios',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          }
+        )
+        const result = await sendFormulario.json()
+        this.displayModal(
+          result.success ? 'Email Enviado' : 'Error',
+          result.respuesta,
+          'OK',
+          result.success ? 's' : 'e'
+        )
+        if (result.success) {
+          this.nombre = ''
+          this.email = ''
+          this.comentario = ''
+          this.telefono = ''
+          this.localidad = ''
+        }
+      } catch (error) {
+        this.displayModal('Error', `Error: ${error.message}`, 'OK', 'e')
       }
-
-      await this.$axios(options)
-        .then((res) => res.data)
-        .catch((err) => {
-          this.displayModal('Error', `Error: ${err.message}`, 'OK', 'e')
-        })
     },
   },
 }

@@ -37,24 +37,31 @@ export default {
     '@nuxtjs/auth-next',
   ],
   axios: {
-    credentials: true,
     baseURL: 'http://localhost:8000/',
   },
   auth: {
     strategies: {
+      local: {
+        user: {
+          property: 'data',
+          autoFecth: true,
+        },
+        endpoints: {
+          login: { url: '/api/login', method: 'post' },
+          logout: { url: '/api/logout', method: 'post' },
+          user: { url: '/api/user', method: 'get' },
+        },
+      },
       laravelSanctum: {
         provider: 'laravel/sanctum',
         url: 'http://localhost:8000',
         endpoints: {
-          login: {
-            url: '/login',
-          },
-          logout: {
-            url: '/logout',
-          },
-          user: {
-            url: 'api/user',
-          },
+          login: { url: '/api/login', method: 'post' },
+          logout: { url: '/api/logout', method: 'post' },
+          user: { url: '/api/user', method: 'get' },
+        },
+        user: {
+          property: false,
         },
       },
     },

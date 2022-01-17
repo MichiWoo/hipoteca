@@ -34,9 +34,6 @@ export default {
       showCookiesConf: false,
       showCookiesAll: false,
       dataCookies: {},
-      goToForm: false,
-      isMobile: false,
-      idSesion: '',
     }
   },
   mounted() {
@@ -56,12 +53,6 @@ export default {
       this.$cookies.set('verCookie', 'si', '2m')
       this.showCookiesAll = true
     }
-    this.$store.watch(
-      Object.getOwnPropertyDescriptor(this.$store.state, 'inForm').get,
-      (data) => {
-        this.goToForm = data
-      }
-    )
     this.saveIp()
   },
   methods: {

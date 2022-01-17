@@ -2,16 +2,20 @@
   <div class="flex flex-col items-center justify-center mt-12 sm:mt-4">
     <div class="hidden w-9/12 mb-16 sm:flex sm:justify-around sm:items-center">
       <div class="flex flex-col items-center justify-center w-3/6 ml-8">
-        <h1
-          class="text-5xl font-bold text-light-secondary dark:text-dark-accent"
-        >
-          Empresas
-        </h1>
+        <h1 class="text-5xl font-bold text-light-secondary">Empresas</h1>
         <div class="w-3/6 mt-6 div-center">
           <button
-            class="w-full p-3 rounded-lg bg-light-secondary dark:bg-dark-secondary border-light-secondary dark:border-text-dark-secondary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+            class="
+              w-full
+              p-3
+              rounded-lg
+              bg-light-secondary
+              border-light-secondary
+              text-light
+              hover:bg-light-accent
+              hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+            "
             aria-label="Botón CTA"
-            @click="goToForm"
           >
             Impulsa tu negocio
           </button>
@@ -23,13 +27,11 @@
     </div>
     <div class="items-center justify-center hidden w-11/12 my-12 sm:flex">
       <div
-        class="w-full h-1 bg-light-primary dark:bg-dark-primary border-1 border-light-primary dark:border-dark-primary"
+        class="w-full h-1 bg-light-primary border-1 border-light-primary"
       ></div>
     </div>
     <div class="div-center sm:hidden">
-      <h1
-        class="text-2xl font-bold sm:text-4xl text-light-secondary dark:text-dark-accent"
-      >
+      <h1 class="text-2xl font-bold sm:text-4xl text-light-secondary">
         Empresas
       </h1>
     </div>
@@ -38,9 +40,17 @@
     </div>
     <div class="w-11/12 mt-6 div-center sm:hidden">
       <button
-        class="w-full p-3 rounded-lg bg-light-secondary dark:bg-dark-secondary border-light-secondary dark:border-text-dark-secondary text-light dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
+        class="
+          w-full
+          p-3
+          rounded-lg
+          bg-light-secondary
+          border-light-secondary
+          text-light
+          hover:bg-light-accent
+          hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
+        "
         aria-label="Botón CTA"
-        @click="goToForm"
       >
         Impulsa tu negocio
       </button>
@@ -48,15 +58,13 @@
     <div class="flex flex-col items-center content-center w-full my-6">
       <div class="w-11/12 my-4 div-center">
         <p
-          class="text-lg font-bold text-center sm:text-2xl text-light-secondary dark:text-dark-secondary"
+          class="text-lg font-bold text-center sm:text-2xl text-light-secondary"
         >
           Préstamos y Créditos para tu empresa
         </p>
       </div>
       <div class="w-11/12 my-4 div-center">
-        <p
-          class="text-sm text-justify sm:text-xl text-light-primary dark:text-dark-primary"
-        >
+        <p class="text-sm text-justify sm:text-xl text-light-primary">
           Hacemos un estudio global y personalizado de tu situación, para
           evaluar conforme a los nuevos criterios que solicita la ley 5/2019 del
           5 de mayo, cuál es su perfil de solvencia, para así ofrecerle la mejor
@@ -65,26 +73,32 @@
       </div>
     </div>
     <div
-      class="flex flex-col items-center content-center w-full my-6 bg-light-accent dark:bg-dark-accent sm:my-16"
+      class="
+        flex flex-col
+        items-center
+        content-center
+        w-full
+        my-6
+        bg-light-accent
+        sm:my-16
+      "
     >
       <div class="w-11/12 my-4 div-center sm:my-16">
         <p
-          class="text-sm font-bold text-center sm:text-xl text-light-secondary dark:text-dark-secondary"
+          class="text-sm font-bold text-center sm:text-xl text-light-secondary"
         >
           ¿Necesita financiación para sus inversiones?
         </p>
       </div>
       <div class="w-11/12 my-4 div-center">
         <p
-          class="text-sm font-bold text-center sm:text-xl text-light-secondary dark:text-dark-secondary"
+          class="text-sm font-bold text-center sm:text-xl text-light-secondary"
         >
           ¿Quiere hacer reformas, ampliaciones, en su negocio?
         </p>
       </div>
       <div class="w-11/12 my-4 div-center">
-        <p
-          class="text-sm text-justify sm:text-xl text-light-primary dark:text-dark-primary"
-        >
+        <p class="text-sm text-justify sm:text-xl text-light-primary">
           En Hipoteca10 le gestionamos préstamos con planes de amortización
           ágiles y adaptados a sus necesidades, sin que su ritmo de tesorería se
           vea alterado por pagos irregulares e importantes:
@@ -276,11 +290,6 @@ export default {
           'Hipoteca10 está especializada en conseguir para sus clientes financiaciones para compra de vivienda, por encima del 80%.',
       },
     ],
-  },
-  methods: {
-    goToForm() {
-      this.$store.commit('goToForm', true)
-    },
   },
 }
 </script>

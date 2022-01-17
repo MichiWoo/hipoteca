@@ -633,10 +633,6 @@ export default {
     scroll(where) {
       this.$refs[where][0].$el.scrollIntoView({ behavior: 'smooth' })
     },
-    goToForm() {
-      this.$store.commit('goToForm', true)
-    },
-
     openModal() {
       this.$emit('openModal', true)
     },

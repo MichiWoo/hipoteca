@@ -6,7 +6,7 @@
           >Usuario</label
         >
         <input
-          v-model="userForm.usuario"
+          v-model="userForm.nombre"
           type="text"
           class="
             bg-gray-50
@@ -76,14 +76,28 @@ export default {
   data() {
     return {
       userForm: {
-        usuario: null,
+        nombre: null,
         password: null,
       },
     }
   },
   methods: {
-    onSubmit() {
-      console.log(this.userForm)
+    async onSubmit() {
+      try {
+        await this.$auth
+          .loginWith('local', { data: this.userForm })
+          .then((res) => {
+            console.log(res)
+            const { data } = res
+            console.log(data)
+            const token = data.access_token
+            const type = data.token_type
+            const tokenType = `${type} ${token}`
+            this.$store.commit('login/saveToken', tokenType)
+          })
+      } catch (error) {
+        console.log(error)
+      }
     },
   },
 }

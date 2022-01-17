@@ -221,11 +221,6 @@ export default {
       ocultarTexto: true,
     }
   },
-  computed: {
-    getIdSession() {
-      return this.$store.state.idSession
-    },
-  },
   watch: {
     aceptaTerm() {
       this.acepta = this.aceptaTerm
@@ -253,7 +248,6 @@ export default {
     },
     scroll(where) {
       this.$refs[where].scrollIntoView({ behavior: 'smooth' })
-      this.$store.commit('goToForm', false)
     },
     checkForm() {
       if (

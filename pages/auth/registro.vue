@@ -6,7 +6,7 @@
           >Usuario</label
         >
         <input
-          v-model="userForm.usuario"
+          v-model="userForm.nombre"
           type="text"
           class="
             bg-gray-50
@@ -75,15 +75,28 @@
 export default {
   data() {
     return {
+      errors: {},
       userForm: {
-        usuario: null,
+        nombre: null,
         password: null,
       },
     }
   },
   methods: {
-    onSubmit() {
-      console.log(this.userForm)
+    async onSubmit() {
+      this.errors = ''
+      try {
+        const res = await this.$axios.$post('api/register', {
+          data: this.userForm,
+        })
+        console.log(res)
+        this.$router.push('/auth/login')
+      } catch (error) {
+        if (error.response.status === 422) {
+          this.errors = error?.response?.data?.errors
+          console.log(this.errors)
+        }
+      }
     },
   },
 }

@@ -93,7 +93,11 @@ export default {
             const token = data.access_token
             const type = data.token_type
             const tokenType = `${type} ${token}`
-            this.$store.commit('login/saveToken', tokenType)
+            const userApp = {
+              nombre: this.userForm.nombre,
+            }
+            this.$store.dispatch('login/loguinIn', userApp, tokenType)
+            this.$router.push('/dashboard')
           })
       } catch (error) {
         console.log(error)

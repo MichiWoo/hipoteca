@@ -92,11 +92,9 @@ export default {
             console.log(data)
             const token = data.access_token
             const type = data.token_type
+            const user = data.user
             const tokenType = `${type} ${token}`
-            const userApp = {
-              nombre: this.userForm.nombre,
-            }
-            this.$store.dispatch('login/loguinIn', userApp, tokenType)
+            this.$store.dispatch('login/loguinIn', user, tokenType)
             this.$router.push('/dashboard')
           })
       } catch (error) {

@@ -10,26 +10,28 @@
       sm:flex-col
       sm:min-h-screen
       w-full
-      bg-dark
+      bg-light-text
     "
   >
-    <router-link
-      to="/"
-      class="
-        hidden
-        text-lg
-        font-semibold
-        tracking-widest
-        text-white
-        uppercase
-        rounded-lg
-        focus:outline-none
-        focus:shadow-outline
-        my-8
-        sm:block
-      "
-      >SCADA</router-link
-    >
+    <router-link to="/">
+      <div
+        class="
+          hidden
+          text-lg
+          font-semibold
+          tracking-widest
+          text-light-accent
+          uppercase
+          rounded-lg
+          focus:outline-none
+          focus:shadow-outline
+          my-8
+          sm:block
+        "
+      >
+        Hipoteca 10
+      </div>
+    </router-link>
     <nav
       class="
         flex flex-row
@@ -44,7 +46,7 @@
       <router-link to="/dashboard">
         <div
           class="
-            bg-dark
+            bg-light-text
             sm:px-2
             flex
             justify-center
@@ -79,9 +81,10 @@
                 m-4
                 sm:ml-4
                 sm:my-4
+                text-light-accent
               "
             >
-              <IconHome class="text-white w-4 h-4" />
+              Icon
             </div>
             <div
               class="
@@ -91,10 +94,10 @@
                 justify-center
                 text-base
                 font-normal
-                text-white
+                text-light-accent
               "
             >
-              Inicio
+              Expedientes
             </div>
           </div>
         </div>
@@ -102,7 +105,7 @@
       <router-link to="/dashboard">
         <div
           class="
-            bg-dark
+            bg-light-text
             sm:px-2
             flex
             justify-center
@@ -137,9 +140,10 @@
                 m-4
                 sm:ml-4
                 sm:my-4
+                text-light-accent
               "
             >
-              <IconWait class="text-white w-4 h-4" />
+              Icon
             </div>
             <div
               class="
@@ -149,10 +153,10 @@
                 justify-center
                 text-base
                 font-normal
-                text-white
+                text-light-accent
               "
             >
-              Espera
+              Formularios
             </div>
           </div>
         </div>
@@ -160,7 +164,7 @@
       <router-link to="/dashboard">
         <div
           class="
-            bg-dark
+            bg-light-text
             sm:px-2
             flex
             justify-center
@@ -195,9 +199,10 @@
                 m-4
                 sm:ml-4
                 sm:my-4
+                text-light-accent
               "
             >
-              <IconService class="text-white w-4 h-4" />
+              Icon
             </div>
             <div
               class="
@@ -207,10 +212,10 @@
                 justify-center
                 text-base
                 font-normal
-                text-white
+                text-light-accent
               "
             >
-              Servicio
+              Tareas
             </div>
           </div>
         </div>
@@ -218,7 +223,7 @@
       <router-link to="/dashboard">
         <div
           class="
-            bg-dark
+            bg-light-text
             sm:px-2
             flex
             justify-center
@@ -253,9 +258,10 @@
                 m-4
                 sm:ml-4
                 sm:my-4
+                text-light-accent
               "
             >
-              <IconTruck class="text-white w-4 h-4" />
+              Icon
             </div>
             <div
               class="
@@ -265,10 +271,10 @@
                 justify-center
                 text-base
                 font-normal
-                text-white
+                text-light-accent
               "
             >
-              Salidas
+              Emails
             </div>
           </div>
         </div>
@@ -276,7 +282,7 @@
       <router-link to="/dashboard">
         <div
           class="
-            bg-dark
+            bg-light-text
             sm:px-2
             flex
             justify-center
@@ -311,9 +317,10 @@
                 m-4
                 sm:ml-4
                 sm:my-4
+                text-light-accent
               "
             >
-              <IconReportes class="text-white w-4 h-4" />
+              Icon
             </div>
             <div
               class="
@@ -323,10 +330,10 @@
                 justify-center
                 text-base
                 font-normal
-                text-white
+                text-light-accent
               "
             >
-              Reportes
+              Conexiones
             </div>
           </div>
         </div>
@@ -334,7 +341,7 @@
       <router-link to="/dashboard">
         <div
           class="
-            bg-dark
+            bg-light-text
             sm:px-2
             flex
             justify-center
@@ -369,9 +376,10 @@
                 m-4
                 sm:ml-4
                 sm:my-4
+                text-light-accent
               "
             >
-              <IconConfig class="text-white w-4 h-4" />
+              Icon
             </div>
             <div
               class="
@@ -381,7 +389,66 @@
                 justify-center
                 text-base
                 font-normal
-                text-white
+                text-light-accent
+              "
+            >
+              Asignar
+            </div>
+          </div>
+        </div>
+      </router-link>
+      <router-link to="/dashboard">
+        <div
+          class="
+            bg-light-text
+            sm:px-2
+            flex
+            justify-center
+            items-center
+            hover:text-blue-100
+            focus:text-blue-100
+            hover:bg-gray-500
+            focus:bg-gray-500
+            focus:outline-none
+            focus:shadow-outline
+          "
+        >
+          <div
+            class="
+              sm:w-full
+              sm:my-2
+              sm:mr-2
+              flex
+              sm:flex-row
+              justify-center
+              sm:justify-start
+              items-center
+            "
+          >
+            <div
+              class="
+                w-full
+                sm:w-1/6
+                flex
+                justify-center
+                items-center
+                m-4
+                sm:ml-4
+                sm:my-4
+                text-light-accent
+              "
+            >
+              <IconGear class="text-light-accent w-4 h-4" />
+            </div>
+            <div
+              class="
+                hidden
+                w-5/6
+                sm:flex
+                justify-center
+                text-base
+                font-normal
+                text-light-accent
               "
             >
               Configuración
@@ -394,20 +461,9 @@
 </template>
 
 <script>
-import IconHome from '../../assets/iconos/house-fill.svg'
-import IconWait from '../../assets/iconos/hourglass-bottom.svg'
-import IconService from '../../assets/iconos/trash-can-solid.svg'
-import IconTruck from '../../assets/iconos/truck-solid.svg'
-import IconReportes from '../../assets/iconos/file-arrow-down-solid.svg'
-import IconConfig from '../../assets/iconos/gear-solid.svg'
 export default {
   components: {
-    IconHome,
-    IconWait,
-    IconService,
-    IconTruck,
-    IconReportes,
-    IconConfig,
+    IconGear: () => import('../icons/Gear.vue'),
   },
 }
 </script>

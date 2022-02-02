@@ -75,7 +75,7 @@
 export default {
   data() {
     return {
-      errors: {},
+      errors: '',
       userForm: {
         nombre: null,
         password: null,

@@ -19,7 +19,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/LogoH10.ico' }],
   },
   css: [],
-  plugins: ['~/plugins/vue-cookies.js'],
+  plugins: ['~/plugins/vue-cookies.js', '~/plugins/axios.js'],
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',

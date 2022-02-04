@@ -27,6 +27,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/google-analytics',
     '@nuxt/image',
+    '@nuxtjs/date-fns',
   ],
   modules: [
     '@nuxtjs/axios',
@@ -34,7 +35,7 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
     '@nuxtjs/date-fns',
-    '@nuxtjs/auth-next',
+    ['@nuxtjs/date-fns', { locales: ['es'] }],
   ],
   axios: {
     baseURL: 'http://localhost:8000/',

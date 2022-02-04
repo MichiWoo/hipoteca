@@ -1,6 +1,6 @@
 <template>
   <table class="w-full">
-    <thead class="text-dark">
+    <thead class="text-dark bg-light-accent">
       <tr>
         <th
           scope="col"
@@ -8,7 +8,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -22,7 +22,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -36,7 +36,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -50,7 +50,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -64,7 +64,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -78,7 +78,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -92,7 +92,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -106,7 +106,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -120,7 +120,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -134,7 +134,7 @@
             py-3
             px-1
             text-xs
-            font-medium
+            font-bold
             tracking-wider
             text-center text-gray-700
             uppercase
@@ -158,12 +158,26 @@
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.titulares.length }}
+          <span
+            v-for="titular in expediente.titulares"
+            :key="titular.id"
+            class="
+              bg-gray-100
+              text-gray-800 text-xs
+              font-semibold
+              mr-2
+              px-2.5
+              py-0.5
+              rounded
+            "
+          >
+            {{ titular.nombre }}
+          </span>
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.created_at }}
+          {{ setFecha(expediente.created_at) }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
@@ -173,7 +187,7 @@
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.usuario.telefono1 }}
+          {{ expediente.telefono1 }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
@@ -193,12 +207,40 @@
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.tramites.length }}
+          <span
+            v-show="expediente.tramites.length > 0"
+            class="
+              inline-flex
+              items-center
+              p-1
+              mr-2
+              text-sm
+              font-semibold
+              text-gray-800
+              bg-gray-100
+              rounded-full
+              dark:bg-gray-700
+              dark:text-gray-300
+            "
+          >
+            <svg
+              class="w-3 h-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.estado }}
+          {{ setEstado(expediente.estado) }}
         </td>
       </tr>
     </tbody>
@@ -211,6 +253,27 @@ export default {
     expedientes: {
       type: Array,
       default: () => [],
+    },
+  },
+  methods: {
+    setFecha(fecha) {
+      return this.$dateFns.format(fecha, 'dd-MM-yyyy')
+    },
+    setEstado(estado) {
+      switch (estado) {
+        case 0:
+          return 'No Contactado'
+        case 1:
+          return 'Esperando Doc.'
+        case 2:
+          return 'Tramitando'
+        case 3:
+          return 'Firmando'
+        case 4:
+          return 'Fallida'
+        case 5:
+          return 'Contactado'
+      }
     },
   },
 }

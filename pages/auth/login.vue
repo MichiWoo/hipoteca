@@ -76,29 +76,16 @@ export default {
   data() {
     return {
       userForm: {
-        nombre: null,
-        password: null,
+        nombre: 'Michel',
+        password: '12345678',
       },
     }
   },
   methods: {
     async onSubmit() {
-      try {
-        await this.$auth
-          .loginWith('local', { data: this.userForm })
-          .then((res) => {
-            console.log(res)
-            const { data } = res
-            console.log(data)
-            const token = data.access_token
-            const type = data.token_type
-            const user = data.user
-            const tokenType = `${type} ${token}`
-            this.$store.dispatch('login/loguinIn', user, tokenType)
-            this.$router.push('/dashboard')
-          })
-      } catch (error) {
-        console.log(error)
+      const resp = await this.$store.dispatch('login/loguinUser', this.userForm)
+      if (resp) {
+        this.$router.push('/dashboard')
       }
     },
   },

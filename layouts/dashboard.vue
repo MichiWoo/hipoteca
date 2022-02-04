@@ -7,7 +7,7 @@
       <div class="h-10 m-1 sm:m-4 bg-info">
         <Navbar :user="user.nombre" />
       </div>
-      <div class="m-2 sm:m-4 bg-green-200">
+      <div class="m-2 sm:m-12 bg-green-200">
         <Nuxt />
       </div>
     </div>

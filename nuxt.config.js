@@ -34,7 +34,6 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
-    '@nuxtjs/date-fns',
     ['@nuxtjs/date-fns', { locales: ['es'] }],
   ],
   axios: {

@@ -1,52 +1,15 @@
 <template>
   <div
-    class="
-      fixed
-      top-0
-      bottom-0
-      left-0
-      right-0
-      z-40
-      flex flex-col
-      items-center
-      justify-center
-      w-full
-      h-full
-      overflow-x-hidden overflow-y-auto
-      bg-transparent
-      opacity-100
-    "
+    class="fixed top-0 bottom-0 left-0 right-0 z-40 flex flex-col items-center justify-center w-full h-full overflow-x-hidden overflow-y-auto bg-transparent opacity-100"
   >
     <div
-      class="
-        relative
-        z-50
-        w-full
-        mt-6
-        mb-3
-        overflow-auto
-        rounded-lg
-        shadow-lg
-        opacity-100
-        sm:w-2/6
-        h-4/6
-        sm:h-2/6
-        md:h-2/6
-        bg-light
-      "
+      class="relative z-50 w-full mt-6 mb-3 overflow-auto rounded-lg shadow-lg opacity-100 sm:w-2/6 h-4/6 sm:h-2/6 md:h-2/6 bg-light"
     >
       <div class="flex flex-col justify-center align-center">
         <div class="flex justify-between px-5 py-4 border-2 border-light">
           <div>
             <svg
-              class="
-                inline
-                w-6
-                h-6
-                text-light-secondary
-                svg-inline--fa
-                fa-exclamation-triangle fa-w-18
-              "
+              class="inline w-6 h-6 text-light-secondary svg-inline--fa fa-exclamation-triangle fa-w-18"
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
@@ -66,14 +29,7 @@
           <div>
             <button aria-label="Cerrar Modal" @click="closeModal('c')">
               <svg
-                class="
-                  inline
-                  w-6
-                  h-6
-                  transition
-                  duration-150
-                  text-light-primary
-                "
+                class="inline w-6 h-6 transition duration-150 text-light-primary"
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
@@ -112,20 +68,7 @@
         <div class="flex items-center justify-end">
           <div class="mx-1 div-center">
             <button
-              class="
-                p-1
-                text-sm
-                rounded-lg
-                sm:px-4
-                sm:py-2
-                md:px-4
-                md:py-2
-                bg-light-primary
-                border-light-accent
-                text-light
-                hover:bg-light-accent
-                hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-              "
+              class="p-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-primary border-light-accent text-light hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
               aria-label="Botón Aceptar Cookies"
               @click="aceptarCookies"
             >
@@ -134,21 +77,7 @@
           </div>
           <div class="mx-1 div-center">
             <button
-              class="
-                p-1
-                text-sm
-                rounded-lg
-                sm:px-4
-                sm:py-2
-                md:px-4
-                md:py-2
-                bg-light-danger
-                border-light-danger
-                dark:border-text-dark-danger
-                text-light
-                hover:bg-light-primary
-                hover:ring-2 hover:ring-light-primary hover:ring-opacity-50
-              "
+              class="p-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-danger border-light-danger dark:border-text-dark-danger text-light hover:bg-light-primary hover:ring-2 hover:ring-light-primary hover:ring-opacity-50"
               aria-label="Botón Rechazar Cookies"
               @click="rechazarCookies"
             >
@@ -157,21 +86,7 @@
           </div>
           <div class="mx-1 div-center">
             <button
-              class="
-                p-1
-                text-sm
-                rounded-lg
-                sm:px-4
-                sm:py-2
-                md:px-4
-                md:py-2
-                bg-light-accent
-                border-light-accent
-                dark:border-text-dark-accent
-                text-light-primary
-                hover:bg-light-accent
-                hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-              "
+              class="p-1 text-sm rounded-lg sm:px-4 sm:py-2 md:px-4 md:py-2 bg-light-accent border-light-accent dark:border-text-dark-accent text-light-primary hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
               aria-label="Botón Ajustes de Cookies"
               @click="ajustesCookies"
             >

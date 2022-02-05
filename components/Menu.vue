@@ -1,21 +1,6 @@
 <template>
   <div
-    class="
-      absolute
-      top-0
-      z-20
-      flex flex-col
-      items-center
-      w-full
-      h-full
-      divide-y
-      menu
-      -left-0
-      bg-light-accent
-      dark:bg-dark
-      divide-light-primary
-      dark:divide-dark-accent
-    "
+    class="absolute top-0 z-20 flex flex-col items-center w-full h-full divide-y menu -left-0 bg-light-accent dark:bg-dark divide-light-primary dark:divide-dark-accent"
   >
     <div class="flex items-start justify-between w-11/12 mx-4 mt-4 sm:mt-2">
       <div
@@ -26,14 +11,7 @@
       </div>
       <div class="mr-1 sm:ml-2 sm:mr-8 sm:mt-4">
         <button
-          class="
-            transition-colors
-            duration-300
-            ease-linear
-            text-light-primary
-            dark:text-dark-primary
-            focus:outline-none
-          "
+          class="transition-colors duration-300 ease-linear text-light-primary dark:text-dark-primary focus:outline-none"
           aria-label="Botón Menú"
           @click="closeMenu"
         >
@@ -105,12 +83,7 @@
             @click="changePage(1)"
           >
             <h3
-              class="
-                text-sm
-                font-bold
-                text-light-secondary
-                dark:text-dark-accent
-              "
+              class="text-sm font-bold text-light-secondary dark:text-dark-accent"
             >
               Nuestro Método de Trabajo
             </h3>
@@ -141,12 +114,7 @@
             @click="changePage(2)"
           >
             <h3
-              class="
-                text-sm
-                font-bold
-                text-light-secondary
-                dark:text-dark-accent
-              "
+              class="text-sm font-bold text-light-secondary dark:text-dark-accent"
             >
               Hipoteca 10
             </h3>
@@ -178,12 +146,7 @@
             @click="changePage(3)"
           >
             <h3
-              class="
-                text-sm
-                font-bold
-                text-light-secondary
-                dark:text-dark-accent
-              "
+              class="text-sm font-bold text-light-secondary dark:text-dark-accent"
             >
               Nuestro Compromiso
             </h3>
@@ -214,12 +177,7 @@
             @click="changePage(4)"
           >
             <h3
-              class="
-                text-sm
-                font-bold
-                text-light-secondary
-                dark:text-dark-accent
-              "
+              class="text-sm font-bold text-light-secondary dark:text-dark-accent"
             >
               Empresas
             </h3>
@@ -250,12 +208,7 @@
             @click="changePage(5)"
           >
             <h3
-              class="
-                text-sm
-                font-bold
-                text-light-secondary
-                dark:text-dark-accent
-              "
+              class="text-sm font-bold text-light-secondary dark:text-dark-accent"
             >
               Sobre Nosotros
             </h3>
@@ -286,12 +239,7 @@
             @click="changePage(6)"
           >
             <h3
-              class="
-                text-sm
-                font-bold
-                text-light-secondary
-                dark:text-dark-accent
-              "
+              class="text-sm font-bold text-light-secondary dark:text-dark-accent"
             >
               Contáctanos
             </h3>

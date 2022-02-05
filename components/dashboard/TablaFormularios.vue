@@ -12,19 +12,13 @@
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Titulares
+          Nombre
         </th>
         <th
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Fecha Reg.
-        </th>
-        <th
-          scope="col"
-          class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
-        >
-          Usuario
+          Email
         </th>
         <th
           scope="col"
@@ -42,105 +36,78 @@
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Provincia
+          IP
         </th>
         <th
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Operación
+          Fecha
         </th>
         <th
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Banco
+          Dispositivo
         </th>
         <th
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Estado
+          Usuario
         </th>
       </tr>
     </thead>
     <tbody>
       <tr
-        v-for="expediente in expedientes"
-        :key="expediente.id"
+        v-for="(formulario, index) in formularios"
+        :key="formulario.id"
         class="odd:bg-white even:bg-gray-50 border-b"
       >
         <td
           class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.numero }}
+          {{ index + 1 }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          <span
-            v-for="titular in expediente.titulares"
-            :key="titular.id"
-            class="bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-          >
-            {{ titular.nombre }}
-          </span>
+          {{ formulario.nombre }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ setFecha(expediente.created_at) }}
+          {{ formulario.email }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.usuario.nombre }}
+          {{ formulario.telefono }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.telefono1 }}
+          {{ formulario.localidad }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.localidad }}
+          {{ formulario.ip }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.provincia }}
+          {{ setFecha(formulario.fecha) }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.tipo }}
+          {{ formulario.movil == 1 ? 'Movil' : 'Pc' }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          <span
-            v-show="expediente.tramites.length > 0"
-            class="inline-flex items-center p-1 mr-2 text-sm font-semibold text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300"
-          >
-            <svg
-              class="w-3 h-3"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </span>
-        </td>
-        <td
-          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
-          {{ setEstado(expediente.estado) }}
+          {{ formulario.usuario ? formulario.usuario.nombre : '' }}
         </td>
       </tr>
     </tbody>
@@ -150,7 +117,7 @@
 <script>
 export default {
   props: {
-    expedientes: {
+    formularios: {
       type: Array,
       default: () => [],
     },
@@ -158,22 +125,6 @@ export default {
   methods: {
     setFecha(fecha) {
       return this.$dateFns.format(fecha, 'dd-MM-yyyy')
-    },
-    setEstado(estado) {
-      switch (estado) {
-        case 0:
-          return 'No Contactado'
-        case 1:
-          return 'Esperando Doc.'
-        case 2:
-          return 'Tramitando'
-        case 3:
-          return 'Firmando'
-        case 4:
-          return 'Fallida'
-        case 5:
-          return 'Contactado'
-      }
     },
   },
 }

@@ -1,30 +1,11 @@
 <template>
   <header class="relative w-full mx-auto">
     <div
-      class="
-        flex
-        items-start
-        justify-around
-        mx-4
-        mt-2
-        sm:mt-2
-        lg:mt-2
-        lg:items-center
-      "
+      class="flex items-start justify-around mx-4 mt-2 sm:mt-2 lg:mt-2 lg:items-center"
     >
       <div class="z-10 w-3/6 sm:w-4/12 sm:ml-4 lg:w-64 sm:mt-2">
         <NuxtLink
-          class="
-            flex
-            items-center
-            mr-6
-            lg:mr-0
-            text-lg
-            font-bold
-            flex-start
-            text-light-primary
-            nuxt-link-exact-active nuxt-link-active
-          "
+          class="flex items-center mr-6 lg:mr-0 text-lg font-bold flex-start text-light-primary nuxt-link-exact-active nuxt-link-active"
           to="/"
           aria-label="Link a Inicio"
         >
@@ -83,14 +64,7 @@
       <div class="z-10 w-2/6 sm:w-4/12 lg:hidden">
         <div class="flex items-start justify-end w-full">
           <button
-            class="
-              transition-colors
-              duration-300
-              ease-linear
-              text-light-primary
-              dark:text-dark-primary
-              focus:outline-none
-            "
+            class="transition-colors duration-300 ease-linear text-light-primary dark:text-dark-primary focus:outline-none"
             aria-label="Botón Menú"
             @click="showMenu"
           >

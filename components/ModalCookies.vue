@@ -1,38 +1,9 @@
 <template>
   <div
-    class="
-      fixed
-      top-0
-      bottom-0
-      left-0
-      right-0
-      z-40
-      flex flex-col
-      items-center
-      justify-center
-      w-full
-      h-full
-      overflow-x-hidden overflow-y-auto
-      bg-transparent
-      opacity-100
-    "
+    class="fixed top-0 bottom-0 left-0 right-0 z-40 flex flex-col items-center justify-center w-full h-full overflow-x-hidden overflow-y-auto bg-transparent opacity-100"
   >
     <div
-      class="
-        relative
-        z-50
-        w-full
-        mt-6
-        mb-3
-        overflow-auto
-        rounded-lg
-        shadow-lg
-        opacity-100
-        sm:w-2/6
-        md:w-2/6
-        h-4/6
-        bg-light
-      "
+      class="relative z-50 w-full mt-6 mb-3 overflow-auto rounded-lg shadow-lg opacity-100 sm:w-2/6 md:w-2/6 h-4/6 bg-light"
     >
       <div class="flex flex-col justify-center align-center">
         <div class="flex justify-between px-5 py-4 border-2 border-light">
@@ -58,14 +29,7 @@
           <div>
             <button aria-label="Cerrar Modal" @click="closeModal('c')">
               <svg
-                class="
-                  inline
-                  w-6
-                  h-6
-                  transition
-                  duration-150
-                  text-light-primary
-                "
+                class="inline w-6 h-6 transition duration-150 text-light-primary"
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
@@ -208,29 +172,14 @@
         </div>
         <div class="w-full my-2 div-center">
           <div
-            class="
-              flex flex-col
-              justify-center
-              w-5/6
-              px-6
-              py-3
-              rounded-lg
-              bg-light-accent
-            "
+            class="flex flex-col justify-center w-5/6 px-6 py-3 rounded-lg bg-light-accent"
           >
             <div class="flex items-start content-start justify-start">
               <div class="flex text-sm flex-start text-light-primary">
                 Nombre:
               </div>
               <div
-                class="
-                  flex
-                  ml-2
-                  text-sm
-                  font-bold
-                  flex-start
-                  text-light-secondary
-                "
+                class="flex ml-2 text-sm font-bold flex-start text-light-secondary"
               >
                 vercookies
               </div>
@@ -248,13 +197,7 @@
                 Finalidad:
               </div>
               <div
-                class="
-                  flex
-                  ml-2
-                  text-sm text-justify
-                  flex-start
-                  text-light-secondary
-                "
+                class="flex ml-2 text-sm text-justify flex-start text-light-secondary"
               >
                 Esta cookie se utiliza para mostrar la información de la
                 política de cookies
@@ -272,29 +215,14 @@
         </div>
         <div class="w-full my-2 div-center">
           <div
-            class="
-              flex flex-col
-              justify-center
-              w-5/6
-              px-6
-              py-3
-              rounded-lg
-              bg-light-accent
-            "
+            class="flex flex-col justify-center w-5/6 px-6 py-3 rounded-lg bg-light-accent"
           >
             <div class="flex items-start content-start justify-start">
               <div class="flex text-sm flex-start text-light-primary">
                 Nombre:
               </div>
               <div
-                class="
-                  flex
-                  ml-2
-                  text-sm
-                  font-bold
-                  flex-start
-                  text-light-secondary
-                "
+                class="flex ml-2 text-sm font-bold flex-start text-light-secondary"
               >
                 preferencesCookies
               </div>
@@ -312,13 +240,7 @@
                 Finalidad:
               </div>
               <div
-                class="
-                  flex
-                  ml-2
-                  text-sm text-justify
-                  flex-start
-                  text-light-secondary
-                "
+                class="flex ml-2 text-sm text-justify flex-start text-light-secondary"
               >
                 Cookie necesaria que registra sus preferencias y consentimientos
                 de cookies según valores de la sección AJUSTES.
@@ -345,21 +267,7 @@
           </div>
           <div class="px-5 py-2 text-sm font-bold text-light-primary">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                flex-shrink-0
-                w-6
-                h-6
-                mr-2
-                border-2
-                rounded
-                bg-light
-                text-light-primary
-                border-light-primary
-                focus-within:border-light-accent
-              "
+              class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 border-2 rounded bg-light text-light-primary border-light-primary focus-within:border-light-accent"
             >
               <input
                 v-model="marketing"
@@ -393,21 +301,7 @@
           </div>
           <div class="px-5 py-2 text-sm font-bold text-light-primary">
             <div
-              class="
-                flex
-                items-center
-                justify-center
-                flex-shrink-0
-                w-6
-                h-6
-                mr-2
-                border-2
-                rounded
-                bg-light
-                text-light-primary
-                border-light-primary
-                focus-within:border-light-accent
-              "
+              class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 border-2 rounded bg-light text-light-primary border-light-primary focus-within:border-light-accent"
             >
               <input
                 v-model="analitics"
@@ -424,11 +318,7 @@
         </div>
         <div class="flex w-full px-5 py-2 flex-start">
           <div
-            class="
-              ml-1
-              text-xs text-justify text-light-primary
-              dark:text-dark-primary
-            "
+            class="ml-1 text-xs text-justify text-light-primary dark:text-dark-primary"
           >
             Las cookies de análisis ayudan a los propietarios de las webs a
             comprender cómo interactúan los visitantes con las webs recopilando

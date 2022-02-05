@@ -12,37 +12,19 @@
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Nombre
+          Ip
         </th>
         <th
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Email
+          Conexión
         </th>
         <th
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Teléfono
-        </th>
-        <th
-          scope="col"
-          class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
-        >
-          Localidad
-        </th>
-        <th
-          scope="col"
-          class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
-        >
-          IP
-        </th>
-        <th
-          scope="col"
-          class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
-        >
-          Fecha
+          Página
         </th>
         <th
           scope="col"
@@ -54,14 +36,14 @@
           scope="col"
           class="py-3 px-1 text-xs font-bold tracking-wider text-center text-gray-700 uppercase"
         >
-          Usuario
+          Formulario
         </th>
       </tr>
     </thead>
     <tbody>
       <tr
-        v-for="(formulario, index) in formularios"
-        :key="formulario.id"
+        v-for="(conexion, index) in conexiones"
+        :key="conexion.id"
         class="odd:bg-white even:bg-gray-50 border-b"
       >
         <td
@@ -72,45 +54,29 @@
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ formulario.nombre }}
+          {{ conexion.ip }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ formulario.email }}
+          {{ setFecha(conexion.created_at) }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ formulario.telefono }}
+          {{ conexion.pagina }}
+        </td>
+        <td
+          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
+        ><div class="flex justify-center content-center items-center">
+          <IconMobile v-if="conexion.movil == 1" class="w-3 h-3" />
+          <IconPc v-else class="w-3 h-3" />
+        </div>
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ formulario.localidad }}
-        </td>
-        <td
-          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
-          {{ formulario.ip }}
-        </td>
-        <td
-          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
-          {{ setFecha(formulario.fecha) }}
-        </td>
-        <td
-          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
-          <div class="flex justify-center content-center items-center">
-            <IconMobile v-if="formulario.movil == 1" class="w-3 h-3" />
-            <IconPc v-else class="w-3 h-3" />
-          </div>
-        </td>
-        <td
-          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
-          {{ formulario.usuario ? formulario.usuario.nombre : '' }}
+          {{ conexion.formulario == 0 ? 'No' : 'Si'}}
         </td>
       </tr>
     </tbody>
@@ -124,7 +90,7 @@ export default {
     IconPc: () => import('../icons/Pc.vue'),
   },
   props: {
-    formularios: {
+    conexiones: {
       type: Array,
       default: () => [],
     },

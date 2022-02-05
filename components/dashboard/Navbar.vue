@@ -7,21 +7,7 @@
       <div class="flex items-center">
         <button
           type="button"
-          class="
-            text-dark
-            hover:text-white
-            bg-white
-            hover:bg-dark
-            font-bold
-            focus:ring-4 focus:ring-blue-300
-            rounded-lg
-            text-base
-            px-5
-            py-2.5
-            text-center
-            mr-3
-            md:mr-0
-          "
+          class="text-dark hover:text-white bg-white hover:bg-dark font-bold focus:ring-4 focus:ring-blue-300 rounded-lg text-base px-5 py-2.5 text-center mr-3 md:mr-0"
         >
           {{ user }}
         </button>

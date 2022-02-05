@@ -12,10 +12,7 @@
     >
       <div class="flex justify-center w-full my-1 sm:w-4/6">
         <h5
-          class="
-            text-sm text-light-secondary text-justify
-            dark:text-dark-secondary
-          "
+          class="text-sm text-light-secondary text-justify dark:text-dark-secondary"
         >
           Hipoteca 10 es tu solución, Contacta con Nosotros para conseguir tu
           hipoteca.
@@ -63,25 +60,7 @@
       </div>
       <div class="flex items-start justify-start w-full mt-2 mb-2 sm:w-4/6">
         <div
-          class="
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-6
-            h-6
-            mr-2
-            border-2
-            rounded
-            bg-light
-            dark:bg-dark
-            text-light-primary
-            dark:text-dark-primary
-            border-light-primary
-            dark:border-dark-primary
-            focus-within:border-light-accent
-            dark-focus-within:border-dark-accent
-          "
+          class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 border-2 rounded bg-light dark:bg-dark text-light-primary dark:text-dark-primary border-light-primary dark:border-dark-primary focus-within:border-light-accent dark-focus-within:border-dark-accent"
         >
           <input
             v-model="acepta"
@@ -96,14 +75,7 @@
           </svg>
         </div>
         <div
-          class="
-            text-xs
-            sm:text-sm
-            text-justify
-            select-one
-            text-light-primary
-            dark:text-dark-primary
-          "
+          class="text-xs sm:text-sm text-justify select-one text-light-primary dark:text-dark-primary"
         >
           He
           <a class="font-bold cursor-pointer" @click="openModal"
@@ -121,12 +93,7 @@
       </div>
       <div class="flex justify-center w-full sm:w-4/6">
         <h6
-          class="
-            text-xs
-            sm:text-sm
-            text-justify text-light-primary
-            dark:text-dark-primary
-          "
+          class="text-xs sm:text-sm text-justify text-light-primary dark:text-dark-primary"
           :class="ocultarTexto ? 'excerpt' : ''"
         >
           Tratamos la información que nos facilita con el fin de prestarles el
@@ -140,12 +107,7 @@
       <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6">
         <div class="flex justify-center">
           <h6
-            class="
-              text-xs
-              sm:text-sm
-              text-justify text-light-secondary
-              dark:text-dark-accent
-            "
+            class="text-xs sm:text-sm text-justify text-light-secondary dark:text-dark-accent"
           >
             <a
               href="https://www.bde.es/bde/es/secciones/servicios/Particulares_y_e/registro-de-intermediarios/registro-de-intermediarios-de-credito-inmobiliario-y-prestamistas-inmobiliarios.html"
@@ -163,12 +125,7 @@
       <div class="flex justify-center w-full mt-2 mb-2 sm:w-4/6">
         <div class="flex justify-center">
           <h6
-            class="
-              text-xs
-              sm:text-sm
-              text-justify text-light-secondary
-              dark:text-dark-accent
-            "
+            class="text-xs sm:text-sm text-justify text-light-secondary dark:text-dark-accent"
           >
             <a href="/mail/i_p.pdf" target="_blank" rel="noreferer noopener">
               Documento de información pre contractural.

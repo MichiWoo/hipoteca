@@ -2,9 +2,7 @@
   <div class="m-2 sm:m-0 w-full flex flex-col">
     <div class="w-full flex flex-row justify-between items-center h-20">
       <div class="flex flex-row justify-center items-center">
-        <div class="flex justify-center items-center mr-2">
-          Lista de Expedientes
-        </div>
+        <div class="flex justify-center items-center mr-2">Formularios</div>
         <router-link to="/dashboard/registro">
           <button
             type="button"
@@ -27,7 +25,7 @@
     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
         <div class="overflow-hidden shadow-md sm:rounded-lg">
-          <TableExpedientes :expedientes="expedientes" />
+          <TablaFormularios :formularios="formularios" />
         </div>
       </div>
     </div>
@@ -37,12 +35,12 @@
 <script>
 export default {
   components: {
-    TableExpedientes: () =>
-      import('../../components/dashboard/TablaExpedientes.vue'),
+    TablaFormularios: () =>
+      import('../../components/dashboard/TablaFormularios.vue'),
   },
   data() {
     return {
-      expedientes: [],
+      formularios: [],
       errors: '',
     }
   },
@@ -53,8 +51,8 @@ export default {
     async getExpedientes() {
       this.errors = ''
       try {
-        const res = await this.$axios.$get('api/expedientes')
-        this.expedientes = res
+        const res = await this.$axios.$get('api/formularios')
+        this.formularios = res
       } catch (error) {
         console.log(error)
       }

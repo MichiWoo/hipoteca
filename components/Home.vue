@@ -5,25 +5,11 @@
       class="flex flex-col md:flex-row justify-center items-center mb-6"
     >
       <div
-        class="
-          flex flex-col
-          justify-center
-          item-center
-          w-full
-          lg:w-9/12
-          text-justify
-        "
+        class="flex flex-col justify-center item-center w-full lg:w-9/12 text-justify"
       >
         <div class="flex justify-center sm:justify-start my-8 sm:w-5/6">
           <h1
-            class="
-              text-2xl
-              font-bold
-              text-light-secondary
-              sm:text-4xl
-              text-justify
-              sm:text-left
-            "
+            class="text-2xl font-bold text-light-secondary sm:text-4xl text-justify sm:text-left"
           >
             Te ayudamos a encontrar la hipoteca perfecta para ti.
           </h1>
@@ -32,33 +18,13 @@
           class="flex items-start justify-around sm:justify-start w-full mb-2"
         >
           <h2
-            class="
-              text-base
-              font-bold
-              text-light-primary
-              sm:text-xl
-              lg:text-2xl
-              text-center
-              md:text-jusitfy
-              sm:text-left
-            "
+            class="text-base font-bold text-light-primary sm:text-xl lg:text-2xl text-center md:text-jusitfy sm:text-left"
           >
             SOMOS ESPECIALISTAS EN HIPOTECAS 100%
           </h2>
         </div>
         <div
-          class="
-            flex
-            items-start
-            justify-around
-            sm:justify-start
-            w-full
-            text-light-primary text-lg text-bold text-justify
-            md:text-justify
-            mb-4
-            mt-4
-            lg:text-2xl
-          "
+          class="flex items-start justify-around sm:justify-start w-full text-light-primary text-lg text-bold text-justify md:text-justify mb-4 mt-4 lg:text-2xl"
         >
           Solicita tu Estudio, sin Compromiso!
         </div>
@@ -66,40 +32,13 @@
           class="items-center justify-around hidden w-3/6 mt-8 sm:flex sm:w-5/6"
         >
           <a
-            class="
-              w-5/6
-              p-2
-              text-base text-center
-              rounded-lg
-              sm:p-4
-              md:p-4
-              bg-light-accent
-              dark:bg-dark-accent
-              border-light-accent
-              dark:border-text-dark-accent
-              text-light
-              sm:text-xl
-              dark:text-dark-text
-              hover:bg-light-accent
-              hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-            "
+            class="w-5/6 p-2 text-base text-center rounded-lg sm:p-4 md:p-4 bg-light-accent dark:bg-dark-accent border-light-accent dark:border-text-dark-accent text-light sm:text-xl dark:text-dark-text hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
             href="tel:+34910758169"
             aria-label="Botón CTA"
           >
             <span class="font-bold text-light-secondary">ó Llámanos al </span>
             <svg
-              class="
-                relative
-                inline-flex
-                w-6
-                h-4
-                rounded-full
-                bg-light-transparent
-                text-light-secondary
-                dark:text-dark-secondary
-                svg-inline--fa
-                fa-phone-alt fa-w-16
-              "
+              class="relative inline-flex w-6 h-4 rounded-full bg-light-transparent text-light-secondary dark:text-dark-secondary svg-inline--fa fa-phone-alt fa-w-16"
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
@@ -124,50 +63,20 @@
       </div>
     </div>
     <div
-      class="
-        w-11/12
-        my-6
-        lg:justify-center
-        flex flex-col
-        lg:flex-row
-        items-strech
-        text-center
-        lg:flex-wrap
-      "
+      class="w-11/12 my-6 lg:justify-center flex flex-col lg:flex-row items-strech text-center lg:flex-wrap"
     >
       <div
         class="flex justify-center mb-3 cursor-pointer w-full lg:w-1/3"
         @click="scroll('h100')"
       >
         <div
-          class="
-            flex flex-col
-            justify-between
-            w-full
-            p-4
-            mx-2
-            rounded-md
-            shadow-lg
-            bg-light-accent
-            h-52
-            hover:shadow-md
-          "
+          class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent h-52 hover:shadow-md"
         >
           <h3 class="text-lg font-black tracking-wide text-light-secondary">
             Hipoteca 100%
           </h3>
           <div
-            class="
-              block
-              overflow-hidden
-              text-sm
-              font-normal
-              leading-7
-              break-words
-              text-light-secondary
-              max-h-14
-              overflow-ellipsis
-            "
+            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis"
           >
             Para conseguir el 100% de la Compra Venta.
           </div>
@@ -178,34 +87,13 @@
         @click="scroll('hsue')"
       >
         <div
-          class="
-            flex flex-col
-            justify-between
-            w-full
-            p-4
-            mx-2
-            rounded-md
-            shadow-lg
-            bg-light
-            h-52
-            hover:shadow-md
-          "
+          class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light h-52 hover:shadow-md"
         >
           <h3 class="text-lg font-black tracking-wide text-light-secondary">
             Hipoteca Autopromotor
           </h3>
           <div
-            class="
-              block
-              overflow-hidden
-              text-sm
-              font-normal
-              leading-7
-              break-words
-              text-light-primary
-              max-h-14
-              overflow-ellipsis
-            "
+            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis"
           >
             Para construir la casa de tus sueños.
           </div>
@@ -216,34 +104,13 @@
         @click="scroll('hcvid')"
       >
         <div
-          class="
-            flex flex-col
-            justify-between
-            w-full
-            p-4
-            mx-2
-            rounded-md
-            shadow-lg
-            bg-light-primary
-            h-52
-            hover:shadow-md
-          "
+          class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary h-52 hover:shadow-md"
         >
           <h3 class="text-lg font-black tracking-wide text-light">
             Hipoteca cambio de Vida
           </h3>
           <div
-            class="
-              block
-              overflow-hidden
-              text-sm
-              font-normal
-              leading-7
-              break-words
-              text-light
-              max-h-14
-              overflow-ellipsis
-            "
+            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light max-h-14 overflow-ellipsis"
           >
             Por si tu banco no te quiere lo suficiente.
           </div>
@@ -254,34 +121,13 @@
         @click="scroll('hsbla')"
       >
         <div
-          class="
-            flex flex-col
-            justify-between
-            w-full
-            p-4
-            mx-2
-            rounded-md
-            shadow-lg
-            bg-light-accent
-            h-52
-            hover:shadow-md
-          "
+          class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-accent h-52 hover:shadow-md"
         >
           <h3 class="text-lg font-black tracking-wide text-light-secondary">
             Hipoteca sin Blanca
           </h3>
           <div
-            class="
-              block
-              overflow-hidden
-              text-sm
-              font-normal
-              leading-7
-              break-words
-              text-light-secondary
-              max-h-14
-              overflow-ellipsis
-            "
+            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-secondary max-h-14 overflow-ellipsis"
           >
             Posibilidad de financiar el 100% de la compra más los gastos.
           </div>
@@ -292,34 +138,13 @@
         @click="scroll('hfun')"
       >
         <div
-          class="
-            flex flex-col
-            justify-between
-            w-full
-            p-4
-            mx-2
-            rounded-md
-            shadow-lg
-            bg-light
-            h-52
-            hover:shadow-md
-          "
+          class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light h-52 hover:shadow-md"
         >
           <h3 class="text-lg font-black tracking-wide text-light-secondary">
             Hipoteca Funcionario
           </h3>
           <div
-            class="
-              block
-              overflow-hidden
-              text-sm
-              font-normal
-              leading-7
-              break-words
-              text-light-primary
-              max-h-14
-              overflow-ellipsis
-            "
+            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light-primary max-h-14 overflow-ellipsis"
           >
             Posibilidad 100% de Tasación.
           </div>
@@ -330,34 +155,13 @@
         @click="scroll('h80')"
       >
         <div
-          class="
-            flex flex-col
-            justify-between
-            w-full
-            p-4
-            mx-2
-            rounded-md
-            shadow-lg
-            bg-light-primary
-            h-52
-            hover:shadow-md
-          "
+          class="flex flex-col justify-between w-full p-4 mx-2 rounded-md shadow-lg bg-light-primary h-52 hover:shadow-md"
         >
           <h3 class="text-lg font-black tracking-wide text-light">
             Hipoteca 80
           </h3>
           <div
-            class="
-              block
-              overflow-hidden
-              text-sm
-              font-normal
-              leading-7
-              break-words
-              text-light
-              max-h-14
-              overflow-ellipsis
-            "
+            class="block overflow-hidden text-sm font-normal leading-7 break-words text-light max-h-14 overflow-ellipsis"
           >
             Sin coste de gestión.
           </div>

@@ -5,16 +5,7 @@
         <h1 class="text-5xl font-bold text-light-secondary">Empresas</h1>
         <div class="w-3/6 mt-6 div-center">
           <button
-            class="
-              w-full
-              p-3
-              rounded-lg
-              bg-light-secondary
-              border-light-secondary
-              text-light
-              hover:bg-light-accent
-              hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-            "
+            class="w-full p-3 rounded-lg bg-light-secondary border-light-secondary text-light hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
             aria-label="Botón CTA"
           >
             Impulsa tu negocio
@@ -40,16 +31,7 @@
     </div>
     <div class="w-11/12 mt-6 div-center sm:hidden">
       <button
-        class="
-          w-full
-          p-3
-          rounded-lg
-          bg-light-secondary
-          border-light-secondary
-          text-light
-          hover:bg-light-accent
-          hover:ring-2 hover:ring-light-accent hover:ring-opacity-50
-        "
+        class="w-full p-3 rounded-lg bg-light-secondary border-light-secondary text-light hover:bg-light-accent hover:ring-2 hover:ring-light-accent hover:ring-opacity-50"
         aria-label="Botón CTA"
       >
         Impulsa tu negocio
@@ -73,15 +55,7 @@
       </div>
     </div>
     <div
-      class="
-        flex flex-col
-        items-center
-        content-center
-        w-full
-        my-6
-        bg-light-accent
-        sm:my-16
-      "
+      class="flex flex-col items-center content-center w-full my-6 bg-light-accent sm:my-16"
     >
       <div class="w-11/12 my-4 div-center sm:my-16">
         <p

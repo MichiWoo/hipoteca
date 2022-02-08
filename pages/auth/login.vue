@@ -40,7 +40,7 @@ export default {
   data() {
     return {
       userForm: {
-        nombre: 'Michel',
+        nombre: 'MichelGM',
         password: '12345678',
       },
     }

@@ -132,7 +132,7 @@
           </div>
         </div>
       </router-link>
-      <router-link to="/dashboard">
+      <router-link to="/dashboard/configuracion">
         <div
           class="bg-light-text sm:px-2 flex justify-center items-center hover:text-blue-100 focus:text-blue-100 hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:shadow-outline"
         >

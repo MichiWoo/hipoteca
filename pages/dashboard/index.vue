@@ -53,8 +53,13 @@ export default {
     async getExpedientes() {
       this.errors = ''
       try {
-        const res = await this.$axios.$get('api/expedientes')
-        this.expedientes = res
+        const expedients = this.$store.state.expedientes.expedientes
+        if (expedients.length == 0) {
+          const resp = await this.$store.dispatch('expedientes/getExpedientes')
+          this.expedientes = resp
+        } else {
+          this.expedientes = expedients
+        }
       } catch (error) {
         console.log(error)
       }

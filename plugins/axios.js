@@ -1,12 +1,14 @@
-export default function ({ $axios }) {
+export default function ({ $axios, redirect }) {
   $axios.onError((error) => {
     console.log(error)
+    redirect('/auth/login')
   })
 
-  $axios.onRequest(() => {
+  $axios.onRequest((config) => {
     const token = localStorage.getItem('token')
-    console.log(token)
-    $axios.setHeader('Content-Type', 'application/json')
-    $axios.setToken(token, 'Bearer')
+    if (token) {
+      config.headers.common.Authorization = `Bearer ${token}`
+      config.headers.common['Content-Type'] = 'application/json'
+    }
   })
 }

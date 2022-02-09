@@ -94,7 +94,7 @@
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
         >
-          {{ expediente.usuario.nombre }}
+          {{ expediente.usuario? expediente.usuario.nombre : '' }}
         </td>
         <td
           class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"

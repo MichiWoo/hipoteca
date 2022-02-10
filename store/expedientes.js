@@ -3,7 +3,35 @@ export const state = () => ({
   expedienteSel: {},
 })
 
-export const getters = {}
+export const getters = {
+  expedientesNoContactados (state) {
+    return state.expedientes.filter( (exp) => exp.estado === 0 )
+  },
+
+  expedientesContactados (state) {
+    return state.expedientes.filter( (exp) => exp.estado === 5 )
+  },
+
+  expedientesEsperando (state) {
+    return state.expedientes.filter( (exp) => exp.estado === 1 )
+  },
+
+  expedientesTramitando (state) {
+    return state.expedientes.filter( (exp) => exp.estado === 2 )
+  },
+
+  expedientesFirmando (state) {
+    return state.expedientes.filter( (exp) => exp.estado === 3 )
+  },
+
+  expedientesFallida (state) {
+    return state.expedientes.filter( (exp) => exp.estado === 4 )
+  },
+
+  expedientesBanco (state) {
+    return state.expedientes.filter( (exp) => exp.tramites.length > 0 )
+  }
+}
 
 export const actions = {
   async getExpedientes({commit}) {

@@ -2,7 +2,7 @@
   <div class="m-2 sm:m-0 w-full flex flex-col">
     <div class="w-full flex flex-row justify-between items-center h-20">
       <div class="flex flex-row justify-center items-center">
-        <div class="flex justify-center items-center mr-2">Lista de Tareas</div>
+        <div class="flex justify-center items-center mr-2">Emails</div>
       </div>
       <div class="flex flex-row justify-center items-center">
         <div class="flex items-center h-5 m-2">
@@ -22,18 +22,6 @@
         </div>
         <div class="flex items-center h-5 m-2">
           <input
-            id="contactado"
-            v-model.number="filter"
-            type="radio"
-            class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300"
-            value="1"
-          />
-          <div class="ml-3 text-sm">
-            <label for="contactado" class="font-medium text-gray-900 dark:text-gray-300">Contactado</label>
-          </div>
-        </div>
-        <div class="flex items-center h-5 m-2">
-          <input
             id="esperando"
             v-model.number="filter"
             type="radio"
@@ -47,24 +35,12 @@
             >Esperando Doc.</label>
           </div>
         </div>
-        <div class="flex items-center h-5 m-2">
-          <input
-            id="tramitando"
-            v-model.number="filter"
-            type="radio"
-            class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300"
-            value="3"
-          />
-          <div class="ml-3 text-sm">
-            <label for="tramitando" class="font-medium text-gray-900 dark:text-gray-300">Tramitando</label>
-          </div>
-        </div>
       </div>
     </div>
     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
         <div class="overflow-hidden shadow-md sm:rounded-lg">
-          <TablaTareas :expedientes="expedientesShow" />
+          <TablaEmails :expedientes="expedientesShow" />
         </div>
       </div>
     </div>
@@ -75,8 +51,8 @@
 import { mapGetters } from 'vuex'
 export default {
   components: {
-    TablaTareas: () =>
-      import('../../components/dashboard/TablaTareas.vue'),
+    TablaEmails: () =>
+      import('../../components/dashboard/TablaEmails.vue'),
   },
   data() {
     return {
@@ -89,9 +65,7 @@ export default {
   computed: {
     ...mapGetters('expedientes', [
         'expedientesNoContactados',
-        'expedientesContactados',
         'expedientesEsperando',
-        'expedientesTramitando',
       ])
   },
   watch: {

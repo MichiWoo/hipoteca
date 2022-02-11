@@ -22,7 +22,7 @@
             <div
               class="w-full sm:w-1/6 flex justify-center items-center m-4 sm:ml-4 sm:my-4 text-light-accent"
             >
-              <IconFolder class="text-light-accent w-3 h-3" />
+              <IconFolder class="text-light-accent w-4 h-4" />
             </div>
             <div
               class="hidden w-5/6 sm:flex justify-center text-base font-normal text-light-accent"
@@ -42,7 +42,7 @@
             <div
               class="w-full sm:w-1/6 flex justify-center items-center m-4 sm:ml-4 sm:my-4 text-light-accent"
             >
-              <IconForm class="text-light-accent w-3 h-3" />
+              <IconForm class="text-light-accent w-4 h-4" />
             </div>
             <div
               class="hidden w-5/6 sm:flex justify-center text-base font-normal text-light-accent"
@@ -52,7 +52,7 @@
           </div>
         </div>
       </router-link>
-      <router-link to="/dashboard">
+      <router-link to="/dashboard/tareas">
         <div
           class="bg-light-text sm:px-2 flex justify-center items-center hover:text-blue-100 focus:text-blue-100 hover:bg-gray-500 focus:bg-gray-500 focus:outline-none focus:shadow-outline"
         >
@@ -62,7 +62,7 @@
             <div
               class="w-full sm:w-1/6 flex justify-center items-center m-4 sm:ml-4 sm:my-4 text-light-accent"
             >
-              Icon
+              <IconWorks class="text-light-accent w-4 h-4" />
             </div>
             <div
               class="hidden w-5/6 sm:flex justify-center text-base font-normal text-light-accent"
@@ -102,7 +102,7 @@
             <div
               class="w-full sm:w-1/6 flex justify-center items-center m-4 sm:ml-4 sm:my-4 text-light-accent"
             >
-              <IconWifi class="text-light-accent w-3 h-3" />
+              <IconWifi class="text-light-accent w-4 h-4" />
             </div>
             <div
               class="hidden w-5/6 sm:flex justify-center text-base font-normal text-light-accent"
@@ -163,6 +163,7 @@ export default {
     IconFolder: () => import('../icons/Folder.vue'),
     IconForm: () => import('../icons/Formulario.vue'),
     IconWifi: () => import('../icons/Wifi.vue'),
+    IconWorks: () => import('../icons/Wrench.vue'),
   },
 }
 </script>

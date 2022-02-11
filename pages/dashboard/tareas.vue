@@ -124,24 +124,5 @@ export default {
       }
     }
   },
-  mounted() {
-    this.getExpedientes()
-  },
-  methods: {
-    async getExpedientes() {
-      this.errors = ''
-      try {
-        const expedients = this.$store.state.expedientes.expedientes
-        if (expedients.length === 0) {
-          const resp = await this.$store.dispatch('expedientes/getExpedientes')
-          this.expedientes = resp
-        } else {
-          this.expedientes = expedients
-        }
-      } catch (error) {
-        console.log(error)
-      }
-    },
-  },
 }
 </script>

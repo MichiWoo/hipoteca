@@ -30,6 +30,10 @@ export const getters = {
 
   expedientesBanco (state) {
     return state.expedientes.filter( (exp) => exp.tramites.length > 0 )
+  },
+
+  expedientesSinAsignar (state) {
+    return state.expedientes.filter( (exp) => !exp.usuario || !exp.user_id )
   }
 }
 

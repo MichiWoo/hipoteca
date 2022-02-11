@@ -75,7 +75,6 @@ export default {
           this.expedientesShow = this.expedientesNoContactados
           return
         case 1:
-          console.log()
           this.expedientesShow = this.expedientesContactados
           return
         case 2:
@@ -97,25 +96,6 @@ export default {
           this.expedientesShow = this.expedientes
       }
     }
-  },
-  mounted() {
-    this.getExpedientes()
-  },
-  methods: {
-    async getExpedientes() {
-      this.errors = ''
-      try {
-        const expedients = this.$store.state.expedientes.expedientes
-        if (expedients.length === 0) {
-          const resp = await this.$store.dispatch('expedientes/getExpedientes')
-          this.expedientes = resp
-        } else {
-          this.expedientes = expedients
-        }
-      } catch (error) {
-        console.log(error)
-      }
-    },
   },
 }
 </script>

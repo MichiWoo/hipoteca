@@ -17,9 +17,11 @@
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/toast": "^3.3.1",
     "core-js": "^3.12.1",
     "nuxt": "^2.15.8",
-    "vue-cookies": "^1.7.4"
+    "vue-cookies": "^1.7.4",
+    "vuejs-datepicker": "^1.6.2"
   },
   "devDependencies": {
     "@nuxt/image": "^0.6.1",

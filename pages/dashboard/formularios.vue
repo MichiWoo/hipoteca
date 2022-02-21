@@ -6,7 +6,7 @@
         <router-link to="/dashboard/registro">
           <button
             type="button"
-            class="text-dark hover:bg-dark hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center"
+            class="text-dark hover:bg-dark hover:text-light focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center"
           >
             +
           </button>
@@ -15,7 +15,7 @@
       <div class="flex-flex-row justify-center items-center">
         <button
           type="button"
-          class="text-dark hover:bg-dark hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm py-2 px-4 text-center inline-flex items-center"
+          class="text-dark hover:bg-dark hover:text-light focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm py-2 px-4 text-center inline-flex items-center"
         >
           Lupa
           <span class="ml-2">Filtrar</span>

@@ -44,6 +44,20 @@ export const actions = {
     console.log(data)
     commit('addExpedientes', data)
     return data
+    
+  },
+
+  async addExpedientes({commit}, data) {
+    console.log('action - addExpedientes')
+    console.log(data)
+    try {
+      const { expediente } = await this.$axios.$post('api/expedientes', data)
+      console.log(expediente)
+      commit('createExpedientes', expediente)
+      return expediente
+    } catch (error) {
+      return error.message      
+    }
   }
 }
 
@@ -52,5 +66,11 @@ export const mutations = {
     console.log('mutation - addExpedientes')
     console.log(expedientes)
     state.expedientes = expedientes
-  }
+  },
+  createExpedientes(state, expediente) {
+    console.log('mutation - createExpedientes')
+    console.log(expediente)
+    state.expedientes.push(expediente)
+    state.expedienteSel = expediente
+  },
 }

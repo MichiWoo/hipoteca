@@ -54,7 +54,7 @@
         >
           <button
             type="button"
-            class="bg-dark hover:bg-gray-50 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center"
+            class="bg-dark hover:bg-gray-50 hover:text-light focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center"
             @click="asignar(expediente)"
           >
             <IconUserPlus class="text-light-accent w-4 h-" />

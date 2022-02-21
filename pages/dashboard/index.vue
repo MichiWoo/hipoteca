@@ -3,11 +3,13 @@
     <div class="w-full flex flex-row justify-between items-center h-20">
       <div class="flex flex-row justify-center items-center">
         <div class="flex justify-center items-center mr-2">Lista de Expedientes</div>
-        <router-link to="/dashboard/registro">
+        <router-link to="/dashboard/expediente-nuevo">
           <button
             type="button"
-            class="text-dark hover:bg-dark hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center"
-          >+</button>
+            class="text-light bg-light-primary hover:bg-dark hover:text-light focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center"
+          >
+            <IconPlus class="w-4 h-4" />
+          </button>
         </router-link>
       </div>
       <div class="flex flex-row justify-center items-center">
@@ -131,6 +133,7 @@ export default {
   components: {
     TableExpedientes: () =>
       import('../../components/dashboard/TablaExpedientes.vue'),
+    IconPlus: () => import('../../components/icons/Plus.vue')
   },
   data() {
     return {

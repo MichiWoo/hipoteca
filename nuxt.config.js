@@ -36,6 +36,7 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
     ['@nuxtjs/date-fns', { locales: ['es'] }],
+    '@nuxtjs/toast',
   ],
   axios: {
     baseURL: 'http://localhost:8000/',
@@ -97,5 +98,9 @@ export default {
   gtm: {
     id: 'GTM-W48J24H',
     enabled: true,
+  },
+  toast: {
+    position: 'bottom-right',
+    duration: 3000
   },
 }

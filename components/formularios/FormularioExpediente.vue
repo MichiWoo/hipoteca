@@ -216,6 +216,7 @@ export default {
       const resp = await this.$store.dispatch('expedientes/addExpedientes', data)
       if (Object.keys(resp).length > 0) {
         this.$toast.success('Expediente creado correctamente.')
+        this.$emit('submitform', resp)
       } else {
         this.$toast.error('Error al crear el expediente.')
 

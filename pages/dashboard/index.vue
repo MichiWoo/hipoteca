@@ -3,7 +3,7 @@
     <div class="w-full flex flex-row justify-between items-center h-20">
       <div class="flex flex-row justify-center items-center">
         <div class="flex justify-center items-center mr-2">Lista de Expedientes</div>
-        <router-link to="/dashboard/expediente-nuevo">
+        <router-link to="/expediente/nuevo">
           <button
             type="button"
             class="text-light bg-light-primary hover:bg-dark hover:text-light focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center"

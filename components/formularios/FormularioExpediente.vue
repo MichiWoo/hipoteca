@@ -133,6 +133,18 @@
           </div>
         </button>
       </div>
+      <div class="mb-6 w-2/12">
+        <button 
+          type="submit"
+          class="text-light-text bg-light-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2"
+          @click.prevent="cancel"
+        >
+          <div class="flex justify-center items-center text-light">
+            <IconSave class="w-5 h-5" />
+            <span class="ml-1 text-xl">Cancelar</span>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -221,7 +233,10 @@ export default {
         this.$toast.error('Error al crear el expediente.')
 
       }
-    }
+    },
+    cancel() {
+      this.$emit('cancel', true)
+    },
   },
 }
 </script>

@@ -1,6 +1,7 @@
 export const state = () => ({
   expedientes: [],
   expedienteSel: {},
+  titularSel: {},
 })
 
 export const getters = {
@@ -58,7 +59,26 @@ export const actions = {
     } catch (error) {
       return error.message      
     }
-  }
+  },
+
+  async addTitular({commit}, data) {
+    console.log('action - addTitular')
+    console.log(data)
+    try {
+      const { expediente } = await this.$axios.$post('api/titulares', data)
+      console.log(expediente)
+      commit('updateExpediente', expediente)
+      return expediente
+    } catch (error) {
+      return error.message
+    }
+  },
+
+  selectTitular({commit}, titular) {
+    console.log('action - selectTitular')
+    console.log(titular)
+    commit('selectTitular', titular)
+  },
 }
 
 export const mutations = {
@@ -72,5 +92,15 @@ export const mutations = {
     console.log(expediente)
     state.expedientes.push(expediente)
     state.expedienteSel = expediente
+  },
+  updateExpediente(state, expediente) {
+    console.log('mutation - updateExpediente')
+    console.log(expediente)
+    state.expedienteSel = expediente
+  },
+  selectTitular(state, titular) {
+    console.log('mutation - selectTitular')
+    console.log(titular)
+    state.titularSel = titular
   },
 }

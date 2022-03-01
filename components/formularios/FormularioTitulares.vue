@@ -129,7 +129,6 @@
           this.$emit('submitform', resp)
         } else {
           this.$toast.error('Error al crear el expediente.')
-
         }
       }
     },

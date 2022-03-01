@@ -41,6 +41,7 @@
           <span class="ml-2">Ir a Préstamos</span>
         </div>
       </button>
+
     </div>
   </div>
 </template>

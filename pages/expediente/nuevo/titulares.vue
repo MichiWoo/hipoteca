@@ -73,6 +73,10 @@
       },
       verTitular(titular) {
         console.log(titular)
+        if (titular === 'close') {
+          this.verForm = false  
+          return
+        }
         this.$store.dispatch('expedientes/selectTitular', {})
         this.$store.dispatch('expedientes/selectTitular', titular)
         this.verForm = true

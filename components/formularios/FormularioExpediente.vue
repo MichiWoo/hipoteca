@@ -120,7 +120,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full flex justify-between items-center">
+    <div class="w-full flex justify-start items-center">
       <div class="mb-6 w-2/12">
         <button 
           type="submit"

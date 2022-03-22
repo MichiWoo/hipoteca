@@ -199,6 +199,18 @@ export default {
           this.expedientes = expedients
         }
         this.expedientesShow = this.expedientes
+        this.getBancos()
+      } catch (error) {
+        console.log(error)
+      }
+    },
+    async getBancos() {
+      try {
+        const banks = this.$store.state.bancos.bancos
+        if (banks.length === 0) {
+          const resp = await this.$store.dispatch('bancos/getBancos')
+          console.log(resp)
+        }
       } catch (error) {
         console.log(error)
       }

@@ -64,8 +64,35 @@ export const actions = {
   async addTitular({commit}, data) {
     console.log('action - addTitular')
     console.log(data)
+    const { idExpediente, titular } = data
     try {
-      const { expediente } = await this.$axios.$post('api/titulares', data)
+      const { expediente } = await this.$axios.$post(`api/expedientes/${idExpediente}/titulares`, titular)
+      console.log(expediente)
+      commit('updateExpediente', expediente)
+      return expediente
+    } catch (error) {
+      return error.message
+    }
+  },
+
+  async addPrestamo({commit}, data) {
+    console.log('action - addPrestamo')
+    const { idExpediente, prestamo } = data
+    try {
+      const { expediente } = await this.$axios.$post(`api/expedientes/${idExpediente}/prestamos`, prestamo)
+      console.log(expediente)
+      commit('updateExpediente', expediente)
+      return expediente
+    } catch (error) {
+      return error.message
+    }
+  },
+
+  async updatePrestamo({commit}, data) {
+    console.log('action - updatePrestamo')
+    const { idExpediente, prestamo } = data
+    try {
+      const { expediente } = await this.$axios.$put(`api/expedientes/${idExpediente}/prestamos/${prestamo.id}`, prestamo)
       console.log(expediente)
       commit('updateExpediente', expediente)
       return expediente

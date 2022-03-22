@@ -59,13 +59,20 @@
         </div>
       </div>
     </div>
-    <div class="w-full flex justify-between items-center">
+    <div class="w-full flex justify-end items-center">
       <button 
         type="button"
-        class="text-light bg-light-primary hover:bg-light-danger focus:ring-4 focus:ring-light-danger font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2"
+        class="text-light bg-light-primary hover:bg-light-danger focus:ring-4 focus:ring-light-danger font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2 mx-1"
         @click="submitForm"
       >
           Guardar
+      </button>
+      <button 
+        type="button"
+        class="text-dark bg-light-accent hover:bg-light-danger focus:ring-4 focus:ring-light-danger font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2 mx-1"
+        @click="closeForm"
+      >
+          Cerrar
       </button>
     </div>
   </div>
@@ -110,7 +117,7 @@
     methods: {
       async submitForm() {
         const data = {
-          expediente: this.expediente.id,
+          idExpediente: this.expediente.id,
           titular: {
             nombre: this.persona.nombre,
             edad: this.persona.edad,
@@ -125,12 +132,15 @@
         }
         const resp = await this.$store.dispatch('expedientes/addTitular', data)
         if (Object.keys(resp).length > 0) {
-          this.$toast.success('Expediente creado correctamente.')
+          this.$toast.success('Titular creado correctamente.')
           this.$emit('submitform', resp)
         } else {
-          this.$toast.error('Error al crear el expediente.')
+          this.$toast.error('Error al crear el titular.')
         }
-      }
+      },
+      closeForm() {
+        this.$emit('submitform', 'close')
+      },
     },
   }
 </script>

@@ -2,7 +2,7 @@
 <div class="w-full flex flex-col justify-center items-start">
   <div class="w-full flex justify-between items-center">
     <div class="mb-6">
-      <label for="banco" class="block mb-2 text-sm font-medium text-light-text">Selecciona el Tipo de Contrato</label>
+      <label for="banco" class="block mb-2 text-sm font-medium text-light-text">Selecciona el Banco</label>
       <select id="banco" v-model.number="prestamo.banco_id" class="bg-light border border-dark text-light-text text-sm rounded-lg focus:ring-light-text focus:border-light-text block w-full p-2"
         :disabled="estado == 2"
       >

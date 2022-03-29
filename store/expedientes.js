@@ -2,6 +2,7 @@ export const state = () => ({
   expedientes: [],
   expedienteSel: {},
   titularSel: {},
+  tramiteSel: {},
 })
 
 export const getters = {
@@ -93,6 +94,19 @@ export const actions = {
     const { idExpediente, prestamo } = data
     try {
       const { expediente } = await this.$axios.$put(`api/expedientes/${idExpediente}/prestamos/${prestamo.id}`, prestamo)
+      console.log(expediente)
+      commit('updateExpediente', expediente)
+      return expediente
+    } catch (error) {
+      return error.message
+    }
+  },
+
+  async addtramite({commit}, data) {
+    console.log('action - addtramite')
+    const { idExpediente, tramite } = data
+    try {
+      const { expediente } = await this.$axios.$post(`api/expedientes/${idExpediente}/tramites`, tramite)
       console.log(expediente)
       commit('updateExpediente', expediente)
       return expediente

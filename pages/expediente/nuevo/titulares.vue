@@ -12,7 +12,7 @@
         </div>
       </button>
     </div>
-    <div class="flex justify-start items-center">
+    <div v-show="expediente.titulares" class="flex justify-start items-center">
       <ul>
         <li v-for="(t, index) in expediente.titulares" :key="t.id">
           <div class="flex justify-start items-center">
@@ -31,7 +31,7 @@
     <div class="w-8/12 flex justify-start items-center my-6">
       <FormTitulares v-show="verForm" @submitform="reloadTitular" @cancel="verForm = false" />
     </div>
-    <div v-show="expediente.titulares.length > 1" class="flex justify-start items-center">
+    <div v-show="expediente.titulares && expediente.titulares.length > 0" class="flex justify-start items-center">
       <button 
         type="button"
         class="text-light bg-light-primary hover:bg-light-danger focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2"

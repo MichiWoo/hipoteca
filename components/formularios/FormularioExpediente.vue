@@ -179,25 +179,25 @@ export default {
         { id: 4, nombre: 'Fallida' },
       ],
       expediente: {
-        fecha: this.$dateFns.format(new Date(), 'dd/MM/yyyy'),
+        fecha: new Date(),
         tipo: 1,
-        vivienda: 1,
+        vivienda: false,
         estado: 5,
         fecha_llamada: null,
-        telefono1: "",
-        telefono2: "",
-        email: "",
-        importe_compra: 0,
-        aportacion: 0,
-        valor_aproximado: 0,
-        importe_prestamo: 0,
-        provincia: "",
-        localidad: "",
-        direccion: "",
-        user_id: null,
-        prestamo: null,
+        telefono1: "9101212112",
+        telefono2: "910121212",
+        email: "prueba@gmail.com",
+        importe_compra: 142000,
+        aportacion: 12000,
+        valor_aproximado: 160000,
+        importe_prestamo: 135000,
+        provincia: "Madrid",
+        localidad: "Madrid",
+        direccion: "Santiago Bernabeu",
+        user_id: 1,
+        prestamo: 120000,
       },
-      observaciones: '',
+      observaciones: 'Observacion de prueba',
     }
   },
   computed: {
@@ -210,19 +210,37 @@ export default {
       return this.$dateFns.format(date, 'dd/MM/yyyy')
     },
     async handleSubmit() {
-      console.log(this.user.id)
-      this.expediente.user_id = this.user.id
-      this.expediente.fecha = this.$dateFns.format(this.expediente.fecha, 'yyyy-MM-dd')
-      this.expediente.fecha_llamada = this.$dateFns.format(this.expediente.fecha_llamada, 'yyyy-MM-dd')
+      this.expediente.user_id = this.user.id || 1
+      const fechaAlta = this.$dateFns.format(this.expediente.fecha, 'yyyy-MM-dd')
+      const fechaLlamada = this.$dateFns.format(this.expediente.fecha_llamada, 'yyyy-MM-dd')
+      const expediente = {
+        fecha: fechaAlta,
+        tipo: this.expediente.tipo,
+        vivienda: this.expediente.vivienda,
+        estado: this.expediente.estado,
+        fecha_llamada: fechaLlamada,
+        telefono1: this.expediente.telefono1,
+        telefono2: this.expediente.telefono2,
+        email: this.expediente.email,
+        importe_compra: this.expediente.importe_compra,
+        aportacion: this.expediente.aportacion,
+        valor_aproximado: this.expediente.valor_aproximado,
+        importe_prestamo: this.expediente.importe_prestamo,
+        provincia: this.expediente.provincia,
+        localidad: this.expediente.localidad,
+        direccion: this.expediente.direccion,
+        user_id: this.expediente.user_id,
+        prestamo: this.expediente.prestamo,
+      }
+      console.log(expediente)
       const observacion = {
         texto: this.observaciones,
-        fecha: this.expediente.fecha,
+        fecha: fechaAlta,
         user_id: this.user.id
       }
-      console.log(this.expediente)
       console.log(observacion)
       const data = {
-        expediente: this.expediente,
+        expediente,
         observacion
       }
       const resp = await this.$store.dispatch('expedientes/addExpedientes', data)
@@ -231,7 +249,6 @@ export default {
         this.$emit('submitform', resp)
       } else {
         this.$toast.error('Error al crear el expediente.')
-
       }
     },
     cancel() {

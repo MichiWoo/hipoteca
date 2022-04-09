@@ -80,13 +80,19 @@
     components: {
       Datepicker,
     },
+    props: {
+      estatus: {
+        type: Number,
+        default: 1,
+      },
+    },
     data() {
       return {
         idioma: es,
         bancosSel: {},
         tramite: {
           id: this.tramiteSel ? this.tramiteSel.id : '',
-          fecha_presentacion: this.tramiteSel ? this.tramiteSel.fecha_presentacion : this.$dateFns.format(new Date(), 'dd/MM/yyyy'),
+          fecha_presentacion: this.tramiteSel ? this.tramiteSel.fecha_presentacion : new Date(),
           fecha_resolucion: this.tramiteSel ? this.tramiteSel.fecha_resolucion : '',
           estado: this.tramiteSel ? this.tramiteSel.estado : 0,
           banco_id: this.tramiteSel ? this.tramiteSel.banco_id : 0,
@@ -96,7 +102,7 @@
           { id: 1, estado: 'Aprobada' },
           { id: 2, estado: 'Denegada' },
         ],
-        estado: 1,
+        estado: this.estatus,
       }
     },
     computed: {
@@ -131,11 +137,13 @@
       async submitForm() {
         
         if (this.estado === 1) {
+          const fechaPresentacion = this.$dateFns.format(this.tramite.fecha_presentacion, "yyyy-MM-dd")
+          const fechaResolucion = this.$dateFns.format(this.tramite.fecha_resolucion, "yyyy-MM-dd")
           const data = {
             idExpediente: this.expediente.id,
             tramite: {
-              fecha_presentacion: this.$dateFns.format(this.tramite.fecha_presentacion, "yyyy-MM-dd"),
-              fecha_resolucion: this.$dateFns.format(this.tramite.fecha_resolucion, "yyyy-MM-dd"),
+              fecha_presentacion: fechaPresentacion,
+              fecha_resolucion: fechaResolucion,
               estado: this.tramite.estado,
               banco_id: this.tramite.banco_id,
             }
@@ -143,23 +151,26 @@
           const resp = await this.$store.dispatch('expedientes/addtramite', data)
           if (Object.keys(resp).length > 0) {
             if (this.estado === 3) {
-              this.$toast.success('Préstamo actualizado correctamente.')
+              this.$toast.success('Trámite agregado correctamente.')
+
             } else {
-              this.$toast.success('Préstamo creado correctamente.')
+              this.$toast.success('Trámite creado correctamente.')
             }
-            this.$emit('submitform', resp)
+            this.$emit('closeForm', true)
 
             this.estado = 2
           } else {
-            this.$toast.error('Error al crear el préstamo.')
+            this.$toast.error('Error al crear el Trámite.')
           }
         } else {
+          const fechaPresentacion = this.$dateFns.format(this.tramite.fecha_presentacion, "yyyy-MM-dd")
+          const fechaResolucion = this.$dateFns.format(this.tramite.fecha_resolucion, "yyyy-MM-dd")
           const data = {
             idExpediente: this.expediente.id,
             tramite: {
               id: this.tramiteSel.id,
-              fecha_presentacion: this.$dateFns.format(this.tramite.fecha_presentacion, "yyyy-MM-dd"),
-              fecha_resolucion: this.$dateFns.format(this.tramite.fecha_resolucion, "yyyy-MM-dd"),
+              fecha_presentacion: fechaPresentacion,
+              fecha_resolucion: fechaResolucion,
               estado: this.tramite.estado,
               banco_id: this.tramite.banco_id,
             }
@@ -171,11 +182,11 @@
             } else {
               this.$toast.success('El Trámite no se creado.')
             }
-            this.$emit('closeForm', 'close')
+            this.$emit('closeForm', true)
 
             this.estado = 2
           } else {
-            this.$toast.error('Error al crear el Trámite.')
+            this.$toast.error('Error al actualizar el Trámite.')
           }
         }
       },

@@ -35,30 +35,28 @@
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="tramite in tramites"
-        :key="tramite.id"
-        class="odd:bg-white even:bg-gray-50 border-b"
-      >
-        <td
-          class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
+      <tr v-for="tramite in expediente.tramites" :key="tramite.id" class="odd:bg-white even:bg-gray-50 border-b">
+        <td class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap">
           {{ tramite.banco.nombre }}
         </td>
-        <td
-          class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
-          {{ setFecha(tramite.fecha_presentacion) }}
+        <td class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap">
+          {{ tramite.fecha_presentacion }}
         </td>
-        <td
-          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
-          {{ setFecha(tramite.fecha_resolucion) }}
+        <td class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap">
+          {{ tramite.fecha_resolucion }}
         </td>
-        <td
-          class="py-2 px-4 text-sm text-gray-500 text-center whitespace-nowrap"
-        >
+        <td class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap">
           {{ setEstado(tramite.estado) }}
+        </td>
+        <td class="py-2 px-1 text-sm text-gray-500 text-center whitespace-nowrap">
+          <div class="flex justify-center items-center">
+            <button type="button" class="text-dark border border-dark hover:bg-dark hover:text-light focus:ring-4 focus:outline-none focus:ring-dark font-medium rounded-full text-sm p-2 text-center inline-flex items-center">
+              <IconEdit class="w-4 h-4 mx-2" />
+            </button>
+            <button type="button" class="text-dark border border-dark hover:bg-dark hover:text-light focus:ring-4 focus:outline-none focus:ring-dark font-medium rounded-full text-sm p-2 text-center inline-flex items-center">
+              <IconDelete class="w-4 h-4 mx-2" />
+            </button>
+          </div>
         </td>
       </tr>
     </tbody>
@@ -67,22 +65,22 @@
 
 <script>
   export default {
-    props: {
-      tramites: {
-        type: Array,
-        default: () => [],
-      },
+    components: {
+      IconDelete: () => import('../icons/Thrash.vue'),
+      IconEdit: () => import('../icons/Pencil.vue'),
+    },
+    computed: {
+      expediente() {
+        return this.$store.state.expedientes.expedienteSel
+      }
     },
     methods: {
-      setFecha(fecha) {
-        return this.$dateFns.format(fecha, 'dd-MM-yyyy')
-      },
       setEstado(estado) {
         switch (estado) {
           case 0:
             return 'Pendiente'
           case 1:
-            return 'Aprobado'
+            return 'Aprobada'
           case 2:
             return 'Denegado'
         }

@@ -71,15 +71,15 @@
     <div class="w-full flex justify-between items-center">
       <div class="mb-6">
         <label for="provincia" class="block mb-2 text-sm font-medium text-light-text">Provincia</label>
-        <input id="provincia" v-model="expediente.provincia" type="provincia" class="bg-light border border-light-text text-light-text text-sm rounded-lg focus:ring-light-text focus:border-light-text block w-full p-2" placeholder="Madrid">
+        <input id="provincia" v-model="expediente.provincia" type="text" class="bg-light border border-light-text text-light-text text-sm rounded-lg focus:ring-light-text focus:border-light-text block w-full p-2" placeholder="Madrid">
       </div>
       <div class="mb-6">
         <label for="localidad" class="block mb-2 text-sm font-medium text-light-text">Localidad</label>
-        <input id="localidad" v-model="expediente.localidad" type="localidad" class="bg-light border border-light-text text-light-text text-sm rounded-lg focus:ring-light-text focus:border-light-text block w-full p-2" placeholder="Madrid">
+        <input id="localidad" v-model="expediente.localidad" type="text" class="bg-light border border-light-text text-light-text text-sm rounded-lg focus:ring-light-text focus:border-light-text block w-full p-2" placeholder="Madrid">
       </div>
       <div class="mb-6 w-3/6">
         <label for="direccion" class="block mb-2 text-sm font-medium text-light-text">Dirección de la vivienda</label>
-        <input id="direccion" v-model="expediente.direccion" type="direccion" class="bg-light border border-light-text text-light-text text-sm rounded-lg focus:ring-light-text focus:border-light-text block w-full p-2" placeholder="Madrid">
+        <input id="direccion" v-model="expediente.direccion" type="text" class="bg-light border border-light-text text-light-text text-sm rounded-lg focus:ring-light-text focus:border-light-text block w-full p-2" placeholder="Madrid">
       </div>
     </div>
     <div class="w-full flex justify-between items-center">

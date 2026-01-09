@@ -18,9 +18,7 @@
       <div
         class="ml-1 text-xs text-justify text-light-primary dark:text-dark-accent sm:text-sm"
       >
-        Hipotecaes10, S.L., con CIF B-87794061 y domicilio Carrera de San
-        Jerónimo 18, 28014 Madrid TELÉFONO: 910 75 81 69 E-MAIL:
-        info@hipoteca10.es NOMBRE DEL DOMINIO: www.hipoteca10.es.
+        Hipotecaes10, S.L., con CIF B-87794061 y domicilio Calle Doctor Esquerdo 33, 28028 Madrid TELÉFONO: 910 75 81 69 E-MAIL: info@hipoteca10.es NOMBRE DEL DOMINIO: www.hipoteca10.es.
       </div>
     </div>
     <div class="flex w-full my-2 sm:w-4/6 flex-start sm:mt-8">

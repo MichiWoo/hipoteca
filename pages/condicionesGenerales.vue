@@ -35,9 +35,7 @@
         "
       >
         Este documento establece las condiciones generales de contratación de la
-        empresa Hipotecaes10 SL, con CIF B-87794061 y domicilio Carrera de San
-        Jerónimo 18, 28014 Madrid TELÉFONO: 910 75 81 69. E-MAIL de contacto:
-        info@hipoteca10.es.
+        empresa Hipotecaes10 SL, con CIF B-87794061 y domicilio Calle Doctor Esquerdo 33, 28028 Madrid TELÉFONO: 910 75 81 69. E-MAIL de contacto: info@hipoteca10.es. NOMBRE DEL DOMINIO: www.hipoteca10.es.
       </div>
     </div>
     <div class="flex w-11/12 py-2 sm:w-4/6 flex-start">

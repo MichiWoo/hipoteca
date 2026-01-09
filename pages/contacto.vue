@@ -38,12 +38,12 @@
         <p
           class="mt-2 text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
         >
-          Carrera San Jerónimo 18.
+          Calle Doctor Esquerdo 33.
         </p>
         <p
           class="text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
         >
-          28014. Madrid
+          28028. Madrid
         </p>
         <p
           class="mb-2 text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
@@ -57,7 +57,20 @@
         </p>
       </div>
     </div>
-    <div class="w-11/12 my-4 div-center sm:hidden"><img src="/mapa.png" /></div>
+    <div class="w-1/2 max-w-xs my-4 div-center sm:hidden">
+      <a
+        href="https://www.google.com/maps/place/C.+del+Dr.+Esquerdo,+33,+Salamanca,+28028+Madrid,+Spain/@40.4248818,-3.6687368,20.02z/data=!4m6!3m5!1s0xd4228b1e8bf6c07:0xa9ec17d3697eb86!8m2!3d40.4248733!4d-3.6684105!16s%2Fg%2F11rgfxz5zc?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver ubicación en Google Maps"
+      >
+        <img
+          src="/mapa.png"
+          class="w-full h-auto hover:opacity-80 transition-opacity cursor-pointer"
+          alt="Mapa de ubicación"
+        />
+      </a>
+    </div>
     <div class="items-center justify-center hidden my-8 sm:flex">
       <div class="flex flex-col items-center content-center w-11/12">
         <p
@@ -74,12 +87,12 @@
         <p
           class="mt-2 text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
         >
-          Carrera San Jerónimo 18.
+          Calle Doctor Esquerdo 33.
         </p>
         <p
           class="text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
         >
-          28014. Madrid
+          28028. Madrid
         </p>
         <p
           class="mb-2 text-base text-center sm:text-xl text-light-primary dark:text-dark-primary"
@@ -92,7 +105,20 @@
           <a href="mailto:info@hipoteca10.es"> info@hipoteca10.es </a>
         </p>
       </div>
-      <div class="w-11/12 my-4 div-center"><img src="/mapa.png" /></div>
+      <div class="w-1/2 max-w-md my-4 div-center">
+        <a
+          href="https://www.google.com/maps/place/C.+del+Dr.+Esquerdo,+33,+Salamanca,+28028+Madrid,+Spain/@40.4248818,-3.6687368,20.02z/data=!4m6!3m5!1s0xd4228b1e8bf6c07:0xa9ec17d3697eb86!8m2!3d40.4248733!4d-3.6684105!16s%2Fg%2F11rgfxz5zc?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ver ubicación en Google Maps"
+        >
+          <img
+            src="/mapa.png"
+            class="w-full h-auto hover:opacity-80 transition-opacity cursor-pointer"
+            alt="Mapa de ubicación"
+          />
+        </a>
+      </div>
     </div>
     <div class="w-11/12 my-6 div-center">
       <p

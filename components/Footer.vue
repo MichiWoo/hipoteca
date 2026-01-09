@@ -59,7 +59,7 @@
               dark:text-dark-primary
             "
           >
-            Carrera San Jerónimo 18.
+            Calle Doctor Esquerdo 33.
           </h3>
           <h3
             class="
@@ -70,7 +70,7 @@
               dark:text-dark-primary
             "
           >
-            28014. Madrid
+            28028. Madrid
           </h3>
         </div>
       </div>
